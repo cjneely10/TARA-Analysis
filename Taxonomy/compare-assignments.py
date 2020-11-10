@@ -69,19 +69,21 @@ def load_eukms(file_path: str) -> Dict[str, Taxonomy]:
     return out
 
 
-def generate_comparison_matrix(delmont: Dict[str, Taxonomy], eukms: Dict[str, Taxonomy]) -> Tuple[List[str], np.ndarray]:
+def generate_comparison_matrix(delmont: Dict[str, Taxonomy], eukms: Dict[str, Taxonomy]) -> Tuple[List[str], np.ndarray, int]:
     keys = sorted(list(eukms.keys()))
     out = np.zeros((len(keys), len(FIELDS) - 1), dtype="int8")
+    z = 0
     for i, key in enumerate(keys):
         if key in delmont.keys():
+            z += 1
             for k in range(0, len(FIELDS)):
                 for l in range(len(FIELDS)):
                     if eukms[key][l] != "" and eukms[key][l].lower() in delmont[key][k].lower():
                         out[i, l - 1] = 1
-    return keys, out
+    return keys, out, z
 
 
-def write_to_file(file_path: str, output_data: Tuple[List[str], List[List[int]]]):
+def write_to_file(file_path: str, output_data: Tuple[List[str], List[List[int]], int]):
     w = open(file_path, "w")
     for name, data in zip(output_data[0], output_data[1]):
         w.write("".join((name, "\t", "\t".join(map(str, data)), "\n")))
@@ -90,7 +92,7 @@ def write_to_file(file_path: str, output_data: Tuple[List[str], List[List[int]]]
     for row in output_data[1]:
         if np.sum(row) != 0:
             non_zero += 1
-    print(non_zero)
+    print(non_zero, output_data[2])
 
 
 if __name__ == "__main__":
