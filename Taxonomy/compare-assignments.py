@@ -6,6 +6,7 @@ from collections import namedtuple
 from typing import Dict, List, Tuple
 
 """
+./Taxonomy/compare-assignments.py -d ../TARA/taxonomy/delmont-assigned-taxonomy.txt -e ../TARA/taxonomy/taxonomy-summary.txt
 Script will take file in format:
 TARA_ARC_108_MAG_00273			Chromista	Ciliophora	Oligotrichea	Choreotrichida	Rhabdonellidae	Schmidingerella
 
@@ -40,7 +41,8 @@ def generate_comparison_matrix(delmont: Dict[str, Taxonomy], eukms: Dict[str, Ta
             z += 1
             for k in range(len(FIELDS)):
                 for l in range(len(FIELDS)):
-                    if eukms[key][l] != "." and eukms[key][l].lower() in delmont[key][k].lower():
+                    if eukms[key][l] != "." and (eukms[key][l].lower() in delmont[key][k].lower() or
+                                                 delmont[key][k].lower() in eukms[key][l].lower()):
                         out[i, k] = 1
     return keys, out, z
 
@@ -56,6 +58,9 @@ def write_to_file(file_path: str, output_data: Tuple[List[str], np.ndarray, int]
             non_zero += 1
     print(non_zero, output_data[2])
     print(np.sum(output_data[1], axis=0))
+    for name, row in zip(output_data[0], output_data[1]):
+        if np.sum(row) == 0:
+            print(name)
 
 
 if __name__ == "__main__":
