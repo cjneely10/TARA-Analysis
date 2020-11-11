@@ -53,14 +53,14 @@ def write_to_file(file_path: str, output_data: Tuple[List[str], np.ndarray, int]
         w.write("".join((name, "\t", "\t".join(map(str, data)), "\n")))
     w.close()
     non_zero = 0
-    for row in output_data[1]:
+    print()
+    for name, row in zip(output_data[0], output_data[1]):
         if np.sum(row) != 0:
             non_zero += 1
+        else:
+            print(name)
     print(non_zero, output_data[2])
     print(np.sum(output_data[1], axis=0))
-    for name, row in zip(output_data[0], output_data[1]):
-        if np.sum(row) == 0:
-            print(name)
 
 
 if __name__ == "__main__":
@@ -75,12 +75,10 @@ if __name__ == "__main__":
         ),
         description="Compare EukMS annotation to delmont-derived data"
     )
-    if not os.path.exists(ap.args.delmont):
-        print("Provide valid Delmont path")
-        exit(1)
-    if not os.path.exists(ap.args.eukms):
-        print("Provide valid EukMS path")
-        exit(1)
+    for _n, _p in zip(("Delmont", "EukMS"), (ap.args.delmont, ap.args.eukms)):
+        if not os.path.exists(_p):
+            print("Provide valid %s path" % _n)
+            exit(1)
 
     write_to_file(
         ap.args.output,
