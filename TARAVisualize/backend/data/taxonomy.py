@@ -2,6 +2,7 @@
 from typing import List, Dict
 from plumbum import cli
 from glob import glob
+import os
 
 
 tax_levels = ("kingdom", "clade", "phylum", "class", "subclass", "order", "family", "genus", "species")
@@ -11,8 +12,11 @@ def generate_summary_taxonomy_file(file_list: List[str], out_path: str):
     w = open(out_path, "w")
     w.write("".join(("\t".join(tax_levels), "\n")))
     for file in file_list:
+        prefix = file.split("/")[2]
         file_data = get_data_from_file(file)
-        w.write("".join(("\t".join((file_data[t] for t in tax_levels)), "\n")))
+        w.write("".join((
+            prefix, "\t", "\t".join((file_data[t] for t in tax_levels)), "\n"
+        )))
     w.close()
 
 
