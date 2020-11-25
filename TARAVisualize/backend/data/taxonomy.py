@@ -1,7 +1,10 @@
+#!/usr/bin/env python
 from typing import List, Dict
-from TARAVisualize.backend.data import os
+from plumbum import cli
+from glob import glob
 
-tax_levels = ("kingdom", "clade", "phylum", "class", "order", "family", "genus")
+
+tax_levels = ("kingdom", "clade", "phylum", "class", "subclass", "order", "family", "genus", "species")
 
 
 def generate_summary_taxonomy_file(file_list: List[str], out_path: str):
@@ -14,16 +17,27 @@ def generate_summary_taxonomy_file(file_list: List[str], out_path: str):
 
 
 def get_data_from_file(file_path: str) -> Dict[str, str]:
-    if not os.path.exists(file_path):
-        exit()
     r = open(file_path, "r")
     i = 0
-    data = {tax: "" for tax in tax_levels}
+    data = {tax: "." for tax in tax_levels}
     for line in r:
         line = line.rstrip("\r\n").split()
-        if line[3] in tax_levels and data[line[3]] == "":
+        if line[3] in tax_levels:
             data[line[3]] = line[5]
         i += 1
-        if i > 15:
+        if line[3] == "species" or i > 30:
             break
     return data
+
+
+class TaxonomyApp(cli.Application):
+    file_glob = cli.SwitchAttr(["-i", "--input-glob"], mandatory=True,
+                               help="Glob for all tax-report.txt files to merge for results")
+    output_path = cli.SwitchAttr(["-o", "--output"], mandatory=True, help="Output path of summary file")
+
+    def main(self):
+        generate_summary_taxonomy_file(glob(self.file_glob), self.output_path)
+
+
+if __name__ == "__main__":
+    TaxonomyApp.run()
