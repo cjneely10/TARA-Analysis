@@ -32,14 +32,14 @@ data_raw = load_data()
 
 # Generate each taxonomy plot
 for col in TAX_LEVELS:
-    subset = data_raw[[filter_selection, "size_fraction", col]]
-    c = alt.Chart(subset.dropna()).mark_bar(
+    subset = data_raw[[filter_selection, "size_fraction", col]].dropna()
+    c = alt.Chart(subset).mark_bar(
         cornerRadiusTopLeft=3,
         cornerRadiusTopRight=3,
         width=12
     ).encode(
         x='%s:O' % col,
-        y='count():O',
+        y=alt.Y('count():O', stack="normalize"),
         color=filter_selection,
         column="size_fraction"
     ).configure_axisX(labelAngle=-45)
