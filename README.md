@@ -3,6 +3,9 @@
 
 This folder will contain assorted data and results as they are collected.
 
+Data will constantly be added as it is gathered, but this repository can be assumed to be in a 
+presentable state.
+
 ### Installation
 
 Plans are to keep this data directory as an interface to visualize data using **StreamLit**.
