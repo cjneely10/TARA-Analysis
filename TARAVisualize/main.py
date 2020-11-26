@@ -1,4 +1,5 @@
 import os
+import numpy as np
 import altair as alt
 import streamlit as st
 import pandas as pd
@@ -16,34 +17,29 @@ def load_data():
     return pd.read_csv(DATA_FILE, delimiter="\t", na_values=".", index_col=0, dtype="object")
 
 
+# Load cached file data
+data_raw = load_data()
 # Create simple layout
 st.title(TITLE)
 st.sidebar.write(TITLE)
 # Get view selection and display for user
 filter_selection = st.sidebar.selectbox("Filter by", FILTER_BY_OPTIONS)
-
-# Load cached file data
-data_raw = load_data()
-
 # Allow user to select which subregions to compare
 regions_selection = st.sidebar.multiselect("Regions", list(set(data_raw.region)))
-
 # Allow user to select normalization
-norm_selection = st.sidebar.checkbox("Normalize", value=True)
-if norm_selection:
+norm_selection = {}
+if st.sidebar.checkbox("Normalize", value=True):
     norm_selection = {"stack": "normalize"}
-else:
-    norm_selection = {}
 
 # Generate each taxonomy plot
 for col in TAX_LEVELS:
-    subset = data_raw[[col, "region", filter_selection]]
+    subset = data_raw[[*TAX_LEVELS, "region", filter_selection]]
     subset = subset[subset["region"].isin(regions_selection)]
     if len(subset) == 0:
         continue
     st.write("Level: %s" % col)
     st.write(subset)
-    c = alt.Chart(subset.dropna()).mark_bar(
+    c = alt.Chart(subset[[col, "region", filter_selection]].dropna()).mark_bar(
         cornerRadiusTopLeft=3,
         cornerRadiusTopRight=3,
         width=12
