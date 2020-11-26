@@ -30,8 +30,7 @@ if st.sidebar.checkbox("Normalize", value=True):
 
 # Generate each taxonomy plot
 for col in TAX_LEVELS:
-    subset = data_raw[[*TAX_LEVELS, "region", filter_selection]]
-    subset = subset[subset["region"].isin(regions_selection)]
+    subset = data_raw[data_raw["region"].isin(regions_selection)]
     if len(subset) == 0:
         continue
     st.write("Level: %s" % col)
