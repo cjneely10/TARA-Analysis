@@ -28,6 +28,13 @@ data_raw = load_data()
 # Allow user to select which subregions to compare
 regions_selection = st.sidebar.multiselect("Regions", list(set(data_raw.region)))
 
+# Allow user to select normalization
+norm_selection = st.sidebar.checkbox("Normalize", value=True)
+if norm_selection:
+    norm_selection = {"stack": "normalize"}
+else:
+    norm_selection = {}
+
 # Generate each taxonomy plot
 for col in TAX_LEVELS:
     subset = data_raw[[col, "region", filter_selection]]
@@ -42,7 +49,7 @@ for col in TAX_LEVELS:
         width=12
     ).encode(
         x='%s:O' % col,
-        y=alt.Y('count():O', stack="normalize"),
+        y=alt.Y('count():O', **norm_selection),
         color=filter_selection,
         column="region"
     ).configure_axisX(labelAngle=-45)
