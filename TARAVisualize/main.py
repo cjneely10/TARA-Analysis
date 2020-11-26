@@ -3,11 +3,6 @@ import altair as alt
 import streamlit as st
 import pandas as pd
 
-"""
-Script to visualize TARA oceans data
-
-"""
-
 # Path to taxonomy data
 DATA_FILE = os.path.join(os.path.dirname(__file__), "data/tax-summary.tsv")
 # Various constants for visualization
