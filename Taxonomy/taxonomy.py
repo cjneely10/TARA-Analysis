@@ -5,6 +5,7 @@ from typing import List, Dict
 
 """
 Script will parse all files in a glob statement and generate a summary .tsv file of taxonomic assignments
+Currently only supports Alexander MAG naming scheme
 
 From working directory:
 ./taxonomy.py -i "out/wdir/*/taxonomy/tax-report.txt" -o tax-summary.tsv
