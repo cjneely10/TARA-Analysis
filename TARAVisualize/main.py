@@ -1,12 +1,9 @@
 import os
-import numpy as np
 import altair as alt
 import streamlit as st
 import pandas as pd
 
-# Path to taxonomy data
 DATA_FILE = os.path.join(os.path.dirname(__file__), "data/tax-summary.tsv")
-# Various constants for visualization
 TAX_LEVELS = ("kingdom", "clade", "phylum", "class", "subclass", "order", "family", "genus", "species")
 TITLE = "TARA oceans data visualizer"
 FILTER_BY_OPTIONS = ("size_fraction", "depth")
