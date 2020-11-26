@@ -1,7 +1,7 @@
 import os
+import pandas as pd
 import altair as alt
 import streamlit as st
-import pandas as pd
 
 DATA_FILE = os.path.join(os.path.dirname(__file__), "data/tax-summary.tsv")
 TAX_LEVELS = ("kingdom", "clade", "phylum", "class", "subclass", "order", "family", "genus", "species")
