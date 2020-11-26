@@ -37,10 +37,10 @@ regions_selection = st.sidebar.multiselect("Regions", list(set(data_raw.region))
 # Generate each taxonomy plot
 for col in TAX_LEVELS:
     st.write("Level: %s" % col)
-    subset = data_raw[[col, "region", filter_selection]].dropna()
+    subset = data_raw[[col, "region", filter_selection]]
     subset = subset[subset["region"].isin(regions_selection)]
     st.write(subset)
-    c = alt.Chart(subset).mark_bar(
+    c = alt.Chart(subset.dropna()).mark_bar(
         cornerRadiusTopLeft=3,
         cornerRadiusTopRight=3,
         width=12
