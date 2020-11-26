@@ -13,7 +13,7 @@ DATA_FILE = os.path.join(os.path.dirname(__file__), "data/tax-summary.tsv")
 # Various constants for visualization
 TAX_LEVELS = ("kingdom", "clade", "phylum", "class", "subclass", "order", "family", "genus", "species")
 TITLE = "TARA oceans data visualizer"
-FILTER_REGIONS = ("region", "depth")
+FILTER_BY_OPTIONS = ("size_fraction", "depth")
 
 
 @st.cache
@@ -25,14 +25,21 @@ def load_data():
 st.title(TITLE)
 st.sidebar.write(TITLE)
 # Get view selection and display for user
-filter_selection = st.sidebar.selectbox("Filter", FILTER_REGIONS)
+filter_selection = st.sidebar.selectbox("Filter by", FILTER_BY_OPTIONS)
 st.write("Viewing by %s" % filter_selection)
+
 # Load cached file data
 data_raw = load_data()
 
+# Allow user to select which subregions to compare
+regions_selection = st.sidebar.multiselect("Regions", list(set(data_raw.region)))
+
 # Generate each taxonomy plot
 for col in TAX_LEVELS:
-    subset = data_raw[[filter_selection, "size_fraction", col]].dropna()
+    st.write("Level: %s" % col)
+    subset = data_raw[[col, "region", filter_selection]].dropna()
+    subset = subset[subset["region"].isin(regions_selection)]
+    st.write(subset)
     c = alt.Chart(subset).mark_bar(
         cornerRadiusTopLeft=3,
         cornerRadiusTopRight=3,
@@ -41,6 +48,6 @@ for col in TAX_LEVELS:
         x='%s:O' % col,
         y=alt.Y('count():O', stack="normalize"),
         color=filter_selection,
-        column="size_fraction"
+        column="region"
     ).configure_axisX(labelAngle=-45)
     st.altair_chart(c)
