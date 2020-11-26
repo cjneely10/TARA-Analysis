@@ -18,5 +18,5 @@ pip install -r requirements.txt
 Run the visualizer with the command:
 
 ```
-streamlit run main.py
+streamlit run TARAVisualize/main.py
 ```
