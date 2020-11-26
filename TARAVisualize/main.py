@@ -26,7 +26,6 @@ st.title(TITLE)
 st.sidebar.write(TITLE)
 # Get view selection and display for user
 filter_selection = st.sidebar.selectbox("Filter by", FILTER_BY_OPTIONS)
-st.write("Viewing by %s" % filter_selection)
 
 # Load cached file data
 data_raw = load_data()
@@ -36,9 +35,11 @@ regions_selection = st.sidebar.multiselect("Regions", list(set(data_raw.region))
 
 # Generate each taxonomy plot
 for col in TAX_LEVELS:
-    st.write("Level: %s" % col)
     subset = data_raw[[col, "region", filter_selection]]
     subset = subset[subset["region"].isin(regions_selection)]
+    if len(subset) == 0:
+        continue
+    st.write("Level: %s" % col)
     st.write(subset)
     c = alt.Chart(subset.dropna()).mark_bar(
         cornerRadiusTopLeft=3,
