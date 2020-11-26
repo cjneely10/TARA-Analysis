@@ -3,6 +3,16 @@ from glob import glob
 from plumbum import cli
 from typing import List, Dict
 
+"""
+Script will parse all files in a glob statement and generate a summary .tsv file of taxonomic assignments
+
+From working directory:
+./taxonomy.py -i "out/wdir/*/taxonomy/tax-report.txt" -o tax-summary.tsv
+From summary directory:
+./taxonomy.py -i "out/results/run/*/tax-report.txt" -o tax-summary.tsv
+
+"""
+
 
 tax_levels = ("kingdom", "clade", "phylum", "class", "subclass", "order", "family", "genus", "species")
 
@@ -13,9 +23,11 @@ def generate_summary_taxonomy_file(file_list: List[str], out_path: str):
     for file in file_list:
         prefix = file.split("/")[2]
         file_data = get_data_from_file(file)
+        # Write header
         w.write("".join((
             prefix, "\t", "\t".join((file_data[t] for t in tax_levels)),
         )))
+        # Write added info from file name metadata
         w.write("".join((
             "\t",
             "\t".join((
