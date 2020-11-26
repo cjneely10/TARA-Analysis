@@ -9,7 +9,7 @@ Script to visualize TARA oceans data
 """
 
 # Path to taxonomy data
-DATA_FILE = os.path.join(os.path.dirname(__file__), "data/tax-summary-adj.tsv")
+DATA_FILE = os.path.join(os.path.dirname(__file__), "data/tax-summary.tsv")
 # Various constants for visualization
 TAX_LEVELS = ("kingdom", "clade", "phylum", "class", "subclass", "order", "family", "genus", "species")
 TITLE = "TARA oceans data visualizer"

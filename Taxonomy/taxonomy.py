@@ -9,12 +9,19 @@ tax_levels = ("kingdom", "clade", "phylum", "class", "subclass", "order", "famil
 
 def generate_summary_taxonomy_file(file_list: List[str], out_path: str):
     w = open(out_path, "w")
-    w.write("".join(("ID\t", "\t".join(tax_levels), "\n")))
+    w.write("".join(("ID\t", "\t".join(tax_levels), "\tregion\tdepth\tsize_fraction\n")))
     for file in file_list:
         prefix = file.split("/")[2]
         file_data = get_data_from_file(file)
         w.write("".join((
-            prefix, "\t", "\t".join((file_data[t] for t in tax_levels)), "\n"
+            prefix, "\t", "\t".join((file_data[t] for t in tax_levels)),
+        )))
+        w.write("".join((
+            "\t",
+            "\t".join((
+                "-".join(prefix.split("-")[0:2]), prefix.split("-")[2], "-".join(prefix.split("-")[3:]).split("_")[0]
+            )),
+            "\n"
         )))
     w.close()
 
