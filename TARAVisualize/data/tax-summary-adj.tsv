@@ -1,0 +1,820 @@
+	ID	kingdom	clade	phylum	class	subclass	order	family	genus	species	region	depth	size_fraction
+0	MS-all-SRF-20-180-00_bin-86	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	20-180-00
+1	MS-all-SRF-0-8-5-00_bin-16		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas bandaiensis	MS-all	SRF	0-8-5-00
+2	RS-all-SRF-0-8-5-00_bin-55	Viridiplantae		Chlorophyta	Mamiellophyceae		Dolichomastigales	Pycnococcaceae	Pycnococcus	Pycnococcus provasolii	RS-all	SRF	0-8-5-00
+3	IO-all-SRF-0-8-5-00_bin-223		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium	Alexandrium tamarense	IO-all	SRF	0-8-5-00
+4	NAO-all-SRF-0-8-5-00_bin-662		Sar	Bacillariophyta	Bacillariophyceae		Bacillariales	Bacillariaceae	Cylindrotheca	Cylindrotheca closterium	NAO-all	SRF	0-8-5-00
+5	RS-all-SRF-20-180-00_bin-27	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	RS-all	SRF	20-180-00
+6	SPO-SPSG-SRF-0-8-5-00_bin-581		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	SPO-SPSG	SRF	0-8-5-00
+7	SPO-SPSG-SRF-0-8-5-00_bin-565	Metazoa	Opisthokonta	Chordata	Choanoflagellata		Craspedida	Salpingoecidae	Salpingoeca	Salpingoeca rosetta	SPO-SPSG	SRF	0-8-5-00
+8	IO-all-SRF-20-180-00_bin-92	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	20-180-00
+9	SPO-all-DCM-0-8-5-00_bin-501		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	SPO-all	DCM	0-8-5-00
+10	SPO-all-SRF-20-180-00_bin-188	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	20-180-00
+11	SPO-all-SRF-20-180-00_bin-111	Metazoa	Opisthokonta	Mollusca	Gastropoda	Heterobranchia	Aplysiida	Aplysiidae	Aplysia	Aplysia californica	SPO-all	SRF	20-180-00
+12	SPO-SPSG-MES-0-8-5-00_bin-179	Fungi	Opisthokonta	Ascomycota	Leotiomycetes		Helotiales	Mollisiaceae	Rhynchosporium	Rhynchosporium commune	SPO-SPSG	MES	0-8-5-00
+13	NAO-all-DCM-0-8-5-00_bin-110	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	NAO-all	DCM	0-8-5-00
+14	NPO-all-DCM-20-180-00_bin-49	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	NPO-all	DCM	20-180-00
+15	NAO-all-SRF-0-8-5-00_bin-411			Proteobacteria	Deltaproteobacteria		Myxococcales	Archangiaceae	Cystobacter	Cystobacter fuscus	NAO-all	SRF	0-8-5-00
+16	SAO-all-SRF-0-8-5-00_bin-545		Sar	Bacillariophyta							SAO-all	SRF	0-8-5-00
+17	SAO-all-DCM-0-8-5-00_bin-409	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	SAO-all	DCM	0-8-5-00
+18	SO-all-SRF-0-8-5-00_bin-45		Prymnesiophyceae	Haptista	Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica	SO-all	SRF	0-8-5-00
+19	MS-all-DCM-5-20-00_bin-31	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	DCM	5-20-00
+20	SPO-SPSG-SRF-20-180-00_bin-127	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	20-180-00
+21	IO-all-SRF-0-8-5-00_bin-484		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	SRF	0-8-5-00
+22	NPO-all-DCM-20-180-00_bin-34	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NPO-all	DCM	20-180-00
+23	NAO-all-SRF-0-8-5-00_bin-516	Metazoa	Opisthokonta	Chordata	Choanoflagellata		Craspedida	Salpingoecidae	Salpingoeca	Salpingoeca rosetta	NAO-all	SRF	0-8-5-00
+24	MS-all-DCM-0-8-5-00_bin-53	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	MS-all	DCM	0-8-5-00
+25	NAO-all-MES-0-8-5-00_bin-290		Amoebozoa	Discosea	Flabellinia			Vannellidae	Vannella	Vannella sp. CB-2014	NAO-all	MES	0-8-5-00
+26	SAO-all-SRF-0-8-5-00_bin-538		Sar		Bigyra	Labyrinthulomycetes	Thraustochytrida	Thraustochytriaceae	Aplanochytrium	Aplanochytrium stocchinoi	SAO-all	SRF	0-8-5-00
+27	SPO-SPSG-SRF-0-8-5-00_bin-427		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SPO-SPSG	SRF	0-8-5-00
+28	IO-all-SRF-180-2000-00_bin-62	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera	Formicidae	Lasius	Lasius niger	IO-all	SRF	180-2000-00
+29	SPO-all-SRF-0-8-5-00_bin-825		Sar	Bacillariophyta	Coscinodiscophyceae	Chaetocerotophycidae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros neogracilis	SPO-all	SRF	0-8-5-00
+30	IO-all-DCM-0-8-5-00_bin-320	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis	Tetraselmis striata	IO-all	DCM	0-8-5-00
+31	SPO-all-SRF-0-8-5-00_bin-505		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Florenciella parvula	SPO-all	SRF	0-8-5-00
+32	SPO-all-SRF-20-180-00_bin-129	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Tephritidae	Rhagoletis	Rhagoletis zephyria	SPO-all	SRF	20-180-00
+33	NAO-all-SRF-20-180-00_bin-42	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	SRF	20-180-00
+34	RS-all-SRF-0-8-5-00_bin-83	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	RS-all	SRF	0-8-5-00
+35	MS-all-SRF-20-180-00_bin-27	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	MS-all	SRF	20-180-00
+36	SAO-all-SRF-0-8-5-00_bin-11		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	SAO-all	SRF	0-8-5-00
+37	SPO-all-SRF-0-8-5-00_bin-148		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SPO-all	SRF	0-8-5-00
+38	SPO-PEOD-DCM-0-8-5-00_bin-41	Viridiplantae		Chlorophyta				Pycnococcaceae	Pycnococcus		SPO-PEOD	DCM	0-8-5-00
+39	NPO-all-SRF-0-8-5-00_bin-556	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	NPO-all	SRF	0-8-5-00
+40	NAO-all-SRF-0-8-5-00_bin-169	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	NAO-all	SRF	0-8-5-00
+41	NPO-all-SRF-180-2000-00_bin-13	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Lepidoptera				NPO-all	SRF	180-2000-00
+42	SO-all-SRF-5-20-00_bin-17	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SO-all	SRF	5-20-00
+43	NAO-all-MIX-0-8-5-00_bin-111	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	MIX	0-8-5-00
+44	SAO-all-DCM-0-8-5-00_bin-431				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	SAO-all	DCM	0-8-5-00
+45	SPO-PEOD-SRF-20-180-00_bin-45	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-PEOD	SRF	20-180-00
+46	SPO-SPSG-SRF-20-180-00_bin-168	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	20-180-00
+47	SAO-all-SRF-180-2000-00_bin-47	Metazoa	Opisthokonta	Chordata	Aves						SAO-all	SRF	180-2000-00
+48	MS-all-SRF-5-20-00_bin-96	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	5-20-00
+49	SPO-SPSG-SRF-20-180-00_bin-115	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	20-180-00
+50	SPO-all-SRF-180-2000-00_bin-155	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota					SPO-all	SRF	180-2000-00
+51	MS-all-SRF-20-180-00_bin-6	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	20-180-00
+52	SAO-all-DCM-0-8-5-00_bin-536	Viridiplantae		Chlorophyta	Palmophyllophyceae		Prasinococcales	Prasinococcaceae	Prasinoderma	Prasinoderma singulare	SAO-all	DCM	0-8-5-00
+53	SAO-all-SRF-0-8-5-00_bin-212	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	SAO-all	SRF	0-8-5-00
+54	NPO-all-DCM-0-8-5-00_bin-431	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	NPO-all	DCM	0-8-5-00
+55	SAO-all-DCM-0-8-5-00_bin-354		Sar	Bacillariophyta	Coscinodiscophyceae	Thalassiosirophycidae	Thalassiosirales				SAO-all	DCM	0-8-5-00
+56	SAO-all-SRF-0-8-5-00_bin-628		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pseudopedinella elastica	SAO-all	SRF	0-8-5-00
+57	NPO-all-SRF-0-8-5-00_bin-407	Viridiplantae		Chlorophyta				Pycnococcaceae	Pycnococcus		NPO-all	SRF	0-8-5-00
+58	NPO-all-SRF-20-180-00_bin-8	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	20-180-00
+59	SAO-all-SRF-180-2000-00_bin-9		Prymnesiophyceae	Haptista	Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica	SAO-all	SRF	180-2000-00
+60	IO-all-SRF-180-2000-00_bin-43	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	180-2000-00
+61	MS-all-SRF-180-2000-00_bin-103	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				MS-all	SRF	180-2000-00
+62	SPO-SPSG-SRF-0-8-5-00_bin-608	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	SPO-SPSG	SRF	0-8-5-00
+63	MS-all-SRF-0-8-5-00_bin-410				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	MS-all	SRF	0-8-5-00
+64	MS-all-SRF-0-8-5-00_bin-584	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	MS-all	SRF	0-8-5-00
+65	NAO-all-SRF-0-8-5-00_bin-572		Sar	Bacillariophyta							NAO-all	SRF	0-8-5-00
+66	SPO-CHIL-SRF-0-8-5-00_bin-213		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas bandaiensis	SPO-CHIL	SRF	0-8-5-00
+67	NAO-all-MIX-0-8-5-00_bin-130		Sar	Bacillariophyta	Coscinodiscophyceae	Coscinodiscophycidae	Melosirales	Stephanopyxidaceae	Stephanopyxis	Stephanopyxis turris	NAO-all	MIX	0-8-5-00
+68	MS-all-SRF-5-20-00_bin-24	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				MS-all	SRF	5-20-00
+69	MS-all-SRF-5-20-00_bin-53	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	5-20-00
+70	NAO-all-SRF-0-8-5-00_bin-17		Sar		Dinophyceae		Suessiales	Symbiodiniaceae	Symbiodinium	Symbiodinium sp.	NAO-all	SRF	0-8-5-00
+71	SAO-all-DCM-0-8-5-00_bin-388		Sar	Bacillariophyta	Coscinodiscophyceae						SAO-all	DCM	0-8-5-00
+72	SPO-all-SRF-0-8-5-00_bin-931	Viridiplantae		Chlorophyta	Mamiellophyceae			Pycnococcaceae	Pycnococcus		SPO-all	SRF	0-8-5-00
+73	NAO-all-MIX-0-8-5-00_bin-276		Sar		Dinophyceae		Suessiales	Symbiodiniaceae	Symbiodinium	Symbiodinium sp.	NAO-all	MIX	0-8-5-00
+74	SPO-SPSG-SRF-5-20-00_bin-49		Sar	Bacillariophyta	Coscinodiscophyceae	Coscinodiscophycidae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Coscinodiscus wailesii	SPO-SPSG	SRF	5-20-00
+75	IO-all-SRF-0-8-5-00_bin-291		Sar		Dinophyceae		Gymnodiniales	Kareniaceae	Karenia	Karenia brevis	IO-all	SRF	0-8-5-00
+76	SAO-all-SRF-0-8-5-00_bin-75	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	SAO-all	SRF	0-8-5-00
+77	SPO-CHIL-SRF-0-8-5-00_bin-122	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	SPO-CHIL	SRF	0-8-5-00
+78	SPO-SPSG-MIX-0-8-5-00_bin-106		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SPO-SPSG	MIX	0-8-5-00
+79	SAO-all-SRF-0-8-5-00_bin-327		Prymnesiophyceae	Haptista	Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi	SAO-all	SRF	0-8-5-00
+80	NAO-all-SRF-0-8-5-00_bin-273		Sar	Bacillariophyta	Coscinodiscophyceae						NAO-all	SRF	0-8-5-00
+81	MS-all-DCM-0-8-5-00_bin-257		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pteridomonas danica	MS-all	DCM	0-8-5-00
+82	SPO-all-SRF-0-8-5-00_bin-561		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	SPO-all	SRF	0-8-5-00
+83	IO-all-DCM-0-8-5-00_bin-12		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina rotalis	IO-all	DCM	0-8-5-00
+84	IO-all-DCM-0-8-5-00_bin-344		Sar	Bacillariophyta	Bacillariophyceae		Bacillariales	Bacillariaceae	Cylindrotheca	Cylindrotheca closterium	IO-all	DCM	0-8-5-00
+85	SPO-all-SRF-20-180-00_bin-70	Metazoa	Opisthokonta	Chordata	Aves						SPO-all	SRF	20-180-00
+86	NPO-all-SRF-0-8-5-00_bin-371	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis	Tetraselmis striata	NPO-all	SRF	0-8-5-00
+87	NAO-all-SRF-5-20-00_bin-3	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	SRF	5-20-00
+88	RS-all-DCM-0-8-5-00_bin-46	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	RS-all	DCM	0-8-5-00
+89	SO-all-SRF-180-2000-00_bin-8		Prymnesiophyceae	Haptista	Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica	SO-all	SRF	180-2000-00
+90	SPO-SPSG-DCM-20-180-00_bin-14	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			SPO-SPSG	DCM	20-180-00
+91	NPO-all-DCM-0-8-5-00_bin-237	Viridiplantae		Chlorophyta				Pycnococcaceae	Pycnococcus		NPO-all	DCM	0-8-5-00
+92	SPO-SPSG-SRF-20-180-00_bin-106	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Lepidoptera				SPO-SPSG	SRF	20-180-00
+93	SPO-all-SRF-180-2000-00_bin-146	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-all	SRF	180-2000-00
+94	SAO-all-MES-0-8-5-00_bin-84		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Imantonia	Vannella sp. CB-2014	SAO-all	MES	0-8-5-00
+95	NAO-all-MIX-0-8-5-00_bin-34	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	NAO-all	MIX	0-8-5-00
+96	NPO-all-SRF-0-8-5-00_bin-646		Sar	Bacillariophyta	Coscinodiscophyceae						NPO-all	SRF	0-8-5-00
+97	SPO-SPSG-SRF-180-2000-00_bin-31	Metazoa	Opisthokonta	Chordata	Aves						SPO-SPSG	SRF	180-2000-00
+98	NPO-all-SRF-20-180-00_bin-23	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NPO-all	SRF	20-180-00
+99	SAO-all-SRF-5-20-00_bin-14		Sar	Bacillariophyta	Bacillariophyceae		Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis kerguelensis	SAO-all	SRF	5-20-00
+100	SPO-SPSG-SRF-0-8-5-00_bin-277	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae				Picochlorum		SPO-SPSG	SRF	0-8-5-00
+101	NPO-all-DCM-20-180-00_bin-2	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera	Formicidae	Lasius	Lasius niger	NPO-all	DCM	20-180-00
+102	SO-all-SRF-0-8-5-00_bin-63		Sar	Bacillariophyta	Bacillariophyceae		Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis kerguelensis	SO-all	SRF	0-8-5-00
+103	MS-all-SRF-0-8-5-00_bin-425	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	MS-all	SRF	0-8-5-00
+104	NAO-all-MIX-0-8-5-00_bin-39	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	MIX	0-8-5-00
+105	SPO-all-SRF-180-2000-00_bin-141	Metazoa	Opisthokonta	Chordata	Actinopteri	Neopterygii	Cyprinodontiformes	Poeciliidae	Poecilia		SPO-all	SRF	180-2000-00
+106	SPO-all-SRF-180-2000-00_bin-136	Metazoa	Opisthokonta	Cnidaria	Anthozoa	Hexacorallia	Scleractinia	Pocilloporidae	Stylophora	Stylophora pistillata	SPO-all	SRF	180-2000-00
+107	SPO-all-SRF-0-8-5-00_bin-93		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium	Azadinium spinosum	SPO-all	SRF	0-8-5-00
+108	IO-all-DCM-0-8-5-00_bin-147				Cryptophyceae		Pyrenomonadales	Goniomonadaceae	Goniomonas	Goniomonas pacifica	IO-all	DCM	0-8-5-00
+109	IO-all-DCM-0-8-5-00_bin-130		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	DCM	0-8-5-00
+110	IO-all-SRF-0-8-5-00_bin-446				Cryptophyceae		Pyrenomonadales	Goniomonadaceae	Goniomonas	Goniomonas pacifica	IO-all	SRF	0-8-5-00
+111	SAO-all-DCM-0-8-5-00_bin-37		Sar		Pelagophyceae		Pelagomonadales		Aureococcus	Aureococcus anophagefferens	SAO-all	DCM	0-8-5-00
+112	SAO-all-DCM-0-8-5-00_bin-181		Prymnesiophyceae	Haptista	Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica	SAO-all	DCM	0-8-5-00
+113	IO-all-MES-0-8-5-00_bin-223		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		IO-all	MES	0-8-5-00
+114	NPO-all-SRF-20-180-00_bin-24	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	20-180-00
+115	SAO-all-DCM-180-2000-00_bin-24	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SAO-all	DCM	180-2000-00
+116	NPO-all-SRF-0-8-5-00_bin-15		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pseudopedinella elastica	NPO-all	SRF	0-8-5-00
+117	SPO-SPSG-SRF-20-180-00_bin-52	Metazoa	Opisthokonta	Chordata	Aves						SPO-SPSG	SRF	20-180-00
+118	SPO-SPSG-SRF-0-8-5-00_bin-207		Amoebozoa	Discosea	Flabellinia		Dactylopodida	Vannellidae	Vannella	Acanthamoeba castellanii	SPO-SPSG	SRF	0-8-5-00
+119	SPO-SPSG-SRF-180-2000-00_bin-205	Metazoa	Opisthokonta	Arthropoda	Branchiopoda	Phyllopoda	Diplostraca	Daphniidae	Daphnia	Daphnia pulex	SPO-SPSG	SRF	180-2000-00
+120	SPO-all-SRF-20-180-00_bin-243	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-all	SRF	20-180-00
+121	MS-all-DCM-0-8-5-00_bin-320	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	MS-all	DCM	0-8-5-00
+122	NAO-all-DCM-20-180-00_bin-17	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			NAO-all	DCM	20-180-00
+123	SAO-all-DCM-0-8-5-00_bin-282		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina rotalis	SAO-all	DCM	0-8-5-00
+124	IO-all-DCM-20-180-00_bin-66	Metazoa	Opisthokonta	Chordata	Aves						IO-all	DCM	20-180-00
+125	SPO-all-DCM-0-8-5-00_bin-527		Amoebozoa	Discosea	Flabellinia		Dactylopodida	Vannellidae	Stygamoeba	Stygamoeba regulata	SPO-all	DCM	0-8-5-00
+126	IO-all-SRF-0-8-5-00_bin-302		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		IO-all	SRF	0-8-5-00
+127	SPO-SPSG-SRF-0-8-5-00_bin-104		Sar	Bacillariophyta	Coscinodiscophyceae						SPO-SPSG	SRF	0-8-5-00
+128	NAO-all-MIX-0-8-5-00_bin-271	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	MIX	0-8-5-00
+129	NAO-all-MIX-20-180-00_bin-24	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	MIX	20-180-00
+130	SPO-all-SRF-20-180-00_bin-137	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota					SPO-all	SRF	20-180-00
+131	MS-all-SRF-20-180-00_bin-44	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	20-180-00
+132	NPO-all-SRF-0-8-5-00_bin-105	Viridiplantae		Chlorophyta	Palmophyllophyceae		Prasinococcales	Prasinococcaceae	Prasinoderma	Prasinoderma singulare	NPO-all	SRF	0-8-5-00
+133	SPO-CHIL-DCM-0-8-5-00_bin-46	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	SPO-CHIL	DCM	0-8-5-00
+134	SPO-all-SRF-180-2000-00_bin-173	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Lepidoptera				SPO-all	SRF	180-2000-00
+135	IO-all-SRF-0-8-5-00_bin-504				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	IO-all	SRF	0-8-5-00
+136	IO-all-SRF-5-20-00_bin-101	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera	Formicidae			IO-all	SRF	5-20-00
+137	MS-all-SRF-180-2000-00_bin-83	Metazoa	Opisthokonta	Chordata	Aves						MS-all	SRF	180-2000-00
+138	NPO-all-SRF-0-8-5-00_bin-249		Sar	Bacillariophyta	Coscinodiscophyceae						NPO-all	SRF	0-8-5-00
+139	SPO-all-DCM-0-8-5-00_bin-251	Metazoa	Opisthokonta	Chordata	Choanoflagellata		Craspedida	Salpingoecidae	Salpingoeca	Salpingoeca rosetta	SPO-all	DCM	0-8-5-00
+140	IO-all-SRF-0-8-5-00_bin-579		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina rotalis	IO-all	SRF	0-8-5-00
+141	SPO-PEOD-SRF-20-180-00_bin-14	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-PEOD	SRF	20-180-00
+142	NAO-all-SRF-20-180-00_bin-19	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	SRF	20-180-00
+143	MS-all-SRF-20-180-00_bin-98	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	20-180-00
+144	SPO-all-SRF-20-180-00_bin-105	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			SPO-all	SRF	20-180-00
+145	IO-all-DCM-20-180-00_bin-54	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	IO-all	DCM	20-180-00
+146	NAO-all-SRF-180-2000-00_bin-59	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	SRF	180-2000-00
+147	MS-all-SRF-5-20-00_bin-9	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	MS-all	SRF	5-20-00
+148	NAO-all-DCM-20-180-00_bin-25	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	DCM	20-180-00
+149	SPO-all-SRF-0-8-5-00_bin-459		Prymnesiophyceae	Haptista	Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Chrysotila carterae	SPO-all	SRF	0-8-5-00
+150	IO-all-DCM-0-8-5-00_bin-306	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	IO-all	DCM	0-8-5-00
+151	MS-all-DCM-0-8-5-00_bin-318		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas bandaiensis	MS-all	DCM	0-8-5-00
+152	SPO-SPSG-SRF-5-20-00_bin-3	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	5-20-00
+153	IO-all-SRF-180-2000-00_bin-44	Viridiplantae	core chlorophytes	Chlorophyta	Chlorophyceae		Chlamydomonadales	Chlamydomonadaceae	Chlamydomonas	Chlamydomonas euryale	IO-all	SRF	180-2000-00
+154	NAO-all-SRF-0-8-5-00_bin-231	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Pycnococcaceae	Pycnococcus	Pycnococcus provasolii	NAO-all	SRF	0-8-5-00
+155	SPO-all-SRF-0-8-5-00_bin-341		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina rotalis	SPO-all	SRF	0-8-5-00
+156	NAO-all-MIX-0-8-5-00_bin-161	Viridiplantae		Chlorophyta	Mamiellophyceae			Pycnococcaceae	Pycnococcus		NAO-all	MIX	0-8-5-00
+157	SAO-all-DCM-0-8-5-00_bin-441		Sar	Bacillariophyta	Mediophyceae	Cymatosirophycidae	Cymatosirales	Cymatosiraceae	Extubocellulus	Extubocellulus spinifer	SAO-all	DCM	0-8-5-00
+158	SPO-PEOD-SRF-20-180-00_bin-35	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-PEOD	SRF	20-180-00
+159	SAO-all-SRF-180-2000-00_bin-37	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SAO-all	SRF	180-2000-00
+160	NAO-all-SRF-0-8-5-00_bin-523				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	NAO-all	SRF	0-8-5-00
+161	NPO-all-DCM-0-8-5-00_bin-223		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	NPO-all	DCM	0-8-5-00
+162	SPO-all-SRF-20-180-00_bin-13	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-all	SRF	20-180-00
+163	RS-all-SRF-180-2000-00_bin-8	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	RS-all	SRF	180-2000-00
+164	IO-all-SRF-0-8-5-00_bin-34		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Chromulinaceae	Ochromonas	Paraphysomonas bandaiensis	IO-all	SRF	0-8-5-00
+165	NAO-all-DCM-5-20-00_bin-19	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	DCM	5-20-00
+166	SO-all-DCM-0-8-5-00_bin-35		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SO-all	DCM	0-8-5-00
+167	NPO-all-SRF-5-20-00_bin-46	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	5-20-00
+168	SPO-all-SRF-0-8-5-00_bin-502	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae				Picochlorum		SPO-all	SRF	0-8-5-00
+169	IO-all-SRF-20-180-00_bin-43	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	20-180-00
+170	SPO-SPSG-SRF-5-20-00_bin-57	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	5-20-00
+171	NAO-all-SRF-0-8-5-00_bin-289		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pteridomonas danica	NAO-all	SRF	0-8-5-00
+172	SAO-all-SRF-0-8-5-00_bin-333		Sar	Bacillariophyta	Bacillariophyceae		Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis kerguelensis	SAO-all	SRF	0-8-5-00
+173	NAO-all-SRF-20-180-00_bin-32	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera	Formicidae			NAO-all	SRF	20-180-00
+174	NAO-all-MIX-20-180-00_bin-37	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	MIX	20-180-00
+175	SAO-all-SRF-20-180-00_bin-61	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SAO-all	SRF	20-180-00
+176	SPO-all-SRF-0-8-5-00_bin-508	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae			Pycnococcaceae	Pycnococcus		SPO-all	SRF	0-8-5-00
+177	NAO-all-DCM-0-8-5-00_bin-160	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	NAO-all	DCM	0-8-5-00
+178	SPO-all-SRF-180-2000-00_bin-184	Metazoa	Opisthokonta	Chordata	Aves						SPO-all	SRF	180-2000-00
+179	SO-all-SRF-0-8-5-00_bin-112		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SO-all	SRF	0-8-5-00
+180	NPO-all-DCM-0-8-5-00_bin-316			Proteobacteria	Deltaproteobacteria		Myxococcales	Archangiaceae	Myxococcus	Cystobacter fuscus	NPO-all	DCM	0-8-5-00
+181	MS-all-SRF-0-8-5-00_bin-479		Sar	Bacillariophyta	Coscinodiscophyceae						MS-all	SRF	0-8-5-00
+182	NAO-all-MIX-0-8-5-00_bin-124				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	NAO-all	MIX	0-8-5-00
+183	SO-all-SRF-5-20-00_bin-55	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Lepidoptera				SO-all	SRF	5-20-00
+184	SAO-all-SRF-0-8-5-00_bin-105		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SAO-all	SRF	0-8-5-00
+185	NPO-all-SRF-0-8-5-00_bin-250			Proteobacteria	Deltaproteobacteria		Myxococcales	Archangiaceae	Myxococcus	Cystobacter fuscus	NPO-all	SRF	0-8-5-00
+186	SAO-all-SRF-5-20-00_bin-32	Viridiplantae	Embryophyta	Streptophyta	Magnoliopsida		Fabales	Fabaceae	Trifolium	Trifolium pratense	SAO-all	SRF	5-20-00
+187	SPO-SPSG-SRF-20-180-00_bin-97	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	20-180-00
+188	SPO-all-SRF-20-180-00_bin-21		Sar	Ciliophora	Spirotrichea	Choreotrichia	Tintinnida	Oxytrichidae	Schmidingerella	Schmidingerella taraikaensis	SPO-all	SRF	20-180-00
+189	NPO-all-SRF-20-180-00_bin-78	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	20-180-00
+190	NPO-all-DCM-0-8-5-00_bin-211	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis	Tetraselmis striata	NPO-all	DCM	0-8-5-00
+191	NPO-all-DCM-20-180-00_bin-33	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	DCM	20-180-00
+192	SPO-all-DCM-0-8-5-00_bin-332	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae		Chlorodendrales	Chlorodendraceae	Picochlorum		SPO-all	DCM	0-8-5-00
+193	SPO-all-SRF-0-8-5-00_bin-633	Viridiplantae	core chlorophytes	Chlorophyta	Chlorophyceae		Chlamydomonadales	Chlamydomonadaceae	Chlamydomonas		SPO-all	SRF	0-8-5-00
+194	SPO-SPSG-DCM-20-180-00_bin-32	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera	Formicidae			SPO-SPSG	DCM	20-180-00
+195	SAO-all-SRF-20-180-00_bin-59	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SAO-all	SRF	20-180-00
+196	MS-all-SRF-20-180-00_bin-18	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	20-180-00
+197	MS-all-DCM-0-8-5-00_bin-636	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	MS-all	DCM	0-8-5-00
+198	SPO-all-SRF-180-2000-00_bin-69	Metazoa	Opisthokonta	Chordata	Aves						SPO-all	SRF	180-2000-00
+199	IO-all-SRF-20-180-00_bin-71	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	20-180-00
+200	SPO-all-SRF-0-8-5-00_bin-1028		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas bandaiensis	SPO-all	SRF	0-8-5-00
+201	SPO-all-SRF-20-180-00_bin-185	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	20-180-00
+202	RS-all-SRF-20-180-00_bin-20	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				RS-all	SRF	20-180-00
+203	SPO-all-SRF-0-8-5-00_bin-867	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	SPO-all	SRF	0-8-5-00
+204	SPO-all-SRF-180-2000-00_bin-214	Metazoa	Opisthokonta	Chordata	Aves						SPO-all	SRF	180-2000-00
+205	MS-all-SRF-0-8-5-00_bin-677		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium	Alexandrium tamarense	MS-all	SRF	0-8-5-00
+206	SAO-all-SRF-20-180-00_bin-53	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	SAO-all	SRF	20-180-00
+207	MS-all-SRF-20-180-00_bin-65	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	20-180-00
+208	IO-all-DCM-180-2000-00_bin-20	Metazoa	Opisthokonta	Chordata	Aves						IO-all	DCM	180-2000-00
+209	RS-all-SRF-0-8-5-00_bin-105	Viridiplantae		Chlorophyta				Pycnococcaceae	Pycnococcus		RS-all	SRF	0-8-5-00
+210	SPO-SPSG-SRF-20-180-00_bin-153	Metazoa	Opisthokonta	Mollusca	Gastropoda	Heterobranchia	Aplysiida	Aplysiidae	Aplysia	Aplysia californica	SPO-SPSG	SRF	20-180-00
+211	SPO-all-SRF-180-2000-00_bin-164	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	180-2000-00
+212	NAO-all-SRF-0-8-5-00_bin-152		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		NAO-all	SRF	0-8-5-00
+213	SO-all-SRF-0-8-5-00_bin-31		Sar	Bacillariophyta	Coscinodiscophyceae						SO-all	SRF	0-8-5-00
+214	SPO-all-SRF-20-180-00_bin-52	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-all	SRF	20-180-00
+215	IO-all-DCM-20-180-00_bin-105	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	DCM	20-180-00
+216	NPO-all-SRF-20-180-00_bin-76	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis		NPO-all	SRF	20-180-00
+217	SPO-SPSG-SRF-20-180-00_bin-99	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	20-180-00
+218	NPO-all-SRF-180-2000-00_bin-22	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	180-2000-00
+219	SAO-all-DCM-0-8-5-00_bin-594		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	SAO-all	DCM	0-8-5-00
+220	SAO-all-SRF-0-8-5-00_bin-546	Viridiplantae		Chlorophyta	Mamiellophyceae		Dolichomastigales	Pycnococcaceae	Pycnococcus	Pycnococcus provasolii	SAO-all	SRF	0-8-5-00
+221	SPO-all-SRF-0-8-5-00_bin-25	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis	Tetraselmis striata	SPO-all	SRF	0-8-5-00
+222	IO-all-SRF-5-20-00_bin-65	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae		Chlorodendrales	Chlorodendraceae	Picochlorum		IO-all	SRF	5-20-00
+223	SAO-all-SRF-20-180-00_bin-20	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae	Anopheles		SAO-all	SRF	20-180-00
+224	SPO-all-DCM-0-8-5-00_bin-138	Viridiplantae	core chlorophytes	Chlorophyta				Pycnococcaceae	Pycnococcus		SPO-all	DCM	0-8-5-00
+225	SO-all-DCM-0-8-5-00_bin-74		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SO-all	DCM	0-8-5-00
+226	SAO-all-DCM-20-180-00_bin-16	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SAO-all	DCM	20-180-00
+227	SPO-all-SRF-180-2000-00_bin-289	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	180-2000-00
+228	IO-all-DCM-20-180-00_bin-49	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			IO-all	DCM	20-180-00
+229	NAO-all-SRF-180-2000-00_bin-33	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	SRF	180-2000-00
+230	SPO-SPSG-SRF-180-2000-00_bin-129	Metazoa	Opisthokonta	Chordata	Aves						SPO-SPSG	SRF	180-2000-00
+231	MS-all-SRF-0-8-5-00_bin-333		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	MS-all	SRF	0-8-5-00
+232	SPO-SPSG-SRF-20-180-00_bin-38	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	20-180-00
+233	IO-all-SRF-0-8-5-00_bin-166		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	IO-all	SRF	0-8-5-00
+234	MS-all-SRF-0-8-5-00_bin-196		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	MS-all	SRF	0-8-5-00
+235	IO-all-SRF-20-180-00_bin-128	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				IO-all	SRF	20-180-00
+236	SAO-all-SRF-180-2000-00_bin-33	Metazoa	Opisthokonta	Chordata	Aves						SAO-all	SRF	180-2000-00
+237	NAO-all-SRF-0-8-5-00_bin-550	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	NAO-all	SRF	0-8-5-00
+238	SAO-all-SRF-0-8-5-00_bin-590		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pteridomonas danica	SAO-all	SRF	0-8-5-00
+239	NAO-all-MIX-180-2000-00_bin-12	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	MIX	180-2000-00
+240	SPO-all-SRF-0-8-5-00_bin-775		Amoebozoa	Discosea	Flabellinia		Dactylopodida	Vannellidae	Stygamoeba	Stygamoeba regulata	SPO-all	SRF	0-8-5-00
+241	SO-all-SRF-5-20-00_bin-63	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SO-all	SRF	5-20-00
+242	MS-all-SRF-0-8-5-00_bin-172	Viridiplantae		Chlorophyta	Mamiellophyceae		Dolichomastigales	Pycnococcaceae	Pycnococcus	Pycnococcus provasolii	MS-all	SRF	0-8-5-00
+243	SPO-all-SRF-0-8-5-00_bin-345		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SPO-all	SRF	0-8-5-00
+244	SPO-all-SRF-20-180-00_bin-84	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-all	SRF	20-180-00
+245	SO-all-SRF-0-8-5-00_bin-90		Prymnesiophyceae	Haptista	Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica	SO-all	SRF	0-8-5-00
+246	MS-all-SRF-20-180-00_bin-24	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			MS-all	SRF	20-180-00
+247	SPO-all-SRF-5-20-00_bin-20		Sar	Bacillariophyta	Coscinodiscophyceae	Thalassiosirophycidae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Conticribra weissflogii	SPO-all	SRF	5-20-00
+248	SPO-all-SRF-5-20-00_bin-57	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	5-20-00
+249	SPO-all-SRF-20-180-00_bin-120	Metazoa	Opisthokonta	Chordata	Aves						SPO-all	SRF	20-180-00
+250	SPO-SPSG-SRF-0-8-5-00_bin-164		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SPO-SPSG	SRF	0-8-5-00
+251	RS-all-DCM-20-180-00_bin-3	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	RS-all	DCM	20-180-00
+252	NAO-all-SRF-20-180-00_bin-41	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	SRF	20-180-00
+253	NAO-all-SRF-0-8-5-00_bin-380		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella		NAO-all	SRF	0-8-5-00
+254	SPO-all-SRF-180-2000-00_bin-28	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	SPO-all	SRF	180-2000-00
+255	IO-all-DCM-0-8-5-00_bin-323	Viridiplantae		Chlorophyta				Pycnococcaceae	Pycnococcus		IO-all	DCM	0-8-5-00
+256	SAO-all-DCM-0-8-5-00_bin-271	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	SAO-all	DCM	0-8-5-00
+257	IO-all-MES-0-8-5-00_bin-262	Fungi	Opisthokonta	Ascomycota	Saccharomycetes		Saccharomycetales	Debaryomycetaceae	Meyerozyma	Meyerozyma guilliermondii	IO-all	MES	0-8-5-00
+258	SAO-all-DCM-0-8-5-00_bin-159		Prymnesiophyceae	Haptista	Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi	SAO-all	DCM	0-8-5-00
+259	NAO-all-DCM-0-8-5-00_bin-14		Sar	Bacillariophyta	Coscinodiscophyceae						NAO-all	DCM	0-8-5-00
+260	SAO-all-DCM-180-2000-00_bin-12	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SAO-all	DCM	180-2000-00
+261	SAO-all-SRF-5-20-00_bin-25	Viridiplantae	Embryophyta	Streptophyta	Magnoliopsida		Fabales	Fabaceae	Trifolium	Trifolium pratense	SAO-all	SRF	5-20-00
+262	NAO-all-MIX-0-8-5-00_bin-144		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas bandaiensis	NAO-all	MIX	0-8-5-00
+263	SPO-all-SRF-20-180-00_bin-202	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	20-180-00
+264	NPO-all-SRF-20-180-00_bin-81	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NPO-all	SRF	20-180-00
+265	NPO-all-SRF-20-180-00_bin-18	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			NPO-all	SRF	20-180-00
+266	NAO-all-DCM-0-8-5-00_bin-69		Sar	Bacillariophyta	Mediophyceae	Cymatosirophycidae	Cymatosirales	Cymatosiraceae	Extubocellulus	Extubocellulus spinifer	NAO-all	DCM	0-8-5-00
+267	SPO-SPSG-SRF-20-180-00_bin-80	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	20-180-00
+268	MS-all-SRF-0-8-5-00_bin-464		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		MS-all	SRF	0-8-5-00
+269	IO-all-SRF-20-180-00_bin-109	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	20-180-00
+270	SPO-SPSG-DCM-20-180-00_bin-25	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	SPO-SPSG	DCM	20-180-00
+271	NAO-all-MIX-0-8-5-00_bin-96	Viridiplantae	core chlorophytes	Chlorophyta				Pycnococcaceae	Pycnococcus		NAO-all	MIX	0-8-5-00
+272	NAO-all-SRF-5-20-00_bin-30	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	SRF	5-20-00
+273	RS-all-SRF-0-8-5-00_bin-32		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	RS-all	SRF	0-8-5-00
+274	SPO-SPSG-SRF-5-20-00_bin-72	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	5-20-00
+275	IO-all-SRF-20-180-00_bin-66	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				IO-all	SRF	20-180-00
+276	IO-all-SRF-0-8-5-00_bin-349		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	SRF	0-8-5-00
+277	IO-all-SRF-180-2000-00_bin-40	Metazoa	Opisthokonta	Chordata	Aves						IO-all	SRF	180-2000-00
+278	SAO-all-MES-0-8-5-00_bin-134	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	SAO-all	MES	0-8-5-00
+279	SPO-SPSG-DCM-0-8-5-00_bin-173	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	SPO-SPSG	DCM	0-8-5-00
+280	SAO-all-DCM-0-8-5-00_bin-320	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	SAO-all	DCM	0-8-5-00
+281	NPO-all-SRF-20-180-00_bin-1	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	20-180-00
+282	IO-all-SRF-20-180-00_bin-82	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				IO-all	SRF	20-180-00
+283	NAO-all-SRF-20-180-00_bin-84	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	SRF	20-180-00
+284	SAO-all-SRF-0-8-5-00_bin-266		Sar	Bacillariophyta	Coscinodiscophyceae						SAO-all	SRF	0-8-5-00
+285	MS-all-SRF-0-8-5-00_bin-250		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pseudopedinella elastica	MS-all	SRF	0-8-5-00
+286	SPO-SPSG-SRF-0-8-5-00_bin-379	Viridiplantae	core chlorophytes	Chlorophyta	Chlorophyceae		Chlamydomonadales	Chlamydomonadaceae	Chlamydomonas		SPO-SPSG	SRF	0-8-5-00
+287	MS-all-SRF-0-8-5-00_bin-161		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Chromulinaceae	Ochromonas	Paraphysomonas bandaiensis	MS-all	SRF	0-8-5-00
+288	SPO-all-SRF-5-20-00_bin-110	Metazoa	Opisthokonta	Chordata	Aves						SPO-all	SRF	5-20-00
+289	IO-all-SRF-0-8-5-00_bin-538		Sar	Bacillariophyta	Bacillariophyceae		Bacillariales	Bacillariaceae	Cylindrotheca	Cylindrotheca closterium	IO-all	SRF	0-8-5-00
+290	NPO-all-DCM-0-8-5-00_bin-249		Sar	Bacillariophyta	Mediophyceae	Cymatosirophycidae	Cymatosirales	Cymatosiraceae	Extubocellulus	Extubocellulus spinifer	NPO-all	DCM	0-8-5-00
+291	SPO-SPSG-SRF-20-180-00_bin-178	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	20-180-00
+292	SPO-PEOD-DCM-20-180-00_bin-4	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-PEOD	DCM	20-180-00
+293	IO-all-SRF-20-180-00_bin-131		Sar	Ciliophora	Spirotrichea	Choreotrichia	Tintinnida	Rhabdonellidae	Schmidingerella	Schmidingerella taraikaensis	IO-all	SRF	20-180-00
+294	SAO-all-SRF-0-8-5-00_bin-583		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pteridomonas danica	SAO-all	SRF	0-8-5-00
+295	SPO-SPSG-SRF-0-8-5-00_bin-290		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pteridomonas danica	SPO-SPSG	SRF	0-8-5-00
+296	NAO-all-MIX-0-8-5-00_bin-192		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella		NAO-all	MIX	0-8-5-00
+297	SPO-all-SRF-0-8-5-00_bin-226				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	SPO-all	SRF	0-8-5-00
+298	SPO-all-SRF-0-8-5-00_bin-835		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina rotalis	SPO-all	SRF	0-8-5-00
+299	NAO-all-DCM-20-180-00_bin-19	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	DCM	20-180-00
+300	IO-all-SRF-20-180-00_bin-23	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	20-180-00
+301	NAO-all-SRF-0-8-5-00_bin-300		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	NAO-all	SRF	0-8-5-00
+302	MS-all-SRF-0-8-5-00_bin-318		Sar	Bacillariophyta	Coscinodiscophyceae						MS-all	SRF	0-8-5-00
+303	NAO-all-MIX-0-8-5-00_bin-275		Sar	Bacillariophyta	Bolidophyceae		Parmales	Triparmaceae	Bolidomonas	Triparma pacifica	NAO-all	MIX	0-8-5-00
+304	NAO-all-MIX-20-180-00_bin-57	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	MIX	20-180-00
+305	SPO-all-SRF-180-2000-00_bin-31	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	180-2000-00
+306	NAO-all-MIX-20-180-00_bin-20	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	MIX	20-180-00
+307	NAO-all-SRF-180-2000-00_bin-81	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	SRF	180-2000-00
+308	IO-all-DCM-20-180-00_bin-62	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	IO-all	DCM	20-180-00
+309	IO-all-SRF-180-2000-00_bin-96	Metazoa	Opisthokonta	Chordata	Aves						IO-all	SRF	180-2000-00
+310	SO-all-DCM-0-8-5-00_bin-52		Sar	Bacillariophyta	Bacillariophyceae		Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis cylindrus	SO-all	DCM	0-8-5-00
+311	SAO-all-DCM-20-180-00_bin-30	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SAO-all	DCM	20-180-00
+312	MS-all-DCM-0-8-5-00_bin-224		Sar	Bacillariophyta	Coscinodiscophyceae						MS-all	DCM	0-8-5-00
+313	IO-all-SRF-20-180-00_bin-53	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	20-180-00
+314	SAO-all-SRF-0-8-5-00_bin-71		Sar	Bacillariophyta	Mediophyceae	Cymatosirophycidae	Cymatosirales	Cymatosiraceae	Minutocellus	Minutocellus polymorphus	SAO-all	SRF	0-8-5-00
+315	NAO-all-SRF-0-8-5-00_bin-307		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	NAO-all	SRF	0-8-5-00
+316	SAO-all-SRF-20-180-00_bin-71	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SAO-all	SRF	20-180-00
+317	SPO-all-SRF-20-180-00_bin-134		Sar	Ciliophora	Spirotrichea	Choreotrichia	Tintinnida	Rhabdonellidae	Schmidingerella	Schmidingerella taraikaensis	SPO-all	SRF	20-180-00
+318	SPO-all-SRF-0-8-5-00_bin-838		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium	Lingulodinium polyedra	SPO-all	SRF	0-8-5-00
+319	IO-all-DCM-0-8-5-00_bin-230		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	DCM	0-8-5-00
+320	SAO-all-DCM-0-8-5-00_bin-218	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	SAO-all	DCM	0-8-5-00
+321	MS-all-DCM-0-8-5-00_bin-323	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas commoda	MS-all	DCM	0-8-5-00
+322	NAO-all-DCM-5-20-00_bin-6	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	DCM	5-20-00
+323	SPO-SPSG-SRF-20-180-00_bin-26	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Tephritidae	Rhagoletis	Rhagoletis zephyria	SPO-SPSG	SRF	20-180-00
+324	SAO-all-DCM-0-8-5-00_bin-43	Viridiplantae		Chlorophyta				Pycnococcaceae	Pycnococcus		SAO-all	DCM	0-8-5-00
+325	SPO-SPSG-SRF-180-2000-00_bin-35	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	180-2000-00
+326	SAO-all-DCM-0-8-5-00_bin-182				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	SAO-all	DCM	0-8-5-00
+327	IO-all-SRF-0-8-5-00_bin-548		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Chromulinaceae	Ochromonas	Paraphysomonas bandaiensis	IO-all	SRF	0-8-5-00
+328	SPO-all-SRF-0-8-5-00_bin-716		Sar	Bacillariophyta	Coscinodiscophyceae						SPO-all	SRF	0-8-5-00
+329	SPO-all-SRF-0-8-5-00_bin-761	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	SPO-all	SRF	0-8-5-00
+330	IO-all-SRF-5-20-00_bin-49	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	5-20-00
+331	SPO-PEOD-DCM-20-180-00_bin-9	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-PEOD	DCM	20-180-00
+332	MS-all-SRF-0-8-5-00_bin-426		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Chromulinaceae	Ochromonas	Paraphysomonas bandaiensis	MS-all	SRF	0-8-5-00
+333	SPO-SPSG-SRF-0-8-5-00_bin-374		Prymnesiophyceae	Haptista	Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Chrysotila carterae	SPO-SPSG	SRF	0-8-5-00
+334	SAO-all-DCM-0-8-5-00_bin-556		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SAO-all	DCM	0-8-5-00
+335	IO-all-SRF-0-8-5-00_bin-105		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas bandaiensis	IO-all	SRF	0-8-5-00
+336	NAO-all-SRF-20-180-00_bin-67	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera	Formicidae			NAO-all	SRF	20-180-00
+337	SAO-all-SRF-0-8-5-00_bin-49		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Haptolina brevifila	SAO-all	SRF	0-8-5-00
+338	SPO-PEOD-DCM-0-8-5-00_bin-80	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	SPO-PEOD	DCM	0-8-5-00
+339	SAO-all-SRF-0-8-5-00_bin-366		Prymnesiophyceae	Haptista	Haptophyta		Isochrysidales	Isochrysidaceae	Isochrysis	Chrysotila carterae	SAO-all	SRF	0-8-5-00
+340	SPO-SPSG-SRF-0-8-5-00_bin-578		Sar	Bacillariophyta	Coscinodiscophyceae						SPO-SPSG	SRF	0-8-5-00
+341	IO-all-SRF-180-2000-00_bin-30	Metazoa	Opisthokonta	Chordata	Aves						IO-all	SRF	180-2000-00
+342	RS-all-SRF-20-180-00_bin-30	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	RS-all	SRF	20-180-00
+343	SPO-all-SRF-180-2000-00_bin-279		Sar	Bacillariophyta	Coscinodiscophyceae	Chaetocerotophycidae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf. neogracilis	SPO-all	SRF	180-2000-00
+344	IO-all-MES-0-8-5-00_bin-188	Fungi	Opisthokonta	Ascomycota	Sordariomycetes	Hypocreomycetidae	Hypocreales	Nectriaceae	Acremonium	Acremonium chrysogenum	IO-all	MES	0-8-5-00
+345	MS-all-DCM-0-8-5-00_bin-366		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	MS-all	DCM	0-8-5-00
+346	SO-all-SRF-20-180-00_bin-23	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SO-all	SRF	20-180-00
+347	SAO-all-DCM-0-8-5-00_bin-350		Sar	Bacillariophyta	Coscinodiscophyceae	Coscinodiscophycidae	Melosirales	Stephanopyxidaceae	Stephanopyxis	Stephanopyxis turris	SAO-all	DCM	0-8-5-00
+348	NPO-all-SRF-0-8-5-00_bin-490		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina rotalis	NPO-all	SRF	0-8-5-00
+349	IO-all-DCM-20-180-00_bin-57	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	IO-all	DCM	20-180-00
+350	NPO-all-SRF-5-20-00_bin-19	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	5-20-00
+351	SPO-all-SRF-0-8-5-00_bin-907		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SPO-all	SRF	0-8-5-00
+352	SPO-SPSG-SRF-180-2000-00_bin-137	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	180-2000-00
+353	SPO-all-SRF-180-2000-00_bin-73	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera	Formicidae	Lasius	Lasius niger	SPO-all	SRF	180-2000-00
+354	SAO-all-SRF-0-8-5-00_bin-34		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas bandaiensis	SAO-all	SRF	0-8-5-00
+355	IO-all-SRF-5-20-00_bin-71	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				IO-all	SRF	5-20-00
+356	MS-all-SRF-0-8-5-00_bin-123	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	MS-all	SRF	0-8-5-00
+357	SPO-all-SRF-5-20-00_bin-152	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				SPO-all	SRF	5-20-00
+358	SPO-SPSG-DCM-5-20-00_bin-1	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae		Chlorodendrales	Chlorodendraceae	Picochlorum		SPO-SPSG	DCM	5-20-00
+359	SPO-SPSG-SRF-20-180-00_bin-69	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	20-180-00
+360	MS-all-SRF-0-8-5-00_bin-580		Prymnesiophyceae	Haptista	Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi	MS-all	SRF	0-8-5-00
+361	NPO-all-DCM-0-8-5-00_bin-298	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Dolichomastix tenuilepis	NPO-all	DCM	0-8-5-00
+362	SPO-SPSG-SRF-20-180-00_bin-130	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	20-180-00
+363	IO-all-FSW-0-8-5-00_bin-83	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis	Tetraselmis striata	IO-all	FSW	0-8-5-00
+364	NAO-all-MIX-180-2000-00_bin-9	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	MIX	180-2000-00
+365	MS-all-SRF-0-8-5-00_bin-298	Viridiplantae	core chlorophytes	Chlorophyta	Chlorophyceae		Chlamydomonadales	Chlamydomonadaceae	Chlamydomonas		MS-all	SRF	0-8-5-00
+366	MS-all-SRF-20-180-00_bin-23	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				MS-all	SRF	20-180-00
+367	SPO-all-SRF-20-180-00_bin-127	Metazoa	Opisthokonta	Chordata	Aves						SPO-all	SRF	20-180-00
+368	IO-all-SRF-0-8-5-00_bin-312		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	SRF	0-8-5-00
+369	IO-all-SRF-20-180-00_bin-40	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	20-180-00
+370	IO-all-DCM-0-8-5-00_bin-353	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	IO-all	DCM	0-8-5-00
+371	MS-all-DCM-20-180-00_bin-15	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	MS-all	DCM	20-180-00
+372	SO-all-DCM-0-8-5-00_bin-41		Sar	Bacillariophyta	Coscinodiscophyceae						SO-all	DCM	0-8-5-00
+373	SO-all-DCM-0-8-5-00_bin-36		Sar	Bacillariophyta	Coscinodiscophyceae						SO-all	DCM	0-8-5-00
+374	SAO-all-DCM-20-180-00_bin-23	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SAO-all	DCM	20-180-00
+375	NAO-all-MIX-0-8-5-00_bin-168		Sar	Bacillariophyta	Coscinodiscophyceae						NAO-all	MIX	0-8-5-00
+376	NAO-all-SRF-0-8-5-00_bin-167		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	NAO-all	SRF	0-8-5-00
+377	NAO-all-DCM-0-8-5-00_bin-38		Sar		Dinophyceae		Suessiales	Symbiodiniaceae	Symbiodinium	Symbiodinium sp.	NAO-all	DCM	0-8-5-00
+378	SPO-SPSG-SRF-20-180-00_bin-188	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	20-180-00
+379	SPO-all-SRF-180-2000-00_bin-151	Metazoa	Opisthokonta	Chordata	Aves						SPO-all	SRF	180-2000-00
+380	SAO-all-MES-0-8-5-00_bin-99	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SAO-all	MES	0-8-5-00
+381	SAO-all-DCM-0-8-5-00_bin-191		Sar		Bigyra	Labyrinthulomycetes	Thraustochytrida	Thraustochytriaceae	Aplanochytrium	Aplanochytrium stocchinoi	SAO-all	DCM	0-8-5-00
+382	IO-all-DCM-5-20-00_bin-2		Sar	Bacillariophyta	Coscinodiscophyceae	Thalassiosirophycidae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Conticribra weissflogii	IO-all	DCM	5-20-00
+383	IO-all-DCM-0-8-5-00_bin-120	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas commoda	IO-all	DCM	0-8-5-00
+384	IO-all-DCM-0-8-5-00_bin-157		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	DCM	0-8-5-00
+385	SPO-SPSG-SRF-0-8-5-00_bin-217		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	SPO-SPSG	SRF	0-8-5-00
+386	SO-all-SRF-0-8-5-00_bin-97		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SO-all	SRF	0-8-5-00
+387	NPO-all-SRF-20-180-00_bin-43	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NPO-all	SRF	20-180-00
+388	SPO-all-SRF-180-2000-00_bin-17	Metazoa	Opisthokonta	Arthropoda	Branchiopoda	Phyllopoda	Diplostraca	Daphniidae	Daphnia	Daphnia pulex	SPO-all	SRF	180-2000-00
+389	RS-all-SRF-20-180-00_bin-29	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				RS-all	SRF	20-180-00
+390	SPO-all-SRF-0-8-5-00_bin-880		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina rotalis	SPO-all	SRF	0-8-5-00
+391	NAO-all-SRF-180-2000-00_bin-49	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			NAO-all	SRF	180-2000-00
+392	SAO-all-DCM-20-180-00_bin-11	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SAO-all	DCM	20-180-00
+393	SPO-all-SRF-0-8-5-00_bin-449		Amoebozoa	Discosea	Flabellinia		Longamoebia	Vannellidae	Vannella	Acanthamoeba castellanii	SPO-all	SRF	0-8-5-00
+394	IO-all-SRF-0-8-5-00_bin-250	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	IO-all	SRF	0-8-5-00
+395	SPO-SPSG-SRF-180-2000-00_bin-159	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	180-2000-00
+396	NPO-all-MES-0-8-5-00_bin-101		Sar		Bigyra	Labyrinthulomycetes	Bicosoecida	Cafeteriaceae	Cafeteria	Cafeteria roenbergensis	NPO-all	MES	0-8-5-00
+397	NPO-all-DCM-20-180-00_bin-47	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	DCM	20-180-00
+398	SPO-SPSG-SRF-180-2000-00_bin-69	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	180-2000-00
+399	SPO-all-SRF-0-8-5-00_bin-394		Sar		Dinophyceae		Gymnodiniales	Kareniaceae	Karenia	Karenia brevis	SPO-all	SRF	0-8-5-00
+400	SAO-all-SRF-0-8-5-00_bin-195		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	SAO-all	SRF	0-8-5-00
+401	SPO-SPSG-SRF-20-180-00_bin-94	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				SPO-SPSG	SRF	20-180-00
+402	SAO-all-SRF-0-8-5-00_bin-171	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	SAO-all	SRF	0-8-5-00
+403	NPO-all-SRF-180-2000-00_bin-25	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	180-2000-00
+404	SPO-all-SRF-0-8-5-00_bin-737		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Florenciella parvula	SPO-all	SRF	0-8-5-00
+405	SPO-SPSG-SRF-20-180-00_bin-129	Metazoa	Opisthokonta	Chordata	Aves						SPO-SPSG	SRF	20-180-00
+406	SO-all-DCM-180-2000-00_bin-14	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SO-all	DCM	180-2000-00
+407	SPO-all-SRF-20-180-00_bin-12	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				SPO-all	SRF	20-180-00
+408	SPO-CHIL-SRF-20-180-00_bin-16	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-CHIL	SRF	20-180-00
+409	RS-all-SRF-180-2000-00_bin-9	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	RS-all	SRF	180-2000-00
+410	IO-all-SRF-5-20-00_bin-121		Sar	Bacillariophyta	Bacillariophyceae		Bacillariales	Bacillariaceae	Cylindrotheca	Cylindrotheca closterium	IO-all	SRF	5-20-00
+411	MS-all-DCM-0-8-5-00_bin-10				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	MS-all	DCM	0-8-5-00
+412	SPO-SPSG-SRF-0-8-5-00_bin-658				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	SPO-SPSG	SRF	0-8-5-00
+413	SPO-PEOD-SRF-0-8-5-00_bin-91	Viridiplantae		Chlorophyta				Pycnococcaceae	Pycnococcus		SPO-PEOD	SRF	0-8-5-00
+414	MS-all-SRF-180-2000-00_bin-8	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	180-2000-00
+415	SPO-SPSG-SRF-20-180-00_bin-164	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	20-180-00
+416	NAO-all-SRF-0-8-5-00_bin-528	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	NAO-all	SRF	0-8-5-00
+417	SPO-all-DCM-0-8-5-00_bin-206		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SPO-all	DCM	0-8-5-00
+418	SAO-all-SRF-0-8-5-00_bin-141		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SAO-all	SRF	0-8-5-00
+419	RS-all-SRF-180-2000-00_bin-3	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				RS-all	SRF	180-2000-00
+420	NPO-all-SRF-20-180-00_bin-41	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	20-180-00
+421	SPO-CHIL-SRF-0-8-5-00_bin-249	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	SPO-CHIL	SRF	0-8-5-00
+422	SAO-all-DCM-0-8-5-00_bin-440				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	SAO-all	DCM	0-8-5-00
+423	NAO-all-MIX-0-8-5-00_bin-117	Metazoa	Opisthokonta	Chordata	Choanoflagellata		Craspedida	Salpingoecidae	Salpingoeca	Salpingoeca rosetta	NAO-all	MIX	0-8-5-00
+424	SPO-CHIL-DCM-180-2000-00_bin-3	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota					SPO-CHIL	DCM	180-2000-00
+425	MS-all-DCM-20-180-00_bin-84	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				MS-all	DCM	20-180-00
+426	SO-all-DCM-0-8-5-00_bin-49		Sar	Bacillariophyta	Coscinodiscophyceae						SO-all	DCM	0-8-5-00
+427	RS-all-SRF-20-180-00_bin-19	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				RS-all	SRF	20-180-00
+428	IO-all-DCM-20-180-00_bin-74	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	DCM	20-180-00
+429	SPO-all-SRF-20-180-00_bin-125	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae				Picochlorum		SPO-all	SRF	20-180-00
+430	SPO-all-DCM-0-8-5-00_bin-542		Sar	Bacillariophyta	Bolidophyceae	Thalassiosirophycidae	Parmales	Triparmaceae	Bolidomonas	Triparma pacifica	SPO-all	DCM	0-8-5-00
+431	NAO-all-SRF-20-180-00_bin-39	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	SRF	20-180-00
+432	SPO-all-SRF-20-180-00_bin-158	Metazoa	Opisthokonta	Chordata	Aves						SPO-all	SRF	20-180-00
+433	SPO-SPSG-SRF-5-20-00_bin-21	Metazoa	Opisthokonta	Chordata	Aves						SPO-SPSG	SRF	5-20-00
+434	SPO-PEOD-MES-0-8-5-00_bin-17	Fungi	Opisthokonta	Ascomycota	Leotiomycetes		Helotiales	Hyaloscyphaceae	Rhynchosporium	Rhynchosporium commune	SPO-PEOD	MES	0-8-5-00
+435	IO-all-SRF-0-8-5-00_bin-260		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	SRF	0-8-5-00
+436	NAO-all-SRF-20-180-00_bin-44	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	SRF	20-180-00
+437	SO-all-DCM-0-8-5-00_bin-34		Prymnesiophyceae	Haptista	Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica	SO-all	DCM	0-8-5-00
+438	NAO-all-SRF-180-2000-00_bin-73	Metazoa	Opisthokonta	Mollusca	Bivalvia	Autobranchia	Ostreida	Ostreidae	Crassostrea	Crassostrea virginica	NAO-all	SRF	180-2000-00
+439	IO-all-DCM-0-8-5-00_bin-351		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	DCM	0-8-5-00
+440	NPO-all-SRF-5-20-00_bin-47	Metazoa	Opisthokonta	Chordata	Aves						NPO-all	SRF	5-20-00
+441	NAO-all-SRF-5-20-00_bin-26	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	NAO-all	SRF	5-20-00
+442	MS-all-SRF-0-8-5-00_bin-405		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas bandaiensis	MS-all	SRF	0-8-5-00
+443	IO-all-SRF-0-8-5-00_bin-126		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	IO-all	SRF	0-8-5-00
+444	SPO-SPSG-SRF-20-180-00_bin-78	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				SPO-SPSG	SRF	20-180-00
+445	SPO-SPSG-SRF-20-180-00_bin-96	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	20-180-00
+446	NAO-all-SRF-0-8-5-00_bin-120		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium	Alexandrium tamarense	NAO-all	SRF	0-8-5-00
+447	SO-all-SRF-0-8-5-00_bin-43		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SO-all	SRF	0-8-5-00
+448	SPO-all-SRF-20-180-00_bin-214	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	SPO-all	SRF	20-180-00
+449	SPO-all-SRF-0-8-5-00_bin-305	Fungi	Opisthokonta	Ascomycota	Sordariomycetes	Hypocreomycetidae	Hypocreales	Nectriaceae	Acremonium	Acremonium chrysogenum	SPO-all	SRF	0-8-5-00
+450	NPO-all-DCM-20-180-00_bin-38	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	DCM	20-180-00
+451	IO-all-SRF-5-20-00_bin-60	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				IO-all	SRF	5-20-00
+452	SPO-SPSG-SRF-180-2000-00_bin-16	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota					SPO-SPSG	SRF	180-2000-00
+453	SAO-all-DCM-0-8-5-00_bin-60		Prymnesiophyceae	Haptista	Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica	SAO-all	DCM	0-8-5-00
+454	IO-all-SRF-20-180-00_bin-115	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	20-180-00
+455	SPO-all-SRF-20-180-00_bin-160	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-all	SRF	20-180-00
+456	SPO-SPSG-SRF-5-20-00_bin-80	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			SPO-SPSG	SRF	5-20-00
+457	RS-all-SRF-20-180-00_bin-21	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				RS-all	SRF	20-180-00
+458	SPO-all-SRF-180-2000-00_bin-318	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	180-2000-00
+459	IO-all-SRF-180-2000-00_bin-21	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	180-2000-00
+460	IO-all-SRF-180-2000-00_bin-56	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				IO-all	SRF	180-2000-00
+461	MS-all-DCM-20-180-00_bin-25	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	MS-all	DCM	20-180-00
+462	SAO-all-DCM-20-180-00_bin-13	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SAO-all	DCM	20-180-00
+463	IO-all-SRF-0-8-5-00_bin-252	Viridiplantae		Chlorophyta	Mamiellophyceae		Dolichomastigales	Mamiellaceae	Micromonas	Dolichomastix tenuilepis	IO-all	SRF	0-8-5-00
+464	SPO-all-SRF-180-2000-00_bin-68	Metazoa	Opisthokonta	Chordata	Aves						SPO-all	SRF	180-2000-00
+465	NPO-all-SRF-20-180-00_bin-25	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	NPO-all	SRF	20-180-00
+466	MS-all-SRF-5-20-00_bin-10	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	5-20-00
+467	SPO-CHIL-SRF-180-2000-00_bin-57	Metazoa	Opisthokonta	Chordata	Aves						SPO-CHIL	SRF	180-2000-00
+468	SPO-all-SRF-0-8-5-00_bin-664		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	SPO-all	SRF	0-8-5-00
+469	SPO-SPSG-SRF-20-180-00_bin-100	Metazoa	Opisthokonta	Chordata	Aves						SPO-SPSG	SRF	20-180-00
+470	NPO-all-DCM-20-180-00_bin-13	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NPO-all	DCM	20-180-00
+471	NAO-all-MES-0-8-5-00_bin-73	Fungi	Opisthokonta	Basidiomycota	Microbotryomycetes		Sporidiobolales	Sporidiobolaceae	Leucosporidium	Leucosporidium creatinivorum	NAO-all	MES	0-8-5-00
+472	SPO-SPSG-SRF-20-180-00_bin-59	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	20-180-00
+473	SPO-SPSG-SRF-0-8-5-00_bin-40		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	SPO-SPSG	SRF	0-8-5-00
+474	SPO-all-SRF-180-2000-00_bin-49	Metazoa	Opisthokonta	Arthropoda	Branchiopoda	Phyllopoda	Diplostraca	Daphniidae	Daphnia	Daphnia pulex	SPO-all	SRF	180-2000-00
+475	SPO-PEOD-DCM-0-8-5-00_bin-54		Amoebozoa	Discosea	Flabellinia		Dactylopodida	Vannellidae	Stygamoeba	Stygamoeba regulata	SPO-PEOD	DCM	0-8-5-00
+476	SPO-SPSG-SRF-0-8-5-00_bin-438		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium	Alexandrium tamarense	SPO-SPSG	SRF	0-8-5-00
+477	NAO-all-DCM-0-8-5-00_bin-243	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	NAO-all	DCM	0-8-5-00
+478	SPO-SPSG-SRF-180-2000-00_bin-1	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	180-2000-00
+479	IO-all-SRF-0-8-5-00_bin-402		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	SRF	0-8-5-00
+480	SPO-PEOD-SRF-20-180-00_bin-15	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-PEOD	SRF	20-180-00
+481	MS-all-SRF-0-8-5-00_bin-588		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	MS-all	SRF	0-8-5-00
+482	SPO-SPSG-SRF-0-8-5-00_bin-234	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis	Tetraselmis striata	SPO-SPSG	SRF	0-8-5-00
+483	NPO-all-SRF-180-2000-00_bin-49	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	180-2000-00
+484	SO-all-SRF-0-8-5-00_bin-50		Sar	Bacillariophyta	Coscinodiscophyceae						SO-all	SRF	0-8-5-00
+485	MS-all-DCM-5-20-00_bin-24	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				MS-all	DCM	5-20-00
+486	NPO-all-SRF-20-180-00_bin-84	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera	Formicidae	Lasius	Lasius niger	NPO-all	SRF	20-180-00
+487	NPO-all-DCM-0-8-5-00_bin-379	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	NPO-all	DCM	0-8-5-00
+488	NPO-all-DCM-20-180-00_bin-21	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	NPO-all	DCM	20-180-00
+489	SPO-SPSG-SRF-180-2000-00_bin-78	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	180-2000-00
+490	MS-all-SRF-0-8-5-00_bin-582		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	MS-all	SRF	0-8-5-00
+491	SPO-SPSG-MIX-0-8-5-00_bin-132	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae				Picochlorum		SPO-SPSG	MIX	0-8-5-00
+492	NAO-all-SRF-0-8-5-00_bin-230		Sar	Bacillariophyta	Mediophyceae	Cymatosirophycidae	Cymatosirales	Cymatosiraceae	Extubocellulus	Extubocellulus spinifer	NAO-all	SRF	0-8-5-00
+493	SPO-SPSG-SRF-0-8-5-00_bin-477	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			SPO-SPSG	SRF	0-8-5-00
+494	MS-all-DCM-20-180-00_bin-41	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	MS-all	DCM	20-180-00
+495	NAO-all-SRF-0-8-5-00_bin-770		Sar		Dictyochophyceae		Chattonellales	Chattonellaceae	Florenciella	Heterosigma akashiwo	NAO-all	SRF	0-8-5-00
+496	NAO-all-SRF-0-8-5-00_bin-23		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas bandaiensis	NAO-all	SRF	0-8-5-00
+497	SO-all-SRF-20-180-00_bin-21		Prymnesiophyceae	Haptista	Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica	SO-all	SRF	20-180-00
+498	MS-all-SRF-20-180-00_bin-99	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				MS-all	SRF	20-180-00
+499	SAO-all-SRF-20-180-00_bin-36	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SAO-all	SRF	20-180-00
+500	SPO-PEOD-SRF-20-180-00_bin-1	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae	Anopheles		SPO-PEOD	SRF	20-180-00
+501	SPO-all-SRF-20-180-00_bin-173	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	SPO-all	SRF	20-180-00
+502	NAO-all-MIX-20-180-00_bin-17	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	MIX	20-180-00
+503	NAO-all-MIX-5-20-00_bin-30	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera	Formicidae			NAO-all	MIX	5-20-00
+504	SPO-PEOD-DCM-180-2000-00_bin-7	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				SPO-PEOD	DCM	180-2000-00
+505	NAO-all-MIX-0-8-5-00_bin-238		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella		NAO-all	MIX	0-8-5-00
+506	SPO-all-SRF-20-180-00_bin-190	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	20-180-00
+507	NAO-all-SRF-180-2000-00_bin-22	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	SRF	180-2000-00
+508	SAO-all-MES-0-8-5-00_bin-141		Sar								SAO-all	MES	0-8-5-00
+509	IO-all-DCM-0-8-5-00_bin-21		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	DCM	0-8-5-00
+510	SO-all-SRF-20-180-00_bin-8		Prymnesiophyceae	Haptista	Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica	SO-all	SRF	20-180-00
+511	SPO-all-SRF-0-8-5-00_bin-975	Viridiplantae	core chlorophytes	Chlorophyta	Chlorophyceae		Chlamydomonadales	Chlamydomonadaceae	Chlamydomonas		SPO-all	SRF	0-8-5-00
+512	NAO-all-DCM-20-180-00_bin-23	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			NAO-all	DCM	20-180-00
+513	IO-all-SRF-180-2000-00_bin-48	Metazoa	Opisthokonta	Chordata	Aves						IO-all	SRF	180-2000-00
+514	SAO-all-SRF-20-180-00_bin-46		Prymnesiophyceae	Haptista	Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica	SAO-all	SRF	20-180-00
+515	SPO-all-SRF-5-20-00_bin-223	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	5-20-00
+516	MS-all-SRF-20-180-00_bin-70	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	MS-all	SRF	20-180-00
+517	SPO-CHIL-MES-0-8-5-00_bin-22	Fungi	Opisthokonta	Ascomycota	Leotiomycetes		Helotiales	Mollisiaceae	Rhynchosporium	Rhynchosporium commune	SPO-CHIL	MES	0-8-5-00
+518	SPO-all-SRF-0-8-5-00_bin-1040		Sar	Bacillariophyta	Coscinodiscophyceae						SPO-all	SRF	0-8-5-00
+519	IO-all-SRF-0-8-5-00_bin-341	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis	Tetraselmis striata	IO-all	SRF	0-8-5-00
+520	IO-all-SRF-0-8-5-00_bin-336		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	SRF	0-8-5-00
+521	IO-all-SRF-5-20-00_bin-74	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hemiptera				IO-all	SRF	5-20-00
+522	IO-all-SRF-0-8-5-00_bin-591	Viridiplantae	core chlorophytes	Chlorophyta	Chlorophyceae		Chlamydomonadales	Chlamydomonadaceae	Chlamydomonas	Chlamydomonas leiostraca	IO-all	SRF	0-8-5-00
+523	SPO-PEOD-SRF-20-180-00_bin-12	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-PEOD	SRF	20-180-00
+524	IO-all-DCM-0-8-5-00_bin-104				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	IO-all	DCM	0-8-5-00
+525	NAO-all-SRF-20-180-00_bin-6	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	SRF	20-180-00
+526	IO-all-SRF-0-8-5-00_bin-80		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pteridomonas danica	IO-all	SRF	0-8-5-00
+527	SAO-all-DCM-180-2000-00_bin-10	Metazoa	Opisthokonta	Chordata	Aves		Passeriformes				SAO-all	DCM	180-2000-00
+528	NPO-all-SRF-0-8-5-00_bin-232	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis		NPO-all	SRF	0-8-5-00
+529	SPO-all-SRF-5-20-00_bin-120	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae				Picochlorum		SPO-all	SRF	5-20-00
+530	SPO-SPSG-SRF-20-180-00_bin-82	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	20-180-00
+531	SO-all-SRF-0-8-5-00_bin-20		Sar	Bacillariophyta	Bacillariophyceae		Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis cylindrus	SO-all	SRF	0-8-5-00
+532	SPO-CHIL-SRF-20-180-00_bin-30	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-CHIL	SRF	20-180-00
+533	NPO-all-DCM-20-180-00_bin-26	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	DCM	20-180-00
+534	IO-all-SRF-0-8-5-00_bin-502		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	SRF	0-8-5-00
+535	SPO-PEOD-SRF-20-180-00_bin-18	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			SPO-PEOD	SRF	20-180-00
+536	MS-all-DCM-0-8-5-00_bin-256	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	MS-all	DCM	0-8-5-00
+537	SAO-all-MES-0-8-5-00_bin-104	Metazoa	Opisthokonta	Chordata	Aves		Passeriformes				SAO-all	MES	0-8-5-00
+538	IO-all-DCM-20-180-00_bin-84	Viridiplantae	core chlorophytes	Chlorophyta	Chlorophyceae		Chlamydomonadales	Chlamydomonadaceae	Chlamydomonas	Chlamydomonas euryale	IO-all	DCM	20-180-00
+539	NAO-all-SRF-180-2000-00_bin-89	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	SRF	180-2000-00
+540	NAO-all-MIX-20-180-00_bin-28	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			NAO-all	MIX	20-180-00
+541	MS-all-SRF-0-8-5-00_bin-310		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina rotalis	MS-all	SRF	0-8-5-00
+542	SPO-all-SRF-20-180-00_bin-146	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	20-180-00
+543	IO-all-SRF-0-8-5-00_bin-290	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis	Tetraselmis striata	IO-all	SRF	0-8-5-00
+544	MS-all-SRF-20-180-00_bin-42	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				MS-all	SRF	20-180-00
+545	SPO-SPSG-DCM-5-20-00_bin-33	Viridiplantae		Chlorophyta				Pycnococcaceae	Pycnococcus		SPO-SPSG	DCM	5-20-00
+546	SAO-all-DCM-0-8-5-00_bin-2	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	SAO-all	DCM	0-8-5-00
+547	NAO-all-SRF-0-8-5-00_bin-745	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae			Pycnococcaceae	Pycnococcus		NAO-all	SRF	0-8-5-00
+548	SAO-all-SRF-0-8-5-00_bin-611		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SAO-all	SRF	0-8-5-00
+549	NPO-all-DCM-20-180-00_bin-3	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				NPO-all	DCM	20-180-00
+550	SPO-SPSG-SRF-180-2000-00_bin-203	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera	Formicidae			SPO-SPSG	SRF	180-2000-00
+551	NAO-all-MIX-0-8-5-00_bin-174		Sar	Bacillariophyta	Coscinodiscophyceae	Coscinodiscophycidae	Melosirales	Stephanopyxidaceae	Stephanopyxis	Stephanopyxis turris	NAO-all	MIX	0-8-5-00
+552	MS-all-SRF-180-2000-00_bin-53	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	180-2000-00
+553	NAO-all-SRF-180-2000-00_bin-100	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			NAO-all	SRF	180-2000-00
+554	SAO-all-SRF-180-2000-00_bin-28	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SAO-all	SRF	180-2000-00
+555	NPO-all-DCM-20-180-00_bin-69	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NPO-all	DCM	20-180-00
+556	SPO-CHIL-SRF-180-2000-00_bin-2		Sar	Bacillariophyta	Coscinodiscophyceae	Chaetocerotophycidae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf. neogracilis	SPO-CHIL	SRF	180-2000-00
+557	SPO-all-SRF-5-20-00_bin-118	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-all	SRF	5-20-00
+558	IO-all-SRF-0-8-5-00_bin-100		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina rotalis	IO-all	SRF	0-8-5-00
+559	IO-all-SRF-0-8-5-00_bin-21	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis	Tetraselmis striata	IO-all	SRF	0-8-5-00
+560	SAO-all-SRF-0-8-5-00_bin-200				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	SAO-all	SRF	0-8-5-00
+561	SPO-SPSG-SRF-0-8-5-00_bin-82	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis	Tetraselmis striata	SPO-SPSG	SRF	0-8-5-00
+562	IO-all-SRF-0-8-5-00_bin-325		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas bandaiensis	IO-all	SRF	0-8-5-00
+563	SPO-all-SRF-20-180-00_bin-110	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	20-180-00
+564	SPO-SPSG-SRF-0-8-5-00_bin-580		Sar	Bacillariophyta	Coscinodiscophyceae	Thalassiosirophycidae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira oceanica	SPO-SPSG	SRF	0-8-5-00
+565	SPO-SPSG-DCM-20-180-00_bin-1	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	DCM	20-180-00
+566	NAO-all-SRF-20-180-00_bin-71	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				NAO-all	SRF	20-180-00
+567	NAO-all-SRF-0-8-5-00_bin-253		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	NAO-all	SRF	0-8-5-00
+568	MS-all-SRF-20-180-00_bin-87	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				MS-all	SRF	20-180-00
+569	SPO-SPSG-SRF-0-8-5-00_bin-66		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium	Lingulodinium polyedra	SPO-SPSG	SRF	0-8-5-00
+570	RS-all-SRF-20-180-00_bin-1	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	RS-all	SRF	20-180-00
+571	SPO-SPSG-SRF-180-2000-00_bin-82	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	SPO-SPSG	SRF	180-2000-00
+572	MS-all-SRF-180-2000-00_bin-111	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				MS-all	SRF	180-2000-00
+573	NAO-all-MES-0-8-5-00_bin-372	Fungi	Opisthokonta	Ascomycota	Dothideomycetes	Pleosporomycetidae	Venturiales	Sympoventuriaceae	Verruconis	Verruconis gallopava	NAO-all	MES	0-8-5-00
+574	NAO-all-SRF-0-8-5-00_bin-127		Prymnesiophyceae	Haptista	Haptophyta		Isochrysidales	Noelaerhabdaceae	Emiliania	Emiliania huxleyi	NAO-all	SRF	0-8-5-00
+575	NPO-all-SRF-0-8-5-00_bin-32		Amoebozoa	Discosea	Flabellinia		Stygamoebida	Vannellidae	Stygamoeba	Stygamoeba regulata	NPO-all	SRF	0-8-5-00
+576	NPO-all-DCM-0-8-5-00_bin-310		Sar	Bacillariophyta	Bolidophyceae	Thalassiosirophycidae	Parmales	Triparmaceae	Bolidomonas	Triparma pacifica	NPO-all	DCM	0-8-5-00
+577	NPO-all-DCM-0-8-5-00_bin-411	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	NPO-all	DCM	0-8-5-00
+578	SPO-all-SRF-5-20-00_bin-55	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae			Pycnococcaceae	Pycnococcus		SPO-all	SRF	5-20-00
+579	SPO-SPSG-SRF-180-2000-00_bin-113	Metazoa	Opisthokonta	Cnidaria	Anthozoa	Hexacorallia	Scleractinia	Pocilloporidae	Stylophora	Stylophora pistillata	SPO-SPSG	SRF	180-2000-00
+580	IO-all-SRF-20-180-00_bin-38	Metazoa	Opisthokonta	Chordata	Aves						IO-all	SRF	20-180-00
+581	NAO-all-SRF-0-8-5-00_bin-366	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	NAO-all	SRF	0-8-5-00
+582	IO-all-SRF-0-8-5-00_bin-210		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	SRF	0-8-5-00
+583	NPO-all-DCM-0-8-5-00_bin-38				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	NPO-all	DCM	0-8-5-00
+584	SPO-SPSG-DCM-0-8-5-00_bin-150	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae		Chlorodendrales	Pycnococcaceae	Pycnococcus		SPO-SPSG	DCM	0-8-5-00
+585	NAO-all-SRF-0-8-5-00_bin-8	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	NAO-all	SRF	0-8-5-00
+586	IO-all-DCM-20-180-00_bin-97	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	DCM	20-180-00
+587	NPO-all-SRF-0-8-5-00_bin-450		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pteridomonas danica	NPO-all	SRF	0-8-5-00
+588	NPO-all-SRF-180-2000-00_bin-18	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	180-2000-00
+589	SAO-all-DCM-0-8-5-00_bin-540	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Pycnococcaceae	Pycnococcus	Pycnococcus provasolii	SAO-all	DCM	0-8-5-00
+590	SPO-all-SRF-5-20-00_bin-1	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	5-20-00
+591	IO-all-SRF-0-8-5-00_bin-113		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	SRF	0-8-5-00
+592	SPO-SPSG-DCM-0-8-5-00_bin-224	Fungi	Opisthokonta	Ascomycota	Leotiomycetes		Helotiales	Mollisiaceae	Rhynchosporium	Rhynchosporium commune	SPO-SPSG	DCM	0-8-5-00
+593	SPO-SPSG-DCM-0-8-5-00_bin-88	Viridiplantae	core chlorophytes	Chlorophyta				Pycnococcaceae	Pycnococcus		SPO-SPSG	DCM	0-8-5-00
+594	SAO-all-SRF-180-2000-00_bin-31	Metazoa	Opisthokonta	Chordata	Aves						SAO-all	SRF	180-2000-00
+595	SAO-all-SRF-0-8-5-00_bin-592		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Paraphysomonadaceae	Paraphysomonas	Paraphysomonas bandaiensis	SAO-all	SRF	0-8-5-00
+596	MS-all-DCM-180-2000-00_bin-37	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	DCM	180-2000-00
+597	NPO-all-SRF-20-180-00_bin-31	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NPO-all	SRF	20-180-00
+598	NPO-all-SRF-20-180-00_bin-46	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NPO-all	SRF	20-180-00
+599	SPO-all-SRF-5-20-00_bin-176		Sar	Bacillariophyta	Bacillariophyceae		Bacillariales	Bacillariaceae	Pseudo-nitzschia	Pseudo-nitzschia fraudulenta	SPO-all	SRF	5-20-00
+600	SPO-all-SRF-20-180-00_bin-86	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				SPO-all	SRF	20-180-00
+601	MS-all-SRF-180-2000-00_bin-37	Metazoa	Opisthokonta	Arthropoda	Branchiopoda	Phyllopoda	Diplostraca	Daphniidae	Daphnia	Daphnia pulex	MS-all	SRF	180-2000-00
+602	SAO-all-DCM-0-8-5-00_bin-447		Sar		Dinophyceae		Gymnodiniales	Kareniaceae	Karenia	Karenia brevis	SAO-all	DCM	0-8-5-00
+603	NPO-all-SRF-5-20-00_bin-9	Viridiplantae		Chlorophyta	Mamiellophyceae			Pycnococcaceae	Pycnococcus		NPO-all	SRF	5-20-00
+604	IO-all-FSW-0-8-5-00_bin-88	Viridiplantae		Chlorophyta				Pycnococcaceae	Pycnococcus		IO-all	FSW	0-8-5-00
+605	RS-all-SRF-20-180-00_bin-10	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	RS-all	SRF	20-180-00
+606	IO-all-DCM-0-8-5-00_bin-325		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	DCM	0-8-5-00
+607	IO-all-FSW-0-8-5-00_bin-66	Metazoa	Apusozoa					Apusomonadidae	Thecamonas	Thecamonas trahens	IO-all	FSW	0-8-5-00
+608	SAO-all-DCM-0-8-5-00_bin-200		Sar	Bacillariophyta	Bacillariophyceae		Naviculales	Phaeodactylaceae	Phaeodactylum	Phaeodactylum tricornutum	SAO-all	DCM	0-8-5-00
+609	SAO-all-SRF-0-8-5-00_bin-87		Prymnesiophyceae	Haptista	Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica	SAO-all	SRF	0-8-5-00
+610	SPO-all-SRF-0-8-5-00_bin-130	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	SPO-all	SRF	0-8-5-00
+611	SAO-all-SRF-20-180-00_bin-69	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SAO-all	SRF	20-180-00
+612	SPO-SPSG-SRF-0-8-5-00_bin-27	Viridiplantae		Chlorophyta	Palmophyllophyceae		Prasinococcales	Prasinococcaceae	Prasinoderma	Prasinoderma coloniale	SPO-SPSG	SRF	0-8-5-00
+613	IO-all-SRF-20-180-00_bin-36	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	IO-all	SRF	20-180-00
+614	IO-all-SRF-0-8-5-00_bin-380		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium	Alexandrium tamarense	IO-all	SRF	0-8-5-00
+615	NPO-all-DCM-5-20-00_bin-42	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae		Chlorodendrales	Chlorodendraceae	Picochlorum		NPO-all	DCM	5-20-00
+616	SPO-all-SRF-20-180-00_bin-151	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-all	SRF	20-180-00
+617	SPO-all-SRF-20-180-00_bin-126	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-all	SRF	20-180-00
+618	MS-all-SRF-0-8-5-00_bin-630				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	MS-all	SRF	0-8-5-00
+619	NAO-all-SRF-180-2000-00_bin-94	Metazoa	Opisthokonta	Mollusca	Gastropoda	Heterobranchia	Aplysiida	Aplysiidae	Aplysia	Aplysia californica	NAO-all	SRF	180-2000-00
+620	NAO-all-SRF-0-8-5-00_bin-76		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	NAO-all	SRF	0-8-5-00
+621	IO-all-SRF-180-2000-00_bin-83	Metazoa	Opisthokonta	Chordata	Mammalia		Primates	Hominidae	Pan	Pan troglodytes	IO-all	SRF	180-2000-00
+622	NAO-all-MIX-0-8-5-00_bin-163	Viridiplantae		Chlorophyta	Palmophyllophyceae		Prasinococcales	Prasinococcaceae	Prasinoderma	Prasinoderma singulare	NAO-all	MIX	0-8-5-00
+623	IO-all-SRF-5-20-00_bin-128	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	5-20-00
+624	MS-all-SRF-5-20-00_bin-93	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	5-20-00
+625	SO-all-DCM-180-2000-00_bin-17	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SO-all	DCM	180-2000-00
+626	NPO-all-SRF-0-8-5-00_bin-284		Sar		Dinophyceae		Suessiales	Symbiodiniaceae	Symbiodinium	Symbiodinium sp.	NPO-all	SRF	0-8-5-00
+627	SO-all-DCM-180-2000-00_bin-1	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hemiptera				SO-all	DCM	180-2000-00
+628	NAO-all-MIX-0-8-5-00_bin-258		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium	Alexandrium tamarense	NAO-all	MIX	0-8-5-00
+629	RS-all-SRF-0-8-5-00_bin-50	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	RS-all	SRF	0-8-5-00
+630	IO-all-SRF-0-8-5-00_bin-251		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella		IO-all	SRF	0-8-5-00
+631	IO-all-SRF-20-180-00_bin-73	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				IO-all	SRF	20-180-00
+632	SPO-all-SRF-0-8-5-00_bin-102	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis		SPO-all	SRF	0-8-5-00
+633	MS-all-DCM-20-180-00_bin-3	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	DCM	20-180-00
+634	SAO-all-SRF-0-8-5-00_bin-297		Sar	Bacillariophyta	Mediophyceae	Cymatosirophycidae	Cymatosirales	Cymatosiraceae	Extubocellulus	Extubocellulus spinifer	SAO-all	SRF	0-8-5-00
+635	IO-all-DCM-0-8-5-00_bin-36		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	DCM	0-8-5-00
+636	IO-all-DCM-20-180-00_bin-38	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	DCM	20-180-00
+637	SPO-SPSG-SRF-0-8-5-00_bin-560	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis	Tetraselmis striata	SPO-SPSG	SRF	0-8-5-00
+638	SPO-all-SRF-180-2000-00_bin-311	Metazoa	Opisthokonta	Chordata	Aves						SPO-all	SRF	180-2000-00
+639	NAO-all-SRF-0-8-5-00_bin-683		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	NAO-all	SRF	0-8-5-00
+640	IO-all-SRF-20-180-00_bin-79	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae	Anopheles		IO-all	SRF	20-180-00
+641	IO-all-SRF-20-180-00_bin-97	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				IO-all	SRF	20-180-00
+642	SPO-CHIL-SRF-20-180-00_bin-8	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-CHIL	SRF	20-180-00
+643	NPO-all-SRF-0-8-5-00_bin-126	Viridiplantae	core chlorophytes	Chlorophyta	Chlorodendrophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis	Tetraselmis striata	NPO-all	SRF	0-8-5-00
+644	MS-all-SRF-20-180-00_bin-10	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	20-180-00
+645	SAO-all-SRF-0-8-5-00_bin-26		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Chromulinaceae	Ochromonas	Paraphysomonas bandaiensis	SAO-all	SRF	0-8-5-00
+646	SPO-SPSG-SRF-0-8-5-00_bin-663		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	SPO-SPSG	SRF	0-8-5-00
+647	SO-all-SRF-0-8-5-00_bin-110		Sar		Pelagophyceae		Pelagomonadales		Pelagomonas	Pelagomonas calceolata	SO-all	SRF	0-8-5-00
+648	IO-all-DCM-20-180-00_bin-109	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				IO-all	DCM	20-180-00
+649	MS-all-SRF-180-2000-00_bin-76	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				MS-all	SRF	180-2000-00
+650	SPO-all-SRF-20-180-00_bin-54	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			SPO-all	SRF	20-180-00
+651	IO-all-DCM-20-180-00_bin-103	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				IO-all	DCM	20-180-00
+652	SPO-all-SRF-20-180-00_bin-23	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	20-180-00
+653	SPO-CHIL-SRF-20-180-00_bin-27	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae	Anopheles		SPO-CHIL	SRF	20-180-00
+654	MS-all-SRF-180-2000-00_bin-92	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				MS-all	SRF	180-2000-00
+655	SPO-SPSG-DCM-20-180-00_bin-30	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	DCM	20-180-00
+656	NAO-all-SRF-5-20-00_bin-25	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	SRF	5-20-00
+657	NAO-all-SRF-180-2000-00_bin-87	Metazoa	Opisthokonta	Chordata	Aves						NAO-all	SRF	180-2000-00
+658	SO-all-DCM-0-8-5-00_bin-59		Sar	Bacillariophyta	Coscinodiscophyceae						SO-all	DCM	0-8-5-00
+659	MS-all-DCM-0-8-5-00_bin-322	Viridiplantae		Chlorophyta	Mamiellophyceae		Dolichomastigales	Pycnococcaceae	Pycnococcus	Pycnococcus provasolii	MS-all	DCM	0-8-5-00
+660	IO-all-SRF-180-2000-00_bin-90	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hemiptera	Aphididae	Acyrthosiphon	Acyrthosiphon pisum	IO-all	SRF	180-2000-00
+661	SPO-SPSG-DCM-5-20-00_bin-40	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae				Picochlorum		SPO-SPSG	DCM	5-20-00
+662	SPO-CHIL-DCM-0-8-5-00_bin-39	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	SPO-CHIL	DCM	0-8-5-00
+663	NAO-all-MIX-0-8-5-00_bin-204		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	NAO-all	MIX	0-8-5-00
+664	NAO-all-MIX-0-8-5-00_bin-279		Sar	Bacillariophyta	Bacillariophyceae		Naviculales				NAO-all	MIX	0-8-5-00
+665	SAO-all-MES-0-8-5-00_bin-199	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	SAO-all	MES	0-8-5-00
+666	SPO-all-SRF-0-8-5-00_bin-469		Sar	Bacillariophyta	Coscinodiscophyceae						SPO-all	SRF	0-8-5-00
+667	SPO-all-SRF-0-8-5-00_bin-844		Sar	Bacillariophyta							SPO-all	SRF	0-8-5-00
+668	NAO-all-SRF-0-8-5-00_bin-631	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	NAO-all	SRF	0-8-5-00
+669	NPO-all-SRF-5-20-00_bin-20	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae				Picochlorum		NPO-all	SRF	5-20-00
+670	NPO-all-SRF-0-8-5-00_bin-297		Prymnesiophyceae	Haptista	Haptophyta		Prymnesiales	Prymnesiaceae	Chrysochromulina	Chrysochromulina rotalis	NPO-all	SRF	0-8-5-00
+671	SPO-SPSG-SRF-20-180-00_bin-109	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	20-180-00
+672	SPO-SPSG-SRF-0-8-5-00_bin-642		Sar	Bacillariophyta	Coscinodiscophyceae						SPO-SPSG	SRF	0-8-5-00
+673	SPO-SPSG-SRF-180-2000-00_bin-207	Metazoa	Opisthokonta	Chordata	Actinopteri	Neopterygii					SPO-SPSG	SRF	180-2000-00
+674	NAO-all-MIX-0-8-5-00_bin-170		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	NAO-all	MIX	0-8-5-00
+675	MS-all-SRF-0-8-5-00_bin-93	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	MS-all	SRF	0-8-5-00
+676	SPO-PEOD-DCM-180-2000-00_bin-9	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota					SPO-PEOD	DCM	180-2000-00
+677	SPO-SPSG-SRF-180-2000-00_bin-136	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota					SPO-SPSG	SRF	180-2000-00
+678	SAO-all-SRF-0-8-5-00_bin-42		Sar	Bacillariophyta	Coscinodiscophyceae	Thalassiosirophycidae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira antarctica	SAO-all	SRF	0-8-5-00
+679	SPO-CHIL-MES-0-8-5-00_bin-26	Fungi	Opisthokonta	Ascomycota	Leotiomycetes		Helotiales	Mollisiaceae	Rhynchosporium	Rhynchosporium commune	SPO-CHIL	MES	0-8-5-00
+680	NAO-all-SRF-0-8-5-00_bin-334	Viridiplantae		Chlorophyta	Mamiellophyceae			Pycnococcaceae	Pycnococcus		NAO-all	SRF	0-8-5-00
+681	SAO-all-SRF-20-180-00_bin-42	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SAO-all	SRF	20-180-00
+682	NAO-all-SRF-20-180-00_bin-82	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	SRF	20-180-00
+683	NPO-all-DCM-0-8-5-00_bin-17		Sar	Bacillariophyta	Coscinodiscophyceae						NPO-all	DCM	0-8-5-00
+684	SPO-all-DCM-0-8-5-00_bin-127	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	SPO-all	DCM	0-8-5-00
+685	SPO-all-SRF-0-8-5-00_bin-906	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis		SPO-all	SRF	0-8-5-00
+686	SPO-PEOD-SRF-5-20-00_bin-37	Viridiplantae		Chlorophyta	Mamiellophyceae			Pycnococcaceae	Pycnococcus		SPO-PEOD	SRF	5-20-00
+687	SPO-all-SRF-180-2000-00_bin-308	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-all	SRF	180-2000-00
+688	SPO-all-SRF-0-8-5-00_bin-1039	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-all	SRF	0-8-5-00
+689	SAO-all-SRF-0-8-5-00_bin-284	Viridiplantae		Chlorophyta				Pycnococcaceae	Pycnococcus		SAO-all	SRF	0-8-5-00
+690	NAO-all-MES-0-8-5-00_bin-268	Fungi	Opisthokonta	Ascomycota	Leotiomycetes		Helotiales	Mollisiaceae	Rhynchosporium	Rhynchosporium commune	NAO-all	MES	0-8-5-00
+691	SPO-SPSG-DCM-20-180-00_bin-23	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				SPO-SPSG	DCM	20-180-00
+692	NAO-all-MIX-5-20-00_bin-5	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	MIX	5-20-00
+693	NPO-all-DCM-20-180-00_bin-55	Viridiplantae		Chlorophyta	Mamiellophyceae			Pycnococcaceae	Pycnococcus		NPO-all	DCM	20-180-00
+694	SAO-all-SRF-5-20-00_bin-29		Sar	Bacillariophyta	Bacillariophyceae		Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis kerguelensis	SAO-all	SRF	5-20-00
+695	NAO-all-SRF-20-180-00_bin-8	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	SRF	20-180-00
+696	SPO-SPSG-SRF-20-180-00_bin-68	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	20-180-00
+697	IO-all-SRF-0-8-5-00_bin-141		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	SRF	0-8-5-00
+698	SAO-all-SRF-5-20-00_bin-54	Viridiplantae	Embryophyta	Streptophyta	Magnoliopsida		Fabales	Fabaceae	Trifolium	Trifolium pratense	SAO-all	SRF	5-20-00
+699	SAO-all-SRF-5-20-00_bin-23	Viridiplantae	Embryophyta	Streptophyta	Magnoliopsida		Fabales	Fabaceae	Trifolium	Trifolium pratense	SAO-all	SRF	5-20-00
+700	NAO-all-MIX-0-8-5-00_bin-142		Sar	Bacillariophyta	Bolidophyceae	Chaetocerotophycidae	Parmales	Triparmaceae	Bolidomonas	Triparma pacifica	NAO-all	MIX	0-8-5-00
+701	SPO-SPSG-SRF-20-180-00_bin-62	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae				Picochlorum		SPO-SPSG	SRF	20-180-00
+702	SPO-CHIL-SRF-0-8-5-00_bin-39	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	SPO-CHIL	SRF	0-8-5-00
+703	MS-all-SRF-5-20-00_bin-56	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	5-20-00
+704	MS-all-DCM-180-2000-00_bin-18	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	DCM	180-2000-00
+705	SPO-SPSG-SRF-180-2000-00_bin-2	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	180-2000-00
+706	NAO-all-DCM-0-8-5-00_bin-171	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	NAO-all	DCM	0-8-5-00
+707	NAO-all-SRF-0-8-5-00_bin-507	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	NAO-all	SRF	0-8-5-00
+708	NPO-all-MES-0-8-5-00_bin-163	Fungi	Opisthokonta	Ascomycota	Dothideomycetes	Pleosporomycetidae	Venturiales	Sympoventuriaceae	Verruconis	Verruconis gallopava	NPO-all	MES	0-8-5-00
+709	NAO-all-SRF-5-20-00_bin-31	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	SRF	5-20-00
+710	NPO-all-DCM-20-180-00_bin-25	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NPO-all	DCM	20-180-00
+711	NPO-all-SRF-0-8-5-00_bin-341	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	0-8-5-00
+712	NPO-all-SRF-0-8-5-00_bin-336		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	NPO-all	SRF	0-8-5-00
+713	SPO-all-SRF-20-180-00_bin-40	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-all	SRF	20-180-00
+714	SO-all-SRF-0-8-5-00_bin-54		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium	Azadinium spinosum	SO-all	SRF	0-8-5-00
+715	MS-all-SRF-0-8-5-00_bin-158		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pteridomonas danica	MS-all	SRF	0-8-5-00
+716	SPO-SPSG-SRF-20-180-00_bin-18	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	20-180-00
+717	SAO-all-DCM-0-8-5-00_bin-418		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	SAO-all	DCM	0-8-5-00
+718	MS-all-SRF-180-2000-00_bin-86	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	180-2000-00
+719	SPO-SPSG-SRF-20-180-00_bin-81	Metazoa	Opisthokonta	Chordata	Aves						SPO-SPSG	SRF	20-180-00
+720	IO-all-SRF-0-8-5-00_bin-89	Viridiplantae		Chlorophyta				Pycnococcaceae	Pycnococcus		IO-all	SRF	0-8-5-00
+721	MS-all-DCM-5-20-00_bin-7	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	DCM	5-20-00
+722	MS-all-SRF-0-8-5-00_bin-125	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis		MS-all	SRF	0-8-5-00
+723	NAO-all-MIX-0-8-5-00_bin-132		Sar	Bacillariophyta	Coscinodiscophyceae						NAO-all	MIX	0-8-5-00
+724	SPO-SPSG-SRF-20-180-00_bin-65	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hemiptera	Aphididae			SPO-SPSG	SRF	20-180-00
+725	SPO-all-SRF-20-180-00_bin-274	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			SPO-all	SRF	20-180-00
+726	IO-all-DCM-0-8-5-00_bin-107		Sar	Bacillariophyta	Coscinodiscophyceae	Coscinodiscophycidae	Melosirales	Stephanopyxidaceae	Stephanopyxis	Stephanopyxis turris	IO-all	DCM	0-8-5-00
+727	SAO-all-SRF-0-8-5-00_bin-459	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	SAO-all	SRF	0-8-5-00
+728	SAO-all-SRF-180-2000-00_bin-19	Metazoa	Opisthokonta	Chordata	Aves						SAO-all	SRF	180-2000-00
+729	NAO-all-SRF-0-8-5-00_bin-499	Viridiplantae		Chlorophyta	Palmophyllophyceae		Prasinococcales	Prasinococcaceae	Prasinoderma	Prasinoderma singulare	NAO-all	SRF	0-8-5-00
+730	SPO-SPSG-SRF-180-2000-00_bin-98	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SPO-SPSG	SRF	180-2000-00
+731	IO-all-SRF-0-8-5-00_bin-406	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	IO-all	SRF	0-8-5-00
+732	SPO-SPSG-SRF-180-2000-00_bin-131	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	180-2000-00
+733	SPO-all-SRF-20-180-00_bin-177	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	20-180-00
+734	NAO-all-MIX-20-180-00_bin-13	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	NAO-all	MIX	20-180-00
+735	SPO-all-SRF-5-20-00_bin-77	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				SPO-all	SRF	5-20-00
+736	NAO-all-SRF-20-180-00_bin-85	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	SRF	20-180-00
+737	NPO-all-SRF-180-2000-00_bin-9	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NPO-all	SRF	180-2000-00
+738	SAO-all-SRF-0-8-5-00_bin-32		Sar	Bacillariophyta	Coscinodiscophyceae	Thalassiosirophycidae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira antarctica	SAO-all	SRF	0-8-5-00
+739	MS-all-SRF-0-8-5-00_bin-226	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas commoda	MS-all	SRF	0-8-5-00
+740	MS-all-SRF-0-8-5-00_bin-251		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Chromulinaceae	Ochromonas	Paraphysomonas bandaiensis	MS-all	SRF	0-8-5-00
+741	NAO-all-DCM-20-180-00_bin-20	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	DCM	20-180-00
+742	NPO-all-SRF-0-8-5-00_bin-575		Sar	Bacillariophyta	Coscinodiscophyceae						NPO-all	SRF	0-8-5-00
+743	MS-all-DCM-20-180-00_bin-45	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	MS-all	DCM	20-180-00
+744	SPO-all-SRF-0-8-5-00_bin-551	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	SPO-all	SRF	0-8-5-00
+745	SPO-SPSG-DCM-0-8-5-00_bin-172	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae				Picochlorum		SPO-SPSG	DCM	0-8-5-00
+746	IO-all-SRF-20-180-00_bin-67	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				IO-all	SRF	20-180-00
+747	IO-all-SRF-20-180-00_bin-10	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			IO-all	SRF	20-180-00
+748	IO-all-SRF-0-8-5-00_bin-348		Sar	Bacillariophyta	Coscinodiscophyceae						IO-all	SRF	0-8-5-00
+749	IO-all-SRF-20-180-00_bin-89	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	20-180-00
+750	NAO-all-SRF-0-8-5-00_bin-339				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	NAO-all	SRF	0-8-5-00
+751	IO-all-SRF-0-8-5-00_bin-22	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos	IO-all	SRF	0-8-5-00
+752	SPO-all-SRF-5-20-00_bin-182	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	5-20-00
+753	NPO-all-SRF-0-8-5-00_bin-209	Metazoa	Opisthokonta	Chordata	Choanoflagellata		Craspedida	Salpingoecidae	Salpingoeca	Salpingoeca rosetta	NPO-all	SRF	0-8-5-00
+754	NPO-all-DCM-20-180-00_bin-60	Metazoa	Opisthokonta	Chordata	Aves						NPO-all	DCM	20-180-00
+755	SPO-SPSG-SRF-20-180-00_bin-104		Sar	Ciliophora	Spirotrichea	Choreotrichia	Tintinnida	Rhabdonellidae	Schmidingerella	Schmidingerella taraikaensis	SPO-SPSG	SRF	20-180-00
+756	SAO-all-DCM-0-8-5-00_bin-160		Sar		Dinophyceae		Gymnodiniales	Kareniaceae	Symbiodinium	Karenia brevis	SAO-all	DCM	0-8-5-00
+757	SAO-all-SRF-0-8-5-00_bin-566		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pseudopedinella elastica	SAO-all	SRF	0-8-5-00
+758	MS-all-DCM-0-8-5-00_bin-94		Sar	Bacillariophyta	Coscinodiscophyceae						MS-all	DCM	0-8-5-00
+759	IO-all-SRF-0-8-5-00_bin-109		Sar	Bacillariophyta	Chrysophyceae		Chromulinales	Chromulinaceae	Ochromonas	Paraphysomonas bandaiensis	IO-all	SRF	0-8-5-00
+760	SPO-all-SRF-20-180-00_bin-78	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	20-180-00
+761	SAO-all-SRF-5-20-00_bin-16	Fungi	Opisthokonta	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporaceae	Alternaria	187734 Alternaria alternata complex	SAO-all	SRF	5-20-00
+762	NPO-all-SRF-0-8-5-00_bin-530		Sar	Bacillariophyta	Mediophyceae	Cymatosirophycidae	Cymatosirales	Cymatosiraceae	Extubocellulus	Extubocellulus spinifer	NPO-all	SRF	0-8-5-00
+763	SPO-all-SRF-0-8-5-00_bin-849	Metazoa	Opisthokonta	Chordata	Choanoflagellata		Craspedida	Salpingoecidae	Salpingoeca	Salpingoeca rosetta	SPO-all	SRF	0-8-5-00
+764	IO-all-SRF-180-2000-00_bin-79	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	SRF	180-2000-00
+765	SAO-all-SRF-0-8-5-00_bin-77		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella	Florenciella parvula	SAO-all	SRF	0-8-5-00
+766	MS-all-SRF-20-180-00_bin-36	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				MS-all	SRF	20-180-00
+767	SPO-all-SRF-20-180-00_bin-132	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae	Anopheles		SPO-all	SRF	20-180-00
+768	IO-all-SRF-0-8-5-00_bin-307		Sar	Bacillariophyta	Coscinodiscophyceae	Coscinodiscophycidae	Melosirales	Stephanopyxidaceae	Stephanopyxis	Stephanopyxis turris	IO-all	SRF	0-8-5-00
+769	SAO-all-SRF-0-8-5-00_bin-325				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	SAO-all	SRF	0-8-5-00
+770	MS-all-DCM-0-8-5-00_bin-612	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp. 'lucimarinus'	MS-all	DCM	0-8-5-00
+771	SAO-all-SRF-0-8-5-00_bin-618				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	SAO-all	SRF	0-8-5-00
+772	MS-all-SRF-5-20-00_bin-35	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			MS-all	SRF	5-20-00
+773	RS-all-SRF-20-180-00_bin-8	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Harpacticoida	Harpacticidae	Tigriopus	Tigriopus californicus	RS-all	SRF	20-180-00
+774	SPO-all-SRF-20-180-00_bin-59	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	20-180-00
+775	NPO-all-SRF-180-2000-00_bin-29	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota					NPO-all	SRF	180-2000-00
+776	MS-all-SRF-180-2000-00_bin-95	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae	Anopheles		MS-all	SRF	180-2000-00
+777	SPO-all-SRF-180-2000-00_bin-112	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				SPO-all	SRF	180-2000-00
+778	SPO-all-SRF-20-180-00_bin-119	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera	Formicidae	Lasius	Lasius niger	SPO-all	SRF	20-180-00
+779	SAO-all-SRF-0-8-5-00_bin-290		Sar	Bacillariophyta	Coscinodiscophyceae	Thalassiosirophycidae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira antarctica	SAO-all	SRF	0-8-5-00
+780	SPO-SPSG-DCM-20-180-00_bin-2	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	DCM	20-180-00
+781	IO-all-DCM-20-180-00_bin-48	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	IO-all	DCM	20-180-00
+782	NAO-all-SRF-0-8-5-00_bin-617	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Hymenoptera				NAO-all	SRF	0-8-5-00
+783	SAO-all-DCM-0-8-5-00_bin-248		Sar		Dinophyceae		Gonyaulacales	Gonyaulacaceae	Alexandrium		SAO-all	DCM	0-8-5-00
+784	MS-all-DCM-0-8-5-00_bin-290		Sar	Bacillariophyta	Dictyochophyceae		Pedinellales		Florenciella	Pseudopedinella elastica	MS-all	DCM	0-8-5-00
+785	SPO-all-SRF-5-20-00_bin-13	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae		Chlorodendrales	Chlorodendraceae	Tetraselmis		SPO-all	SRF	5-20-00
+786	IO-all-SRF-0-8-5-00_bin-351		Sar		Dictyochophyceae		Chattonellales	Chattonellaceae	Florenciella		IO-all	SRF	0-8-5-00
+787	SPO-SPSG-SRF-180-2000-00_bin-122	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-SPSG	SRF	180-2000-00
+788	IO-all-DCM-180-2000-00_bin-25	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			IO-all	DCM	180-2000-00
+789	NAO-all-SRF-0-8-5-00_bin-320	Viridiplantae		Chlorophyta	Mamiellophyceae		Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla	NAO-all	SRF	0-8-5-00
+790	SAO-all-SRF-20-180-00_bin-21	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				SAO-all	SRF	20-180-00
+791	NPO-all-SRF-180-2000-00_bin-11	Metazoa	Opisthokonta	Mollusca	Bivalvia	Autobranchia	Ostreida	Ostreidae	Crassostrea	Crassostrea virginica	NPO-all	SRF	180-2000-00
+792	SAO-all-DCM-0-8-5-00_bin-433		Sar		Pelagophyceae		Pelagomonadales		Aureococcus	Aureococcus anophagefferens	SAO-all	DCM	0-8-5-00
+793	NAO-all-DCM-0-8-5-00_bin-34				Cryptophyceae		Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila	NAO-all	DCM	0-8-5-00
+794	NPO-all-SRF-20-180-00_bin-32	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NPO-all	SRF	20-180-00
+795	NAO-all-MIX-180-2000-00_bin-13	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NAO-all	MIX	180-2000-00
+796	SPO-all-DCM-0-8-5-00_bin-275	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae				Picochlorum		SPO-all	DCM	0-8-5-00
+797	SPO-SPSG-SRF-180-2000-00_bin-57	Metazoa	Opisthokonta	Chordata	Actinopteri	Neopterygii	Beloniformes	Adrianichthyidae	Oryzias	Oryzias latipes	SPO-SPSG	SRF	180-2000-00
+798	SAO-all-SRF-0-8-5-00_bin-575	Viridiplantae		Chlorophyta	Palmophyllophyceae		Prasinococcales	Prasinococcaceae	Prasinoderma	Prasinoderma singulare	SAO-all	SRF	0-8-5-00
+799	SPO-all-DCM-0-8-5-00_bin-208		Sar	Bacillariophyta	Coscinodiscophyceae						SPO-all	DCM	0-8-5-00
+800	MS-all-SRF-20-180-00_bin-4	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	MS-all	SRF	20-180-00
+801	NPO-all-DCM-20-180-00_bin-73	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera				NPO-all	DCM	20-180-00
+802	SAO-all-MES-0-8-5-00_bin-71	Fungi	Opisthokonta	Ascomycota	Leotiomycetes		Helotiales	Mollisiaceae	Rhynchosporium	Rhynchosporium commune	SAO-all	MES	0-8-5-00
+803	SPO-all-SRF-5-20-00_bin-108	Viridiplantae	core chlorophytes	Chlorophyta	Trebouxiophyceae				Picochlorum		SPO-all	SRF	5-20-00
+804	SO-all-DCM-180-2000-00_bin-6		Prymnesiophyceae	Haptista	Haptophyta		Phaeocystales	Phaeocystaceae	Phaeocystis	Phaeocystis antarctica	SO-all	DCM	180-2000-00
+805	SPO-all-SRF-20-180-00_bin-16	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	20-180-00
+806	NAO-all-SRF-180-2000-00_bin-77	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	NAO-all	SRF	180-2000-00
+807	SAO-all-DCM-0-8-5-00_bin-207		Sar	Bacillariophyta	Dictyochophyceae		Florenciellales		Florenciella		SAO-all	DCM	0-8-5-00
+808	IO-all-MES-0-8-5-00_bin-59	Fungi	Opisthokonta	Ascomycota	Saccharomycetes		Saccharomycetales	Debaryomycetaceae	Candida	Candida parapsilosis	IO-all	MES	0-8-5-00
+809	NAO-all-SRF-20-180-00_bin-40	Metazoa	Opisthokonta	Arthropoda	Insecta	Pterygota	Diptera	Culicidae			NAO-all	SRF	20-180-00
+810	SAO-all-SRF-20-180-00_bin-80	Metazoa	Opisthokonta	Chordata	Aves		Passeriformes				SAO-all	SRF	20-180-00
+811	SO-all-SRF-0-8-5-00_bin-4		Sar	Bacillariophyta	Coscinodiscophyceae						SO-all	SRF	0-8-5-00
+812	SAO-all-SRF-20-180-00_bin-19	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SAO-all	SRF	20-180-00
+813	MS-all-DCM-0-8-5-00_bin-676		Sar	Bacillariophyta	Coscinodiscophyceae						MS-all	DCM	0-8-5-00
+814	NPO-all-SRF-0-8-5-00_bin-113				Cryptophyceae		Pyrenomonadales	Goniomonadaceae	Goniomonas	Goniomonas pacifica	NPO-all	SRF	0-8-5-00
+815	SAO-all-DCM-20-180-00_bin-3	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SAO-all	DCM	20-180-00
+816	SPO-all-SRF-180-2000-00_bin-23	Metazoa	Opisthokonta	Arthropoda	Hexanauplia	Copepoda	Calanoida	Temoridae	Eurytemora	Eurytemora affinis	SPO-all	SRF	180-2000-00
+817	SPO-all-SRF-0-8-5-00_bin-499		Sar	Bacillariophyta	Coscinodiscophyceae						SPO-all	SRF	0-8-5-00
+818	SAO-all-DCM-0-8-5-00_bin-294		Sar	Bacillariophyta	Coscinodiscophyceae	Coscinodiscophycidae					SAO-all	DCM	0-8-5-00
