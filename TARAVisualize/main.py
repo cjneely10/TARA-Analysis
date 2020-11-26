@@ -22,6 +22,7 @@ for col in tax_levels:
     c = alt.Chart(subset.dropna()).mark_bar(
         cornerRadiusTopLeft=3,
         cornerRadiusTopRight=3,
+        width=12
     ).encode(
         x='%s:O' % col,
         y='count():O',
