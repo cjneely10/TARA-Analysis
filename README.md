@@ -13,6 +13,7 @@ Plans are to keep this data directory as an interface to visualize data using **
 A `requirements.txt` file is present for easy python virtual environment collection:
 
 ```
+git clone https://github.com/cjneely10/TARA-Analysis.git
 pip install -r requirements.txt
 ```
 
