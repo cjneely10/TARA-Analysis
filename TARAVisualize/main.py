@@ -27,7 +27,7 @@ def load_fastani(file_name: str, header_ids: List[str]) -> pd.DataFrame:
 
 
 def create_heatmap(file_names: List[str], as_dict: Dict[Tuple[str, str], str]) -> pd.DataFrame:
-    out = np.full((len(file_names), len(file_names)), 70.0, dtype="float32")
+    out = np.full((len(file_names), len(file_names)), 80.0, dtype="float32")
     for i, f1_name in enumerate(file_names):
         for j, f2_name in enumerate(file_names):
             if (f1_name, f2_name) in as_dict.keys():
@@ -59,7 +59,7 @@ for col in tax_selection:
     subset = data_raw[data_raw["region"].isin(regions_selection)]
     if len(subset) == 0:
         continue
-    st.write("Level: %s" % col)
+    st.write("Taxonomy")
     st.write(subset)
     subset = subset[[col, "region", filter_selection]].dropna()
     c = alt.Chart(subset).mark_bar(
@@ -73,6 +73,10 @@ for col in tax_selection:
         column="region"
     ).configure_axisX(labelAngle=-45)
     st.altair_chart(c)
-    ax = sns.heatmap(create_heatmap(subset.index, fastani_a_dict), square=True,  cmap="mako")
-    st.pyplot(plt)
+    st.write("Average Nucleotide Identity")
+    col1, col2 = st.beta_columns([5, 5])
+    heatmap_df = create_heatmap(subset.index, fastani_a_dict)
+    ax = sns.heatmap(heatmap_df, square=True,  cmap="mako")
+    col1.pyplot(plt)
+    col2.write(heatmap_df)
     plt.clf()
