@@ -68,6 +68,7 @@ for col in tax_selection:
     st.write("Taxonomy of regions by %s (n=%s)" % (col, str(len(subset))))
     st.write(regions_str)
     st.write(subset)
+    # Filter na sections for better display on chart
     subset = subset[[col, "region", filter_selection]].dropna()
     c = alt.Chart(subset).mark_bar(
         cornerRadiusTopLeft=3,
