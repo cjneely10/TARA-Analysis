@@ -4,7 +4,7 @@ import pandas as pd
 import altair as alt
 import seaborn as sns
 import streamlit as st
-from typing import Dict, List
+from typing import Dict
 import matplotlib.pyplot as plt
 
 FILE_DIR = os.path.dirname(__file__)

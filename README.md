@@ -17,10 +17,12 @@ git clone https://github.com/cjneely10/TARA-Analysis.git
 pip install -r requirements.txt
 ```
 
-## Taxonomy
+### Usage
 
 Run the visualizer with the command:
 
 ```
 streamlit run TARAVisualize/main.py
 ```
+
+[]()
