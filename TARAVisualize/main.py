@@ -4,7 +4,7 @@ import pandas as pd
 import altair as alt
 import seaborn as sns
 import streamlit as st
-from typing import Dict, List, Tuple
+from typing import Dict, List
 import matplotlib.pyplot as plt
 
 FILE_DIR = os.path.dirname(__file__)
@@ -30,7 +30,7 @@ def load_fastani_file(file_name: str, header_ids: List[str]) -> pd.DataFrame:
 def load_fastani_data(fastani_df: pd.DataFrame) -> pd.DataFrame:
     fastani_a = load_fastani_file(FASTANI_A, ["alexander1", "alexander2", "pid", "r1", "r2"])
     as_dict = {(k1, k2): p for k1, k2, p in zip(fastani_a.alexander1, fastani_a.alexander2, fastani_a.pid)}
-    out = np.full((len(fastani_df.index), len(fastani_df.index)), 80.0, dtype="float32")
+    out = np.full((len(fastani_df.index), len(fastani_df.index)), 70.0, dtype="float32")
     dict_keys = as_dict.keys()
     for i, f1_name in enumerate(fastani_df.index):
         for j, f2_name in enumerate(fastani_df.index):
@@ -60,7 +60,7 @@ if st.sidebar.checkbox("Normalize", value=True):
 
 # Generate each plot
 for col in tax_selection:
-    subset = data_raw[data_raw["region"].isin(regions_selection)]
+    subset = data_raw[data_raw["region"].isin(regions_selection) & data_raw[col]]
     if len(subset) == 0:
         continue
     # Generate taxonomy table and plot
@@ -69,7 +69,7 @@ for col in tax_selection:
     st.write(regions_str)
     st.write(subset)
     # Filter na sections for better display on chart
-    subset = subset[[col, "region", filter_selection]].dropna()
+    subset = subset[[col, "region", filter_selection]]
     c = alt.Chart(subset).mark_bar(
         cornerRadiusTopLeft=3,
         cornerRadiusTopRight=3,
