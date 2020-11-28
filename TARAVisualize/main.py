@@ -53,10 +53,14 @@ tax_selection = st.sidebar.multiselect("Taxonomic levels", TAX_LEVELS)
 norm_selection: Dict[str, str] = {}
 if st.sidebar.checkbox("Normalize", value=True):
     norm_selection = {"stack": "normalize"}
+nan_selection = st.sidebar.checkbox("Filter nan", value=True)
 
 # Generate each plot
 for col in tax_selection:
-    subset = data_raw[data_raw["region"].isin(regions_selection) & data_raw[col]]
+    if nan_selection:
+        subset = data_raw[data_raw["region"].isin(regions_selection) & data_raw[col]]
+    else:
+        subset = data_raw[data_raw["region"].isin(regions_selection)]
     if len(subset) == 0:
         continue
     # Generate taxonomy table and plot
