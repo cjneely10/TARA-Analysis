@@ -37,7 +37,7 @@ def load_fastani_data(fastani_df: pd.DataFrame) -> pd.DataFrame:
             if (f1_name, f2_name) in dict_keys:
                 out[i, j] = float(as_dict[(f1_name, f2_name)])
     out_df = pd.DataFrame(out, index=fastani_df.index, columns=fastani_df.index)
-    return out_df / out_df.max()
+    return out_df
 
 
 # Load cached file data
@@ -64,8 +64,9 @@ for col in tax_selection:
     if len(subset) == 0:
         continue
     # Generate taxonomy table and plot
+    regions_str = "%s" % ", ".join(regions_selection)
     st.write("Taxonomy of regions by %s (n=%s)" % (col, str(len(subset))))
-    st.write("%s" % ", ".join(regions_selection))
+    st.write(regions_str)
     st.write(subset)
     subset = subset[[col, "region", filter_selection]].dropna()
     c = alt.Chart(subset).mark_bar(
@@ -81,10 +82,13 @@ for col in tax_selection:
     st.altair_chart(c)
     # Generate ANI plot and table
     st.write("Average Nucleotide Identity by %s (n=%s)" % (col, str(len(subset))))
-    col1, col2 = st.beta_columns([5, 5])
+    st.write(regions_str)
     not_present_cols = set(fastani_a_df.index) - set(subset.index)
     heatmap_df = fastani_a_df.drop(not_present_cols, axis=1).drop(not_present_cols, axis=0)
+    if norm_selection != {}:
+        heatmap_df /= heatmap_df.max()
     ax = sns.heatmap(heatmap_df, square=True, cmap="mako")
+    col1, col2 = st.beta_columns([5, 5])
     col1.pyplot(plt)
     col2.write(heatmap_df)
     # Clear before moving to next request
