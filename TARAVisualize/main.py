@@ -8,9 +8,9 @@ from typing import Dict, List
 import matplotlib.pyplot as plt
 
 FILE_DIR = os.path.dirname(__file__)
-DATA_FILE = os.path.join(FILE_DIR, "data/tax-summary.tsv")
-FASTANI_A = os.path.join(FILE_DIR, "data/all-alex-v-alex.fastani.out")
-FASTANI_B = os.path.join(FILE_DIR, "data/all-alex-v-delmont.fastani.out")
+DATA_FILE = os.path.join(FILE_DIR, "data/tax-summary.tsv.gz")
+FASTANI_A = os.path.join(FILE_DIR, "data/all-alex-v-alex.fastani.out.gz")
+FASTANI_B = os.path.join(FILE_DIR, "data/all-alex-v-delmont.fastani.out.gz")
 TAX_LEVELS = ("kingdom", "clade", "phylum", "class", "subclass", "order", "family", "genus", "species")
 TITLE = "TARA oceans data visualizer"
 FILTER_BY_OPTIONS = ("size_fraction", "depth")
