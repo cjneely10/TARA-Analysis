@@ -84,7 +84,7 @@ for col in tax_selection:
     col1, col2 = st.beta_columns([5, 5])
     not_present_cols = set(fastani_a_df.index) - set(subset.index)
     heatmap_df = fastani_a_df.drop(not_present_cols, axis=1).drop(not_present_cols, axis=0)
-    ax = sns.heatmap(heatmap_df, square=True,  cmap="mako")
+    ax = sns.heatmap(heatmap_df, square=True, cmap="mako")
     col1.pyplot(plt)
     col2.write(heatmap_df)
     # Clear before moving to next request
