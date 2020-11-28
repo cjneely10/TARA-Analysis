@@ -87,7 +87,7 @@ for col in tax_selection:
     heatmap_df = fastani_a_df.drop(not_present_cols, axis=1).drop(not_present_cols, axis=0)
     if norm_selection != {}:
         heatmap_df /= heatmap_df.max()
-    ax = sns.heatmap(heatmap_df, square=True, cmap="mako")
+    sns.heatmap(heatmap_df, square=True, cmap="mako")
     col1, col2 = st.beta_columns([5, 5])
     col1.pyplot(plt)
     col2.write(heatmap_df)
