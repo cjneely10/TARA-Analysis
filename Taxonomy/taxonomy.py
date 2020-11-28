@@ -42,7 +42,7 @@ def generate_summary_taxonomy_file(file_list: List[str], out_path: str):
 def get_data_from_file(file_path: str) -> Dict[str, str]:
     r = open(file_path, "r")
     i = 0
-    data = {tax: (".", 1.0) for tax in tax_levels}
+    data = {tax: (".", 8.0) for tax in tax_levels}
     for line in r:
         line = line.rstrip("\r\n").split()
         if len(line) < 5:
