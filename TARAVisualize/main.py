@@ -22,24 +22,28 @@ def load_taxonomy() -> pd.DataFrame:
 
 
 @st.cache
-def load_fastani(file_name: str, header_ids: List[str]) -> pd.DataFrame:
+def load_fastani_file(file_name: str, header_ids: List[str]) -> pd.DataFrame:
     return pd.read_csv(file_name, delimiter="\t", header=0, names=header_ids, dtype="object")
 
 
-def create_heatmap(file_names: List[str], as_dict: Dict[Tuple[str, str], str]) -> pd.DataFrame:
-    out = np.full((len(file_names), len(file_names)), 80.0, dtype="float32")
-    for i, f1_name in enumerate(file_names):
-        for j, f2_name in enumerate(file_names):
-            if (f1_name, f2_name) in as_dict.keys():
+@st.cache
+def load_fastani_data(fastani_df: pd.DataFrame) -> pd.DataFrame:
+    fastani_a = load_fastani_file(FASTANI_A, ["alexander1", "alexander2", "pid", "r1", "r2"])
+    as_dict = {(k1, k2): p for k1, k2, p in zip(fastani_a.alexander1, fastani_a.alexander2, fastani_a.pid)}
+    out = np.full((len(fastani_df.index), len(fastani_df.index)), 80.0, dtype="float32")
+    dict_keys = as_dict.keys()
+    for i, f1_name in enumerate(fastani_df.index):
+        for j, f2_name in enumerate(fastani_df.index):
+            if (f1_name, f2_name) in dict_keys:
                 out[i, j] = float(as_dict[(f1_name, f2_name)])
-    return pd.DataFrame(out, index=file_names, columns=file_names)
+    out_df = pd.DataFrame(out, index=fastani_df.index, columns=fastani_df.index)
+    return out_df / out_df.max()
 
 
 # Load cached file data
 data_raw = load_taxonomy()
-fastani_a = load_fastani(FASTANI_A, ["alexander1", "alexander2", "pid", "r1", "r2"])
-fastani_a_dict = {(k1, k2): p for k1, k2, p in zip(fastani_a.alexander1, fastani_a.alexander2, fastani_a.pid)}
-fastani_b = load_fastani(FASTANI_B, ["alexander1", "delmont", "pid", "r1", "r2"])
+fastani_a_df = load_fastani_data(data_raw)
+
 # Create simple layout
 st.title(TITLE)
 st.sidebar.write(TITLE)
@@ -54,12 +58,14 @@ norm_selection: Dict[str, str] = {}
 if st.sidebar.checkbox("Normalize", value=True):
     norm_selection = {"stack": "normalize"}
 
-# Generate each taxonomy plot
+# Generate each plot
 for col in tax_selection:
     subset = data_raw[data_raw["region"].isin(regions_selection)]
     if len(subset) == 0:
         continue
-    st.write("Taxonomy")
+    # Generate taxonomy table and plot
+    st.write("Taxonomy of regions by %s (n=%s)" % (col, str(len(subset))))
+    st.write("%s" % ", ".join(regions_selection))
     st.write(subset)
     subset = subset[[col, "region", filter_selection]].dropna()
     c = alt.Chart(subset).mark_bar(
@@ -73,10 +79,13 @@ for col in tax_selection:
         column="region"
     ).configure_axisX(labelAngle=-45)
     st.altair_chart(c)
-    st.write("Average Nucleotide Identity")
+    # Generate ANI plot and table
+    st.write("Average Nucleotide Identity by %s (n=%s)" % (col, str(len(subset))))
     col1, col2 = st.beta_columns([5, 5])
-    heatmap_df = create_heatmap(subset.index, fastani_a_dict)
+    not_present_cols = set(fastani_a_df.index) - set(subset.index)
+    heatmap_df = fastani_a_df.drop(not_present_cols, axis=1).drop(not_present_cols, axis=0)
     ax = sns.heatmap(heatmap_df, square=True,  cmap="mako")
     col1.pyplot(plt)
     col2.write(heatmap_df)
+    # Clear before moving to next request
     plt.clf()
