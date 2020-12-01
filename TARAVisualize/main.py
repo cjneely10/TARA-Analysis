@@ -51,7 +51,7 @@ regions_selection = st.sidebar.multiselect("Regions", list(set(data_raw.region))
 tax_selection = st.sidebar.multiselect("Taxonomic levels", TAX_LEVELS)
 # Allow user to select normalization
 norm_selection: Dict[str, str] = {}
-if st.sidebar.checkbox("Normalize", value=True):
+if st.sidebar.checkbox("Normalize", value=False):
     norm_selection = {"stack": "normalize"}
 nan_selection = st.sidebar.checkbox("Filter nan", value=True)
 
