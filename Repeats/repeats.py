@@ -31,7 +31,9 @@ def generate_summary_file(file_list: List[str], out_path: str):
     w.write("".join(("ID\t", "\t".join(sorted_header), "\n")))
     for record, record_dict in all_data.items():
         w.write("".join((
-            record, "\t", "\t".join((record_dict[key] if key in record_dict.keys() else "0.0" for key in sorted_header)), "\n"
+            record, "\t", "\t".join((
+                record_dict[key] if key in record_dict.keys() else "0.0" for key in sorted_header
+            )), "\n"
         )))
     w.close()
 

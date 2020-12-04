@@ -10,7 +10,8 @@ import matplotlib.pyplot as plt
 FILE_DIR = os.path.dirname(__file__)
 DATA_FILE = os.path.join(FILE_DIR, "data/tax-summary.tsv.gz")
 FASTANI_A = os.path.join(FILE_DIR, "data/all-alex-v-alex.fastani.out.gz")
-REPEATS_FILE = os.path.join(FILE_DIR, "data/repeats-summary.bylength.tsv.gz")
+REPEATS_FILE = os.path.join(FILE_DIR, "data/repeats-summary.tsv.gz")
+REPEAT_BY_PERC = os.path.join(FILE_DIR, "data/repeats-summary.bylength.tsv.gz")
 TAX_LEVELS = ("kingdom", "clade", "phylum", "class", "subclass", "order", "family", "genus", "species")
 TITLE = "TARA oceans data visualizer"
 FILTER_BY_OPTIONS = ("size_fraction", "depth")
@@ -37,14 +38,15 @@ def load_fastani_data(fastani_df: pd.DataFrame) -> pd.DataFrame:
 
 
 @st.cache
-def load_repeats_data() -> pd.DataFrame:
-    return pd.read_csv(REPEATS_FILE, delimiter="\t", index_col=0, dtype="object")
+def load_repeats_data(_file) -> pd.DataFrame:
+    return pd.read_csv(_file, delimiter="\t", index_col=0, dtype="object")
 
 
 # Load cached file data
 data_raw = load_taxonomy()
 fastani_a_df = load_fastani_data(data_raw)
-repeats_df = load_repeats_data()
+repeats_df = load_repeats_data(REPEATS_FILE)
+repeats_perc_df = load_repeats_data(REPEAT_BY_PERC)
 
 # Create simple layout
 st.title(TITLE)
@@ -60,6 +62,7 @@ norm_selection: Dict[str, str] = {}
 if st.sidebar.checkbox("Normalize", value=False):
     norm_selection = {"stack": "normalize"}
 nan_selection = st.sidebar.checkbox("Filter nan", value=True)
+by_percent = st.sidebar.checkbox("Repeat content by percent", value=True)
 
 # Generate each plot
 for col in tax_selection:
@@ -102,7 +105,10 @@ for col in tax_selection:
     plt.clf()
 
     # Generate histogram of repeats content
-    rep_subset = repeats_df[repeats_df.index.isin(subset.index)].astype("float32")
+    if not by_percent:
+        rep_subset = repeats_df[repeats_df.index.isin(subset.index)].astype("float32")
+    else:
+        rep_subset = repeats_perc_df[repeats_perc_df.index.isin(subset.index)].astype("float32")
     rep_subset = rep_subset[rep_subset["Total"] > 0.0]
     columns = list(rep_subset.columns)
     columns_drop_null = [c.replace(":", "") if rep_subset[c].mean() > 0.0 else "" for c in columns]
@@ -110,7 +116,10 @@ for col in tax_selection:
     boxplot = rep_subset.boxplot(column=columns, ax=ax)
     plt.xticks([i + 1 for i in range(len(columns))], columns_drop_null, rotation="vertical")
     plt.xlabel("Type of repeat")
-    plt.ylabel("Total length of repeat sequences")
+    if by_percent:
+        plt.ylabel("Percent repetitive content")
+    else:
+        plt.ylabel("Total length of repetitive content")
     st.write("Repetitive content by %s (n=%s)" % (col, str(len(subset))))
     st.pyplot(plt, clear_figure=True)
     st.write(rep_subset)
