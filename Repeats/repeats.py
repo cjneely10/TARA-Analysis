@@ -51,8 +51,8 @@ def get_data_from_file(file_path: str) -> Dict[str, str]:
         if _line.startswith("="):
             break
         line = _line.rstrip("\r\n").split()
-        if len(line) > 2:
-            out[line[0]] = line[-2]
+        if len(line) > 5:
+            out[line[0]] = line[-4]
     return dict(out)
 
 

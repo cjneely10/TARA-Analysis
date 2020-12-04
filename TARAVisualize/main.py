@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 FILE_DIR = os.path.dirname(__file__)
 DATA_FILE = os.path.join(FILE_DIR, "data/tax-summary.tsv.gz")
 FASTANI_A = os.path.join(FILE_DIR, "data/all-alex-v-alex.fastani.out.gz")
-REPEATS_FILE = os.path.join(FILE_DIR, "data/repeats-summary.tsv.gz")
+REPEATS_FILE = os.path.join(FILE_DIR, "data/repeats-summary.bylength.tsv.gz")
 TAX_LEVELS = ("kingdom", "clade", "phylum", "class", "subclass", "order", "family", "genus", "species")
 TITLE = "TARA oceans data visualizer"
 FILTER_BY_OPTIONS = ("size_fraction", "depth")
@@ -110,7 +110,7 @@ for col in tax_selection:
     boxplot = rep_subset.boxplot(column=columns, ax=ax)
     plt.xticks([i + 1 for i in range(len(columns))], columns_drop_null, rotation="vertical")
     plt.xlabel("Type of repeat")
-    plt.ylabel("Percentage of sequence")
+    plt.ylabel("Total length of repeat sequences")
     st.write("Repetitive content by %s (n=%s)" % (col, str(len(subset))))
     st.pyplot(plt, clear_figure=True)
     st.write(rep_subset)
