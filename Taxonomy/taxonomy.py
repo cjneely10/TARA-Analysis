@@ -1,16 +1,14 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from glob import glob
 from plumbum import cli
 from typing import List, Dict
 
 """
-Script will parse all files in a glob statement and generate a summary .tsv file of taxonomic assignments
+Script will parse all files in a glob statement and generate a summary .tsv file
 Currently only supports Alexander MAG naming scheme
 
 From working directory:
 ./taxonomy.py -i "out/wdir/*/taxonomy/tax-report.txt" -o tax-summary.tsv
-From summary directory:
-./taxonomy.py -i "out/results/run/*/tax-report.txt" -o tax-summary.tsv
 
 """
 
