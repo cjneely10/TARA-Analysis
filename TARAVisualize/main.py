@@ -105,9 +105,11 @@ for col in tax_selection:
     rep_subset = repeats_df[repeats_df.index.isin(subset.index)].astype("float32")
     rep_subset = rep_subset[rep_subset["Total"] > 0.0]
     columns = list(rep_subset.columns)
-    columns_drop_null = [c if rep_subset[c].mean() > 0.0 else "" for c in columns]
+    columns_drop_null = [c.replace(":", "") if rep_subset[c].mean() > 0.0 else "" for c in columns]
     fig, ax = plt.subplots()
     boxplot = rep_subset.boxplot(column=columns, ax=ax)
     plt.xticks([i + 1 for i in range(len(columns))], columns_drop_null, rotation="vertical")
+    plt.xlabel("Type of repeat")
+    plt.ylabel("Percentage of sequence")
     st.write("Repetitive content by %s (n=%s)" % (col, str(len(subset))))
     st.pyplot(plt, clear_figure=True)
