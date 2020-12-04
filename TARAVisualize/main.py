@@ -113,3 +113,4 @@ for col in tax_selection:
     plt.ylabel("Percentage of sequence")
     st.write("Repetitive content by %s (n=%s)" % (col, str(len(subset))))
     st.pyplot(plt, clear_figure=True)
+    st.write(rep_subset)
