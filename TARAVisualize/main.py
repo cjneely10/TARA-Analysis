@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 FILE_DIR = os.path.dirname(__file__)
 DATA_FILE = os.path.join(FILE_DIR, "data/tax-summary.tsv.gz")
 FASTANI_A = os.path.join(FILE_DIR, "data/all-alex-v-alex.fastani.out.gz")
-FASTANI_B = os.path.join(FILE_DIR, "data/all-alex-v-delmont.fastani.out.gz")
+REPEATS_FILE = os.path.join(FILE_DIR, "data/repeats-summary.tsv.gz")
 TAX_LEVELS = ("kingdom", "clade", "phylum", "class", "subclass", "order", "family", "genus", "species")
 TITLE = "TARA oceans data visualizer"
 FILTER_BY_OPTIONS = ("size_fraction", "depth")
@@ -36,9 +36,15 @@ def load_fastani_data(fastani_df: pd.DataFrame) -> pd.DataFrame:
     return out_df
 
 
+@st.cache
+def load_repeats_data() -> pd.DataFrame:
+    return pd.read_csv(REPEATS_FILE, delimiter="\t", index_col=0, dtype="object")
+
+
 # Load cached file data
 data_raw = load_taxonomy()
 fastani_a_df = load_fastani_data(data_raw)
+repeats_df = load_repeats_data()
 
 # Create simple layout
 st.title(TITLE)
@@ -94,3 +100,14 @@ for col in tax_selection:
     col2.write(heatmap_df)
     # Clear before moving to next request
     plt.clf()
+
+    # Generate histogram of repeats content
+    rep_subset = repeats_df[repeats_df.index.isin(subset.index)].astype("float32")
+    rep_subset = rep_subset[rep_subset["Total"] > 0.0]
+    columns = list(rep_subset.columns)
+    columns_drop_null = [c if rep_subset[c].mean() > 0.0 else "" for c in columns]
+    fig, ax = plt.subplots()
+    boxplot = rep_subset.boxplot(column=columns, ax=ax)
+    plt.xticks([i + 1 for i in range(len(columns))], columns_drop_null, rotation="vertical")
+    st.write("Repetitive content by %s (n=%s)" % (col, str(len(subset))))
+    st.pyplot(plt, clear_figure=True)

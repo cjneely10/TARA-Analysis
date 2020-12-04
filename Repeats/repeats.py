@@ -28,10 +28,10 @@ def generate_summary_file(file_list: List[str], out_path: str):
     sorted_header: List[str] = sorted(list(header))
     w = open(out_path, "w")
     # Write header
-    w.write("".join(("\t".join(sorted_header), "\n")))
+    w.write("".join(("ID\t", "\t".join(sorted_header), "\n")))
     for record, record_dict in all_data.items():
         w.write("".join((
-            record, "\t", "\t".join((record_dict[key] for key in sorted_header)), "\n"
+            record, "\t", "\t".join((record_dict[key] if key in record_dict.keys() else "0.0" for key in sorted_header)), "\n"
         )))
     w.close()
 
@@ -51,7 +51,7 @@ def get_data_from_file(file_path: str) -> Dict[str, str]:
         if _line.startswith("="):
             break
         line = _line.rstrip("\r\n").split()
-        if len(line) > 1:
+        if len(line) > 2:
             out[line[0]] = line[-2]
     return dict(out)
 
