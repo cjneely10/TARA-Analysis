@@ -58,6 +58,7 @@ regions_selection = st.sidebar.multiselect("Regions", list(set(data_raw.region))
 # Allow user to select which taxa to visualize
 tax_selection = st.sidebar.multiselect("Taxonomic levels", TAX_LEVELS)
 # Allow user to select normalization
+st.sidebar.write("Options")
 norm_selection: Dict[str, str] = {}
 if st.sidebar.checkbox("Normalize", value=False):
     norm_selection = {"stack": "normalize"}
