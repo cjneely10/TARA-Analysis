@@ -8,4 +8,4 @@ dependencies:
   - ete3
   - pip
   - pip:
-     - -r requirements.txt
+      - -r requirements.txt
