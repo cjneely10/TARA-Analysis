@@ -1,0 +1,11 @@
+name: TARA-Analysis
+channels:
+  - etetoolkit
+  - conda-forge
+dependencies:
+  - python=3.8
+  - nodejs
+  - ete3
+  - pip
+  - pip:
+     - -r requirements.txt
