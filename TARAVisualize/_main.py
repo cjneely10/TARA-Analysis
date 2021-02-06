@@ -17,31 +17,6 @@ TITLE = "TARA oceans data visualizer"
 FILTER_BY_OPTIONS = ("size_fraction", "depth")
 
 
-@st.cache
-def load_taxonomy() -> pd.DataFrame:
-    return pd.read_csv(DATA_FILE, delimiter="\t", na_values=".", index_col=0, dtype="object")
-
-
-@st.cache
-def load_fastani_data(fastani_df: pd.DataFrame) -> pd.DataFrame:
-    fastani_a = pd.read_csv(FASTANI_A, delimiter="\t", header=0, names=["alexander1", "alexander2", "pid", "r1", "r2"],
-                            dtype="object")
-    as_dict = {(k1, k2): p for k1, k2, p in zip(fastani_a.alexander1, fastani_a.alexander2, fastani_a.pid)}
-    out = np.full((len(fastani_df.index), len(fastani_df.index)), 70.0, dtype="float32")
-    dict_keys = as_dict.keys()
-    for i, f1_name in enumerate(fastani_df.index):
-        for j, f2_name in enumerate(fastani_df.index):
-            if (f1_name, f2_name) in dict_keys:
-                out[i, j] = float(as_dict[(f1_name, f2_name)])
-    out_df = pd.DataFrame(out, index=fastani_df.index, columns=fastani_df.index)
-    return out_df
-
-
-@st.cache
-def load_repeats_data(_file) -> pd.DataFrame:
-    return pd.read_csv(_file, delimiter="\t", index_col=0, dtype="object")
-
-
 # Load cached file data
 data_raw = load_taxonomy()
 fastani_a_df = load_fastani_data(data_raw)

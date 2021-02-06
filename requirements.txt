@@ -8,3 +8,4 @@ streamlit>=0.75.0
 dash==1.19.0
 jupyter==1.0.0
 biopython==1.78
+pylint==2.6.0
