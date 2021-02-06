@@ -1,9 +1,10 @@
 import os
 
+import concurrent.futures
 from TARAVisualize import st
-from TARAVisualize.loader.fastani import generate_fastani
+from TARAVisualize.loader.fastani import generate_fastani, filter_fastani
 from TARAVisualize.loader.phylogeny import generate_phylogeny
-from TARAVisualize.loader.repeats import generate_repeats
+from TARAVisualize.loader.repeats import generate_repeats, repeats_filter
 from TARAVisualize.utils.data_cacher import DataCacher
 from TARAVisualize.loader.header_and_sidebar import get_region_filterby_selection
 from TARAVisualize.loader.taxonomy import generate_taxonomy_display
@@ -30,12 +31,19 @@ if result:
     # Display
     if selected_mags:
         # Filter all associated data
-        metadata, repeats = cache.filter(selected_mags, [metadata, repeats])
-        # Load application components
-        generate_taxonomy_display(metadata, filter_option)
-        generate_fastani(fastani, selected_mags)
-        generate_phylogeny(tree, selected_mags)
-        generate_repeats(repeats)
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            futures = [executor.submit(tree.prune, selected_mags),
+                       executor.submit(lambda: metadata[metadata.index.isin(selected_mags)]),
+                       executor.submit(repeats_filter, repeats[repeats.index.isin(selected_mags)]),
+                       executor.submit(filter_fastani, fastani, selected_mags)]
+            # Load application components
+            concurrent.futures.wait(futures)
+            tree_path, metadata, repeats, fastani = [future.result() for future in futures]
+            generate_taxonomy_display(metadata, filter_option)
+            generate_fastani(fastani)
+            generate_phylogeny(tree, tree_path)
+            tree.clean()
+            generate_repeats(repeats)
 
 else:
     st.title("Select a region")
