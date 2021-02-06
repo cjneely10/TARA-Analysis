@@ -1,7 +1,6 @@
 from typing import Set
 
 from TARAVisualize import st
-from TARAVisualize import plt
 from TARAVisualize import TreeSubsetter
 
 
