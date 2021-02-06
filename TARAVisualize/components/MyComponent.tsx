@@ -1,6 +1,6 @@
-import React, { useEffect } from "../../component-template/template/my_component/frontend/node_modules/react"
-import { withStreamlitConnection, Streamlit, ComponentProps } from "../../component-template/template/my_component/frontend/node_modules/streamlit-component-lib"
-import Plot from "../../component-template/template/my_component/frontend/node_modules/react-plotly.js"
+import React, { useEffect } from "react"
+import { withStreamlitConnection, Streamlit, ComponentProps } from "streamlit-component-lib"
+import Plot from "react-plotly.js"
 
 function MyComponent(props: ComponentProps) {
   useEffect(() => Streamlit.setFrameHeight())

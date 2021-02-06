@@ -11,7 +11,8 @@ class StreamlitApp(cli.Application):
     npm_start = None
 
     def main(self):
-        local.cwd.chdir(os.path.join(self.base_directory, "component-template", "template", "my_component", "frontend"))
+        local.cwd.chdir(os.path.join(self.base_directory, "TARAVisualize", "components", "component-template",
+                                     "template", "my_component", "frontend"))
         try:
             self.npm_start = local["npm"]["run", "start"] & BG
             local.cwd.chdir(self.base_directory)

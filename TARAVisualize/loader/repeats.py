@@ -1,3 +1,4 @@
+import plotly.express as px
 from TARAVisualize import pd
 from TARAVisualize import st
 from TARAVisualize import plt
@@ -14,4 +15,5 @@ def generate_repeats(repeats: pd.DataFrame):
     plt.xlabel("Type of repeat")
     plt.ylabel("Total length of repetitive content")
     st.title("DNA Repeats")
+    px.box(repeats)
     st.pyplot(plt, clear_figure=True)
