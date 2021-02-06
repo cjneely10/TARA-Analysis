@@ -1,6 +1,7 @@
 from TARAVisualize import np
 from TARAVisualize import pd
 from TARAVisualize import px
+from TARAVisualize import st
 from TARAVisualize import plt
 from TARAVisualize.components.selectable_component import selectable_component
 
@@ -15,5 +16,9 @@ def generate_repeats(repeats: pd.DataFrame):
     fig = px.scatter(rep_subset)
     selected_ids = selectable_component(fig)
     if selected_ids is not None:
-        pass
+        display_df = repeats[repeats.index.isin([selected_id["x"] for selected_id in selected_ids])]
+    else:
+        display_df = repeats
+    display_df = display_df.loc[:, (display_df != 0.0).any(axis=0)]
+    st.write(display_df)
     plt.clf()
