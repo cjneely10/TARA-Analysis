@@ -8,6 +8,7 @@ from TARAVisualize.components.selectable_component import selectable_component
 
 def generate_repeats(repeats: pd.DataFrame):
     # Generate histogram of repeats content
+    st.title("DNA Repeats")
     display_columns = ("LINEs", "SINEs", "LTR", "Small", "DNA", "Satellites", "Simple" "Unclassified")
     rep_subset = repeats[repeats["Total"] > 0.0]
     rep_subset = rep_subset.replace(0.0, np.nan)
