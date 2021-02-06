@@ -23,17 +23,19 @@ cache = DataCacher()
 fastani, repeats, metadata, tree = cache.load([FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE])
 
 # Get user filter selections
-filter_option, selected_mags = get_region_filterby_selection(metadata)
+result = get_region_filterby_selection(metadata)
 
-# Display
-if selected_mags:
-    # Filter all associated data
-    metadata, repeats = cache.filter(selected_mags, [metadata, repeats])
-    # Load application components
-    generate_taxonomy_display(metadata, filter_option)
-    generate_fastani(fastani, selected_mags)
-    generate_phylogeny(tree, selected_mags)
-    generate_repeats(repeats)
+if result:
+    filter_option, selected_mags = result
+    # Display
+    if selected_mags:
+        # Filter all associated data
+        metadata, repeats = cache.filter(selected_mags, [metadata, repeats])
+        # Load application components
+        generate_taxonomy_display(metadata, filter_option)
+        generate_fastani(fastani, selected_mags)
+        generate_phylogeny(tree, selected_mags)
+        generate_repeats(repeats)
 
 else:
     st.title("Select a region")

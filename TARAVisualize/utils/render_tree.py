@@ -11,7 +11,7 @@ circular_style.scale = 20
 circular_style.show_branch_support = True
 circular_style.show_branch_support = True
 circular_style.arc_start = 180
-circular_style.arc_span = 180
+circular_style.arc_span = 270
 # Generate tree
 tree = ete3.Tree(sys.argv[1])
 # Render as circular plot
