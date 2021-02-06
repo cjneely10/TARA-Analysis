@@ -1,9 +1,9 @@
 import os
 
-from Bio import Phylo
-
 from TARAVisualize import st
 from TARAVisualize.utils.data_cacher import DataCacher
+from TARAVisualize.components.header_and_sidebar import get_region_filterby_selection
+from TARAVisualize.components.taxonomy import generate_taxonomy_display
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
@@ -13,15 +13,13 @@ FASTANI_FILE = os.path.join(FILE_DIR, "data/all-alex-v-alex.fastani.out.gz")
 REPEATS_FILE = os.path.join(FILE_DIR, "data/repeats-summary.bylength.tsv.gz")
 TREE_FILE = os.path.join(FILE_DIR, "data/COV80_TOPAZ_2021-01-25.nwk")
 
-TAX_LEVELS = ("kingdom", "clade", "phylum", "class", "subclass", "order", "family", "genus", "species")
-TITLE = "TARA oceans data visualizer"
-FILTER_BY_OPTIONS = ("size_fraction", "depth")
+cache = DataCacher()
 
-fastani, repeats, taxonomy, tree = DataCacher().load([FASTANI_FILE, TAX_FILE, REPEATS_FILE, TREE_FILE])
+fastani, repeats, metadata, tree = cache.load([FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE])
 
-st.write(repeats)
+filter_option, selected_mags_df = get_region_filterby_selection(metadata)
 
-subsetted_tree = tree.prune(["SPO-all-DCM-0-8-5-00_bin-566", "NAO-all-MIX-0-8-5-00_bin-161"])
-
-st.pyplot(Phylo.draw(subsetted_tree))
+if selected_mags_df:
+    metadata, = cache.filter(selected_mags_df, [metadata])
+    generate_taxonomy_display(metadata, filter_option)
 

@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Tuple, Set
 from pathlib import Path
 import concurrent.futures
 
@@ -17,7 +17,7 @@ class DataCacher:
         self.max_threads = max_threads
 
     @st.cache
-    def load(self, file_list: List[str]) -> List:
+    def load(self, file_list: List[str]) -> Tuple:
         """
         Load all internal data into proper parseable formats, in memory
         """
@@ -26,6 +26,16 @@ class DataCacher:
             for i, function in enumerate((DataCacher.load_fastani_data, DataCacher.load_repeats_data,
                                           DataCacher.load_taxonomy, DataCacher.load_tree)):
                 futures.append(executor.submit(function, Path(file_list[i]).resolve()))
+            concurrent.futures.wait(futures)
+            return tuple((future.result() for future in futures))
+
+    @staticmethod
+    @st.cache
+    def filter(ids_list: Set[str], data_frames: List[pd.DataFrame]):
+        with concurrent.futures.ThreadPoolExecutor(len(data_frames)) as executor:
+            futures = []
+            for data_frame in data_frames:
+                futures.append(executor.submit(lambda : data_frame[data_frame.index.isin(ids_list)]))
             concurrent.futures.wait(futures)
             return [future.result() for future in futures]
 
@@ -36,7 +46,7 @@ class DataCacher:
         :param data_file: Path to data file
         :return: Loaded pandas dataframe
         """
-        return pd.read_csv(data_file, delimiter="\t", na_values=".", index_col=0)
+        return pd.read_csv(data_file, delimiter="\t", na_values=".", index_col=0, dtype="object")
 
     @staticmethod
     def load_fastani_data(data_file: Path) -> pd.DataFrame:
@@ -56,7 +66,7 @@ class DataCacher:
                     value = float(as_dict[(f1_name, f2_name)])
                     if value > out[i, j]:
                         out[i, j] = value
-        out_df = pd.DataFrame(out, index=record_ids, columns=record_ids)
+        out_df = pd.DataFrame(out, index=record_ids, columns=record_ids, dtype="float32")
         return out_df
 
     @staticmethod
@@ -66,7 +76,7 @@ class DataCacher:
         :param file: Path to file
         :return:
         """
-        return pd.read_csv(file, delimiter="\t", index_col=0)
+        return pd.read_csv(file, delimiter="\t", index_col=0, dtype="object")
 
     @staticmethod
     def load_tree(file: Path) -> TreeSubsetter:
