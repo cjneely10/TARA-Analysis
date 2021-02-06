@@ -25,4 +25,4 @@ Run the visualizer with the command:
 streamlit run TARAVisualize/main.py
 ```
 
-![](https://github.com/cjneely10/TARA-Analysis/blob/main/TARAVisualize/assets/main-image.png)
+![](https://github.com/cjneely10/TARA-Analysis/blob/main/assets/main-image.png)
