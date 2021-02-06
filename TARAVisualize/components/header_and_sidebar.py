@@ -10,7 +10,7 @@ def get_region_filterby_selection(metadata: pd.DataFrame) -> Tuple[str, Set[str]
     st.sidebar.write(title)
 
     # Get view selection and display for user
-    filter_selection = st.sidebar.selectbox("Filter by", ("size_fraction", "depth"))
+    filter_selection = st.sidebar.selectbox("Filter by", ("Size Fraction", "Depth"))
     # Allow user to select which subregions to compare
     regions_selection = st.sidebar.multiselect("Regions", list(set(metadata.region)))
     # Display filtered results as table

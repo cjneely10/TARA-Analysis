@@ -1,25 +1,28 @@
-import tempfile
-from typing import List
+import os
+from plumbum import local
+from typing import Set
 from pathlib import Path
 
-import ete3
-from Bio import Phylo
-
-from TARAVisualize import Tree
-from TARAVisualize import st
+from TARAVisualize import ete3
 
 
 class TreeSubsetter:
     def __init__(self, tree_path: Path):
         self.tree = ete3.Tree(tree_path.read_text())
+        self.tmp_tree = os.path.join(os.path.dirname(__file__), "tmp-tree.newick")
+        self.tmp_png = os.path.join(os.path.dirname(__file__), "tmp.png")
 
-    @st.cache
-    def prune(self, ids: List[str]) -> Tree:
+    def prune(self, ids: Set[str]) -> str:
         tree = self.tree.copy()
         if len(ids) > 0:
+            ids = [_id for _id in ids if _id in tree.get_leaf_names()]
             tree.prune(ids)
-        with tempfile.NamedTemporaryFile() as file:
-            tree.write(features=[], outfile=file.name)
-            tree = Phylo.read(file.name, "newick")
-            tree.ladderize()
-            return tree
+        tree.write(features=[], outfile=self.tmp_tree)
+        local[os.path.join(os.path.dirname(__file__), "render_tree.py")][self.tmp_tree, self.tmp_png]()
+        return self.tmp_png
+
+    def clean(self):
+        if os.path.exists(self.tmp_tree):
+            os.remove(self.tmp_tree)
+        if os.path.exists(self.tmp_png):
+            os.remove(self.tmp_png)
