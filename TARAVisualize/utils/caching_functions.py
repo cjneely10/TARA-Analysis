@@ -5,7 +5,7 @@ from TARAVisualize import pd
 from TARAVisualize.utils.tree_subsetter import TreeSubsetter
 
 
-def load_taxonomy(data_file: Path, id_mapping_file: dict = None) -> pd.DataFrame:
+def load_taxonomy(data_file: Path) -> pd.DataFrame:
     """ Load taxonomy data into pandas data frame
 
     :param data_file: Path to data file
@@ -16,11 +16,10 @@ def load_taxonomy(data_file: Path, id_mapping_file: dict = None) -> pd.DataFrame
     return tax_df
 
 
-def load_fastani_data(data_file: Path, id_mapping_file: dict = None) -> pd.DataFrame:
+def load_fastani_data(data_file: Path) -> pd.DataFrame:
     """ Load FastANI data into nxn DataFrame of comparison data
 
     :param data_file: FastANI results file
-    :param id_mapping_file: Path to mapping file
     :return:
     """
     fastani_a = pd.read_csv(data_file, delimiter="\t", header=0,
@@ -39,10 +38,9 @@ def load_fastani_data(data_file: Path, id_mapping_file: dict = None) -> pd.DataF
     return pd.DataFrame(out, index=record_ids, columns=record_ids, dtype="float32")
 
 
-def load_repeats_data(file: Path, id_mapping_file: dict = None) -> pd.DataFrame:
+def load_repeats_data(file: Path) -> pd.DataFrame:
     """ Load repeats file results into pandas
 
-    :param id_mapping_file: Path to mapping file
     :param file: Path to file
     :return:
     """
@@ -53,10 +51,9 @@ def load_repeats_data(file: Path, id_mapping_file: dict = None) -> pd.DataFrame:
     return repeats_df
 
 
-def load_tree(file: Path, id_mapping_file: dict = None) -> TreeSubsetter:
+def load_tree(file: Path) -> TreeSubsetter:
     """ Read in newick file into subsettable tree
 
-    :param id_mapping_file: Path to mapping file
     :param file: Path to newick file
     :return: Tree with ability to respond to subset requests
     """

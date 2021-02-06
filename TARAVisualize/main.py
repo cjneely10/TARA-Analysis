@@ -8,6 +8,7 @@ from TARAVisualize.utils.data_cacher import DataCacher
 from TARAVisualize.loader.header_and_sidebar import get_region_filterby_selection
 from TARAVisualize.loader.taxonomy import generate_taxonomy_display
 
+# Paths to data files
 FILE_DIR = os.path.dirname(__file__)
 TAX_FILE = os.path.join(FILE_DIR, "data/tax-summary.tsv.gz")
 FASTANI_FILE = os.path.join(FILE_DIR, "data/all-alex-v-alex.fastani.out.gz")
@@ -15,14 +16,20 @@ REPEATS_FILE = os.path.join(FILE_DIR, "data/repeats-summary.bylength.tsv.gz")
 TREE_FILE = os.path.join(FILE_DIR, "data/COV80_TOPAZ_2021-01-25.nwk")
 ID_MAPPING_FILE = os.path.join(FILE_DIR, "data/renamed-eukaryotic-mags.tsv")
 
-cache = DataCacher(ID_MAPPING_FILE)
+# Instantiate parallelized data cacher
+cache = DataCacher()
 
+# Load all data into full dataframes
 fastani, repeats, metadata, tree = cache.load([FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE])
 
+# Get user filter selections
 filter_option, selected_mags = get_region_filterby_selection(metadata)
 
+# Display
 if selected_mags:
+    # Filter all associated data
     metadata, repeats = cache.filter(selected_mags, [metadata, repeats])
+    # Load application components
     generate_taxonomy_display(metadata, filter_option)
     generate_fastani(fastani, selected_mags)
     generate_phylogeny(tree, selected_mags)

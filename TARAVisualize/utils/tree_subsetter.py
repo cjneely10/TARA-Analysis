@@ -15,8 +15,7 @@ class TreeSubsetter:
     def prune(self, ids: Set[str]) -> str:
         tree = self.tree.copy()
         if len(ids) > 0:
-            ids = [_id for _id in ids if _id in tree.get_leaf_names()]
-            tree.prune(ids)
+            tree.prune([_id for _id in ids if _id in tree.get_leaf_names()])
         tree.write(features=[], outfile=self.tmp_tree)
         local[os.path.join(os.path.dirname(__file__), "render_tree.py")][self.tmp_tree, self.tmp_png]()
         return self.tmp_png
