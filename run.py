@@ -19,7 +19,6 @@ class StreamlitApp(cli.Application):
 
         except KeyboardInterrupt:
             del self.npm_start
-        print(self.npm_start is None or self.npm_start.poll())
 
 
 if __name__ == "__main__":
