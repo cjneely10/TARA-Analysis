@@ -14,11 +14,14 @@ class StreamlitApp(cli.Application):
         local.cwd.chdir(os.path.join(self.base_directory, "TARAVisualize", "components", "component-template",
                                      "template", "my_component", "frontend"))
         try:
+            print("Preparing nodejs development server...")
             self.npm_start = local["npm"]["run", "start"] & BG
             local.cwd.chdir(self.base_directory)
+            print("Launching streamlit...")
             local["streamlit"]["run", os.path.join(self.base_directory, "TARAVisualize", "main.py")]()
 
         except KeyboardInterrupt:
+            print("\nClosing nodejs development server...")
             del self.npm_start
 
 
