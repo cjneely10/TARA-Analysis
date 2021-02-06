@@ -5,15 +5,14 @@ from TARAVisualize import pd
 
 
 def get_region_filterby_selection(metadata: pd.DataFrame) -> Tuple[str, Set[str]]:
-    title = "TARA oceans data visualizer"
+    title = "TOPAZ data visualizer"
     # Create simple layout
-    st.title(title)
     st.sidebar.write(title)
 
     # Get view selection and display for user
     filter_selection = st.sidebar.selectbox("Filter by", ("size_fraction", "depth"))
     # Allow user to select which subregions to compare
-    regions_selection = st.sidebar.multiselect("Regions", metadata.region)
+    regions_selection = st.sidebar.multiselect("Regions", list(set(metadata.region)))
     # Display filtered results as table
     filtered_data = metadata[metadata.region.isin(regions_selection)]
     # Show dataframe on menu for selection

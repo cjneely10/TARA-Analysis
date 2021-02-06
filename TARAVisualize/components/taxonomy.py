@@ -5,6 +5,7 @@ from TARAVisualize import alt
 
 def generate_taxonomy_display(metadata: pd.DataFrame, filter_option: str):
     # Generate taxonomy table and plot
+    st.title("Taxonomy")
     st.write(metadata)
     c = alt.Chart(metadata).mark_bar(
         cornerRadiusTopLeft=3,

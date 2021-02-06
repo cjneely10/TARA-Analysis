@@ -1,6 +1,6 @@
-from typing import List, Tuple, Set
 from pathlib import Path
 import concurrent.futures
+from typing import List, Tuple, Set
 
 from TARAVisualize import np
 from TARAVisualize import pd
@@ -80,4 +80,9 @@ class DataCacher:
 
     @staticmethod
     def load_tree(file: Path) -> TreeSubsetter:
+        """ Read in newick file into subsettable tree
+
+        :param file: Path to newick file
+        :return: Tree with ability to respond to subset requests
+        """
         return TreeSubsetter(file)

@@ -1,6 +1,7 @@
 import os
 
 from TARAVisualize import st
+from TARAVisualize.components.fastani import generate_fastani
 from TARAVisualize.utils.data_cacher import DataCacher
 from TARAVisualize.components.header_and_sidebar import get_region_filterby_selection
 from TARAVisualize.components.taxonomy import generate_taxonomy_display
@@ -17,9 +18,10 @@ cache = DataCacher()
 
 fastani, repeats, metadata, tree = cache.load([FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE])
 
-filter_option, selected_mags_df = get_region_filterby_selection(metadata)
+filter_option, selected_mags = get_region_filterby_selection(metadata)
 
-if selected_mags_df:
-    metadata, = cache.filter(selected_mags_df, [metadata])
+if selected_mags:
+    metadata, = cache.filter(selected_mags, [metadata])
     generate_taxonomy_display(metadata, filter_option)
+    generate_fastani(fastani, selected_mags)
 
