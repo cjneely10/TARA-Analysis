@@ -12,7 +12,6 @@ def load_taxonomy(data_file: Path) -> pd.DataFrame:
     :return: Loaded pandas dataframe
     """
     tax_df = pd.read_csv(data_file, delimiter="\t", na_values=".", index_col=0, dtype="object")
-    # return tax_df.rename(self.id_mappings)
     return tax_df
 
 
@@ -24,10 +23,8 @@ def load_fastani_data(data_file: Path) -> pd.DataFrame:
     """
     fastani_a = pd.read_csv(data_file, delimiter="\t", header=0,
                             names=["alexander1", "alexander2", "pid", "r1", "r2"])
-    # record_ids = [self.id_mappings[val] for val in set(fastani_a["alexander1"])]
     record_ids = set(fastani_a["alexander1"])
     as_dict = {(k1, k2): p for k1, k2, p in zip(fastani_a.alexander1, fastani_a.alexander2, fastani_a.pid)}
-    # as_dict = {(self.id_mappings[k1], self.id_mappings[k2]): p for k1, k2, p in zip(fastani_a.alexander1, fastani_a.alexander2, fastani_a.pid)}
     out = np.full((len(record_ids), len(record_ids)), 70.0, dtype="float32")
     for i, f1_name in enumerate(record_ids):
         for j, f2_name in enumerate(record_ids):
@@ -45,7 +42,6 @@ def load_repeats_data(file: Path) -> pd.DataFrame:
     :return:
     """
     repeats_df = pd.read_csv(file, delimiter="\t", index_col=0, dtype="object")
-    # return repeats_df.rename(self.id_mappings)
     for i in repeats_df.columns:
         repeats_df[i] = repeats_df[i].apply(lambda _: float(_))
     return repeats_df

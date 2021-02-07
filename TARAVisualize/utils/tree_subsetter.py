@@ -27,7 +27,7 @@ class TreeSubsetter:
         if os.path.exists(self.tmp_png):
             os.remove(self.tmp_png)
 
-    def render(self, full: bool = False):
+    def render(self, full: bool = False) -> str:
         if full:
             self.tree.write(features=[], outfile=self.tmp_tree)
         local[os.path.join(os.path.dirname(__file__), "render_tree.py")][self.tmp_tree, self.tmp_png]()

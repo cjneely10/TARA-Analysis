@@ -14,7 +14,7 @@ class DataCacher:
     @st.cache
     def load(self, file_list: List[str]) -> Tuple:
         """
-        Load all internal data into proper parseable formats, in memory
+        Load all internal data into proper parsable formats, in memory
         """
         with concurrent.futures.ThreadPoolExecutor() as executor:
             futures = []

@@ -20,7 +20,7 @@ def generate_repeats(repeats: pd.DataFrame, original_repeats: pd.DataFrame):
     plt.clf()
 
 
-def repeats_filter(repeats: pd.DataFrame):
+def repeats_filter(repeats: pd.DataFrame) -> pd.DataFrame:
     display_columns = ("LINEs", "SINEs", "LTR", "Small", "DNA", "Satellites", "Simple", "Unclassified")
     rep_subset = repeats[repeats["Total"] > 0.0]
     return rep_subset.replace(0.0, np.nan).filter(display_columns).rename(

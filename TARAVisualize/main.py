@@ -28,13 +28,15 @@ selected_mags = get_region_filterby_selection(metadata)
 
 if selected_mags:
     with concurrent.futures.ThreadPoolExecutor() as executor:
+        # Filter data concurrently
         futures = [executor.submit(tree.prune, selected_mags),
                    executor.submit(lambda: metadata[metadata.index.isin(selected_mags)]),
                    executor.submit(repeats_filter, repeats[repeats.index.isin(selected_mags)]),
                    executor.submit(filter_fastani, fastani, selected_mags)]
-        # Load application components
         concurrent.futures.wait(futures)
+        # Get filtered data from thread pool
         tree_path, metadata, filtered_repeats, fastani = (future.result() for future in futures)
+        # Load application components to page
         distribution(metadata)
         generate_fastani(fastani)
         generate_phylogeny(tree, tree_path)
