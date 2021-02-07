@@ -24,27 +24,22 @@ cache = DataCacher()
 fastani, repeats, metadata, tree = cache.load([FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE])
 
 # Get user filter selections
-result = get_region_filterby_selection(metadata)
+selected_mags = get_region_filterby_selection(metadata)
 
-if result:
-    selected_mags = result
-    # Display
-    if selected_mags:
-        # Filter all associated data
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            futures = [executor.submit(tree.prune, selected_mags),
-                       executor.submit(lambda: metadata[metadata.index.isin(selected_mags)]),
-                       executor.submit(repeats_filter, repeats[repeats.index.isin(selected_mags)]),
-                       executor.submit(filter_fastani, fastani, selected_mags)]
-            # Load application components
-            concurrent.futures.wait(futures)
-            tree_path, metadata, filtered_repeats, fastani = [future.result() for future in futures]
-            distribution(metadata)
-            generate_fastani(fastani)
-            generate_phylogeny(tree, tree_path)
-            generate_repeats(filtered_repeats, repeats)
+if selected_mags:
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        futures = [executor.submit(tree.prune, selected_mags),
+                   executor.submit(lambda: metadata[metadata.index.isin(selected_mags)]),
+                   executor.submit(repeats_filter, repeats[repeats.index.isin(selected_mags)]),
+                   executor.submit(filter_fastani, fastani, selected_mags)]
+        # Load application components
+        concurrent.futures.wait(futures)
+        tree_path, metadata, filtered_repeats, fastani = (future.result() for future in futures)
+        distribution(metadata)
+        generate_fastani(fastani)
+        generate_phylogeny(tree, tree_path)
+        generate_repeats(filtered_repeats, repeats)
 
 else:
     st.title("Select a region")
     generate_phylogeny(tree, tree.render(True), False)
-

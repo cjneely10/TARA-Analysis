@@ -6,31 +6,19 @@ from TARAVisualize.utils.caching_functions import *
 
 
 class DataCacher:
-    def __init__(self, max_threads: int = 4):
-        """ Create DataCacher using streamlit's internal caching system
-
-        :param max_threads: Max allowable concurrent processes
+    def __init__(self):
         """
-        self.max_threads = max_threads
+        Create DataCacher using streamlit's internal caching system
+        """
 
     @st.cache
     def load(self, file_list: List[str]) -> Tuple:
         """
         Load all internal data into proper parseable formats, in memory
         """
-        with concurrent.futures.ThreadPoolExecutor(self.max_threads) as executor:
+        with concurrent.futures.ThreadPoolExecutor() as executor:
             futures = []
             for i, function in enumerate((load_fastani_data, load_repeats_data, load_taxonomy, load_tree)):
                 futures.append(executor.submit(function, Path(file_list[i]).resolve()))
             concurrent.futures.wait(futures)
             return tuple((future.result() for future in futures))
-
-    @staticmethod
-    @st.cache
-    def filter(ids_list: Set[str], data_frames: List[pd.DataFrame]):
-        with concurrent.futures.ThreadPoolExecutor(len(data_frames)) as executor:
-            futures = []
-            for data_frame in data_frames:
-                futures.append(executor.submit(lambda: data_frame[data_frame.index.isin(ids_list)]))
-            concurrent.futures.wait(futures)
-            return [future.result() for future in futures]

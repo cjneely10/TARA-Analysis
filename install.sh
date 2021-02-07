@@ -10,4 +10,3 @@ rm component-template/template/my_component/frontend/__init__.py
 cd component-template/template/my_component/frontend
 npm install react-plotly.js plotly.js @types/react-plotly.js
 npm install
-cd -

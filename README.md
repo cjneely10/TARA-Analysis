@@ -10,10 +10,21 @@ cd TARA-Analysis
 
 ### Usage
 
-Run the visualizer with the commands:
+Activate your conda environment:
 
 ```
 conda activate TARA-Analysis
+```
+
+In a separate terminal, start a nodejs development server:
+
+```
+./start.sh
+```
+
+Run the visualizer:
+
+```
 ./run.py
 ```
 

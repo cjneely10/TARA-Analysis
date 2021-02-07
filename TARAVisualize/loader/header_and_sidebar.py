@@ -14,5 +14,9 @@ def get_region_filterby_selection(metadata: pd.DataFrame) -> Set[str]:
     if regions_selection:
         # Display filtered results as table
         filtered_data = metadata[metadata.region.isin(regions_selection)]
+        if len(regions_selection) == 1:
+            st.sidebar.write(f"{len(filtered_data)} MAGs in region {regions_selection[0]}")
+        else:
+            st.sidebar.write(f"{len(filtered_data)} MAGs in regions {', '.join(regions_selection)}")
         # Show dataframe on menu for selection
         return set(filtered_data.index)
