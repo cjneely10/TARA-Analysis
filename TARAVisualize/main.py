@@ -4,7 +4,7 @@ import os
 from TARAVisualize import st
 from TARAVisualize.loader.distribution import distribution
 from TARAVisualize.loader.fastani import generate_fastani, filter_fastani
-from TARAVisualize.loader.header_and_sidebar import get_region_filterby_selection
+from TARAVisualize.loader.header_and_sidebar import get_mags_list
 from TARAVisualize.loader.phylogeny import generate_phylogeny
 from TARAVisualize.loader.repeats import generate_repeats, repeats_filter
 from TARAVisualize.utils.data_cacher import DataCacher
@@ -24,7 +24,7 @@ cache = DataCacher()
 fastani, repeats, metadata, tree = cache.load([FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE])
 
 # Get user filter selections
-selected_mags = get_region_filterby_selection(metadata)
+selected_mags = get_mags_list(metadata)
 
 if selected_mags:
     with concurrent.futures.ThreadPoolExecutor() as executor:

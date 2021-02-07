@@ -4,7 +4,7 @@ from TARAVisualize import pd
 from TARAVisualize import st
 
 
-def get_region_filterby_selection(metadata: pd.DataFrame) -> Set[str]:
+def get_mags_list(metadata: pd.DataFrame) -> Set[str]:
     title = "TOPAZ data visualizer"
     # Create simple layout
     st.sidebar.write(title)
