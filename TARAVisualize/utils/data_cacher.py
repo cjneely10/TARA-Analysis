@@ -1,5 +1,5 @@
 import concurrent.futures
-from typing import List, Tuple, Set
+from typing import List, Tuple
 
 from TARAVisualize import st
 from TARAVisualize.utils.caching_functions import *

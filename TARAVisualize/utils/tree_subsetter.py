@@ -1,7 +1,8 @@
 import os
-from plumbum import local
-from typing import Set
 from pathlib import Path
+from typing import Set
+
+from plumbum import local
 
 from TARAVisualize import ete3
 

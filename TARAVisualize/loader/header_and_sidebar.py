@@ -1,7 +1,7 @@
-from typing import Tuple, Set
+from typing import Set
 
-from TARAVisualize import st
 from TARAVisualize import pd
+from TARAVisualize import st
 
 
 def get_region_filterby_selection(metadata: pd.DataFrame) -> Set[str]:

@@ -1,8 +1,8 @@
 from TARAVisualize import np
 from TARAVisualize import pd
+from TARAVisualize import plt
 from TARAVisualize import px
 from TARAVisualize import st
-from TARAVisualize import plt
 from TARAVisualize.components.selectable_component import selectable_component
 
 

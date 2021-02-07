@@ -1,13 +1,13 @@
+import concurrent.futures
 import os
 
-import concurrent.futures
 from TARAVisualize import st
+from TARAVisualize.loader.distribution import distribution
 from TARAVisualize.loader.fastani import generate_fastani, filter_fastani
+from TARAVisualize.loader.header_and_sidebar import get_region_filterby_selection
 from TARAVisualize.loader.phylogeny import generate_phylogeny
 from TARAVisualize.loader.repeats import generate_repeats, repeats_filter
 from TARAVisualize.utils.data_cacher import DataCacher
-from TARAVisualize.loader.header_and_sidebar import get_region_filterby_selection
-from TARAVisualize.loader.distribution import distribution
 
 # Paths to data files
 FILE_DIR = os.path.dirname(__file__)

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import sys
+
 import ete3
 
 assert len(sys.argv) == 3

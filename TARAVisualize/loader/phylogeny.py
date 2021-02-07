@@ -1,5 +1,5 @@
-from TARAVisualize import st
 from TARAVisualize import TreeSubsetter
+from TARAVisualize import st
 
 
 def generate_phylogeny(tree: TreeSubsetter, tree_image: str, display_title: bool = True):

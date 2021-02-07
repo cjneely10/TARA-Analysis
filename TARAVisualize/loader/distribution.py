@@ -1,6 +1,6 @@
-from TARAVisualize import st
-from TARAVisualize import pd
 from TARAVisualize import alt
+from TARAVisualize import pd
+from TARAVisualize import st
 
 
 def distribution(metadata: pd.DataFrame):
