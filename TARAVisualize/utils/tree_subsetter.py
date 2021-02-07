@@ -14,7 +14,7 @@ class TreeSubsetter:
 
     def prune(self, ids: Set[str]) -> str:
         tree = self.tree.copy()
-        if len(ids) > 0:
+        if len(ids) > 5:
             tree.prune([_id for _id in ids if _id in tree.get_leaf_names()])
         tree.write(features=[], outfile=self.tmp_tree)
         local[os.path.join(os.path.dirname(__file__), "render_tree.py")][self.tmp_tree, self.tmp_png]()
@@ -25,3 +25,6 @@ class TreeSubsetter:
             os.remove(self.tmp_tree)
         if os.path.exists(self.tmp_png):
             os.remove(self.tmp_png)
+
+    def __del__(self):
+        self.clean()

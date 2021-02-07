@@ -7,7 +7,7 @@ from TARAVisualize.loader.phylogeny import generate_phylogeny
 from TARAVisualize.loader.repeats import generate_repeats, repeats_filter
 from TARAVisualize.utils.data_cacher import DataCacher
 from TARAVisualize.loader.header_and_sidebar import get_region_filterby_selection
-from TARAVisualize.loader.taxonomy import generate_taxonomy_display
+from TARAVisualize.loader.distribution import distribution
 
 # Paths to data files
 FILE_DIR = os.path.dirname(__file__)
@@ -27,7 +27,7 @@ fastani, repeats, metadata, tree = cache.load([FASTANI_FILE, REPEATS_FILE, TAX_F
 result = get_region_filterby_selection(metadata)
 
 if result:
-    filter_option, selected_mags = result
+    selected_mags = result
     # Display
     if selected_mags:
         # Filter all associated data
@@ -38,12 +38,11 @@ if result:
                        executor.submit(filter_fastani, fastani, selected_mags)]
             # Load application components
             concurrent.futures.wait(futures)
-            tree_path, metadata, repeats, fastani = [future.result() for future in futures]
-            generate_taxonomy_display(metadata, filter_option)
+            tree_path, metadata, filtered_repeats, fastani = [future.result() for future in futures]
+            distribution(metadata)
             generate_fastani(fastani)
             generate_phylogeny(tree, tree_path)
-            tree.clean()
-            generate_repeats(repeats)
+            generate_repeats(filtered_repeats, repeats)
 
 else:
     st.title("Select a region")

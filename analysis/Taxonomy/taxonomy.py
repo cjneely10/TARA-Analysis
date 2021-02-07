@@ -8,7 +8,7 @@ Script will parse all files in a glob statement and generate a summary .tsv file
 Currently only supports Alexander MAG naming scheme
 
 From working directory:
-./taxonomy.py -i "out/wdir/*/taxonomy/tax-report.txt" -o tax-summary.tsv
+./distribution.py -i "out/wdir/*/taxonomy/tax-report.txt" -o tax-summary.tsv
 
 """
 
