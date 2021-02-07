@@ -46,4 +46,5 @@ if result:
 
 else:
     st.title("Select a region")
+    generate_phylogeny(tree, tree.render(True), False)
 
