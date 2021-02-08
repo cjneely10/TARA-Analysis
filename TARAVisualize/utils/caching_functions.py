@@ -54,3 +54,7 @@ def load_tree(file: Path) -> TreeSubsetter:
     :return: Tree with ability to respond to subset requests
     """
     return TreeSubsetter(file)
+
+
+def load_quality(file: Path) -> pd.DataFrame:
+    return pd.read_csv(file, delimiter=" ", na_values=".", index_col=0, dtype="object").astype(int)

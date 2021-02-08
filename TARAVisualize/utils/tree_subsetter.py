@@ -18,7 +18,7 @@ class TreeSubsetter:
         self.clean()
         tree = self.tree.copy()
         if len(ids) > 5:
-            tree.prune([_id for _id in ids if _id in tree.get_leaf_names()])
+            tree.prune([_id for _id in ids if _id in tree.get_leaf_names()], preserve_branch_length=True)
         tree.write(features=[], outfile=self.tmp_tree)
         return self.render()
 

@@ -13,10 +13,8 @@ def generate_repeats(repeats: pd.DataFrame, original_repeats: pd.DataFrame):
     selected_ids = selectable_component(fig)
     if selected_ids is not None:
         display_df = original_repeats[original_repeats.index.isin([selected_id["x"] for selected_id in selected_ids])]
-    else:
-        display_df = original_repeats
-    display_df = display_df.loc[:, (display_df != 0.0).any(axis=0)].replace(np.nan, 0.0)
-    st.write(display_df)
+        display_df = display_df.loc[:, (display_df != 0.0).any(axis=0)].replace(np.nan, 0.0)
+        st.write(display_df)
     plt.clf()
 
 
