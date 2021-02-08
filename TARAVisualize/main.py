@@ -9,6 +9,7 @@ from TARAVisualize.loader.header_and_sidebar import get_mags_list
 from TARAVisualize.loader.phylogeny import generate_phylogeny
 from TARAVisualize.loader.repeats import generate_repeats, repeats_filter
 from TARAVisualize.loader.quality import generate_quality
+from TARAVisualize.loader.taxonomy import get_taxonomy
 from TARAVisualize.utils.data_cacher import DataCacher
 
 # Paths to data files
@@ -46,10 +47,11 @@ if selected_mags:
         tree_path, metadata, filtered_repeats, fastani, busco_n50, kegg_data = (future.result() for future in futures)
         # Load application components to page
         generate_quality(busco_n50)
-        distribution(metadata)
         generate_fastani(fastani)
         generate_phylogeny(tree, tree_path)
         generate_repeats(filtered_repeats, repeats)
+        distribution(metadata)
+        get_taxonomy(metadata)
         generate_kegg_plot(kegg_data, kegg_id_dict)
 
 else:
