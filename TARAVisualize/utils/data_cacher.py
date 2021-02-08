@@ -6,17 +6,18 @@ from TARAVisualize.utils.caching_functions import *
 
 
 class DataCacher:
-    def __init__(self):
+    def __init__(self, threads: int):
         """
         Create DataCacher using streamlit's internal caching system
         """
+        self.threads = threads
 
     @st.cache
     def load(self, file_list: List[str]) -> Tuple:
         """
         Load all internal data into proper parsable formats, in memory
         """
-        with concurrent.futures.ThreadPoolExecutor() as executor:
+        with concurrent.futures.ThreadPoolExecutor(self.threads) as executor:
             futures = []
             for i, function in enumerate((load_fastani_data, load_repeats_data, load_taxonomy, load_tree)):
                 futures.append(executor.submit(function, Path(file_list[i]).resolve()))

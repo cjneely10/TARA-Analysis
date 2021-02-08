@@ -1,5 +1,6 @@
 import concurrent.futures
 import os
+import sys
 
 from TARAVisualize import st
 from TARAVisualize.loader.distribution import distribution
@@ -16,9 +17,10 @@ FASTANI_FILE = os.path.join(FILE_DIR, "data/all-alex-v-alex.fastani.out.gz")
 REPEATS_FILE = os.path.join(FILE_DIR, "data/repeats-summary.bylength.tsv.gz")
 TREE_FILE = os.path.join(FILE_DIR, "data/COV80_TOPAZ_2021-01-25.nwk")
 ID_MAPPING_FILE = os.path.join(FILE_DIR, "data/renamed-eukaryotic-mags.tsv")
+THREADS = int(sys.argv[1])
 
 # Instantiate parallelized data cacher
-cache = DataCacher()
+cache = DataCacher(THREADS)
 
 # Load all data into full dataframes
 fastani, repeats, metadata, tree = cache.load([FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE])
@@ -27,7 +29,7 @@ fastani, repeats, metadata, tree = cache.load([FASTANI_FILE, REPEATS_FILE, TAX_F
 selected_mags = get_mags_list(metadata)
 
 if selected_mags:
-    with concurrent.futures.ThreadPoolExecutor() as executor:
+    with concurrent.futures.ThreadPoolExecutor(THREADS) as executor:
         # Filter data concurrently
         futures = [executor.submit(tree.prune, selected_mags),
                    executor.submit(lambda: metadata[metadata.index.isin(selected_mags)]),
