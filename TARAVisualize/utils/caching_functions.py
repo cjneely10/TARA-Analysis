@@ -58,3 +58,15 @@ def load_tree(file: Path) -> TreeSubsetter:
 
 def load_quality(file: Path) -> pd.DataFrame:
     return pd.read_csv(file, delimiter=" ", na_values=".", index_col=0, dtype="object").astype(int)
+
+
+def load_kegg(file: Path) -> pd.DataFrame:
+    return pd.read_csv(file, delimiter="\t", na_values=".", index_col=0, dtype="object").astype(int)
+
+
+def load_kegg_details(file: Path) -> dict:
+    out = {}
+    for line in open(file, "r"):
+        line = line.rstrip("\r\n").split("\t")
+        out[line[0]] = line[1]
+    return out
