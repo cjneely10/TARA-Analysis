@@ -1,10 +1,10 @@
 from TARAVisualize import pd
 from TARAVisualize import px
 from TARAVisualize import st
+from TARAVisualize.utils.tax_levels import tax_levels as levels
 
 
 def get_taxonomy(metadata: pd.DataFrame):
-    levels = ["clade", "kingdom", "phylum", "class", "order", "family", "genus", "species"]
     st.title("Taxonomy")
     col1, col2 = st.beta_columns([1, 1])
     for i in range(0, 8, 2):
