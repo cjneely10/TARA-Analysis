@@ -1,13 +1,14 @@
 import concurrent.futures
 import os
+
 from TARAVisualize import st
 from TARAVisualize.loader.distribution import distribution
 from TARAVisualize.loader.fastani import generate_fastani, filter_fastani
 from TARAVisualize.loader.gene_clustering import generate_kegg_plot
 from TARAVisualize.loader.header_and_sidebar import get_mags_list
 from TARAVisualize.loader.phylogeny import generate_phylogeny
-from TARAVisualize.loader.repeats import generate_repeats, repeats_filter
 from TARAVisualize.loader.quality import generate_quality
+from TARAVisualize.loader.repeats import generate_repeats, repeats_filter
 from TARAVisualize.loader.taxonomy import get_taxonomy
 from TARAVisualize.utils.data_cacher import DataCacher
 

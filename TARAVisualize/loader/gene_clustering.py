@@ -1,6 +1,7 @@
+from collections import Counter
+
 from TARAVisualize import pd
 from TARAVisualize import st
-from collections import Counter
 
 
 def generate_kegg_plot(kegg_df: pd.DataFrame, kegg_ids):
