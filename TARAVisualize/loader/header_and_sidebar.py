@@ -20,6 +20,7 @@ def get_mags_list(metadata: pd.DataFrame) -> Set[str]:
     filtered_data = metadata
 
     to_filter = []
+    filter_used = False
     if len(regions_selection) + len(size_fraction_selection) + len(depth_selection) > 0:
         # Display filtered results as table
         if len(regions_selection) > 0:
@@ -28,15 +29,19 @@ def get_mags_list(metadata: pd.DataFrame) -> Set[str]:
             to_filter.append(("size_fraction", "size_fraction_selection"))
         if len(depth_selection) > 0:
             to_filter.append(("depth", "depth_selection"))
+        filter_used = True
 
     if len(to_filter) > 0:
         filtered_data = filtered_data[eval("&".join([('filtered_data["%s"].isin(%s)' % (label, selection))
                                                      for label, selection in to_filter]))]
+        filter_used = True
 
     if taxonomy_selection != "all":
         levels_selection = st.sidebar.multiselect("Select Assignment",
                                                   sorted(list(set(filtered_data[taxonomy_selection].dropna()))))
         filtered_data = filtered_data[filtered_data[taxonomy_selection].isin(levels_selection)]
         st.sidebar.write(f"{len(filtered_data)} MAGs selected")
+        filter_used = True
         # Show dataframe on menu for selection
+    if filter_used:
         return set(filtered_data.index)

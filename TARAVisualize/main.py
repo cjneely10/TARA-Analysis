@@ -51,5 +51,5 @@ if selected_mags:
         generate_kegg_plot(kegg_data, kegg_id_dict)
 
 else:
-    st.title("Select a region")
+    st.title("Select a filter")
     generate_phylogeny(tree, tree.render(True), False)
