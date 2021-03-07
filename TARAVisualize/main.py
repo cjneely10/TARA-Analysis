@@ -1,6 +1,5 @@
 import concurrent.futures
 import os
-import sys
 from TARAVisualize import st
 from TARAVisualize.loader.distribution import distribution
 from TARAVisualize.loader.fastani import generate_fastani, filter_fastani
@@ -22,19 +21,15 @@ ID_MAPPING_FILE = os.path.join(FILE_DIR, "data", "renamed-eukaryotic-mags.tsv")
 BUSCO_N50_FILE = os.path.join(FILE_DIR, "data", "busco-n50-summary.txt.gz")
 KEGG_FILE = os.path.join(FILE_DIR, "data", "kegg-counts.txt.gz")
 KEGG_DETAILS = os.path.join(FILE_DIR, "data", "kegg-summary-test.txt")
-THREADS = int(sys.argv[1])
-
-# Instantiate parallelized data cacher
-cache = DataCacher(THREADS)
 
 # Load all data into full dataframes
-fastani, repeats, metadata, tree, busco_n50, kegg_data, kegg_id_dict = cache.load(
+fastani, repeats, metadata, tree, busco_n50, kegg_data, kegg_id_dict = DataCacher().load(
     [FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE, BUSCO_N50_FILE, KEGG_FILE, KEGG_DETAILS])
 # Get user filter selections
 selected_mags = get_mags_list(metadata)
 
 if selected_mags:
-    with concurrent.futures.ThreadPoolExecutor(THREADS) as executor:
+    with concurrent.futures.ThreadPoolExecutor() as executor:
         # Filter data concurrently
         futures = [executor.submit(tree.prune, selected_mags),
                    executor.submit(lambda: metadata[metadata.index.isin(selected_mags)]),

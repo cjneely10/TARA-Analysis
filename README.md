@@ -33,7 +33,7 @@ In one terminal, start a `nodejs` development server:
 Run the visualizer in a different terminal:
 
 ```
-./run.py -t <threads>
+./run.py
 ```
 
 ![](https://github.com/cjneely10/TARA-Analysis/blob/main/assets/main-image.png)
