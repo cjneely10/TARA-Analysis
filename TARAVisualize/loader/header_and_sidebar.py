@@ -15,21 +15,24 @@ def get_mags_list(metadata: pd.DataFrame) -> Set[str]:
     size_fraction_selection = st.sidebar.multiselect("Size Fraction", list(set(metadata.size_fraction)))
     depth_selection = st.sidebar.multiselect("Depth", list(set(metadata.depth)))
     taxonomy_selection = st.sidebar.selectbox("Taxonomic Level", ["all", *tax_levels])
+    filtered_data = metadata
 
-    if len(regions_selection) + len(size_fraction_selection) + len(depth_selection) > 0 or taxonomy_selection != "all":
+    level_selected = False
+    if taxonomy_selection != "all":
+        levels_selection = st.sidebar.multiselect("Select Assignment",
+                                                  list(set(filtered_data[taxonomy_selection])))
+        if len(levels_selection) > 0:
+            level_selected = True
+            filtered_data = filtered_data[filtered_data[taxonomy_selection].isin(levels_selection)]
+
+    if len(regions_selection) + len(size_fraction_selection) + len(depth_selection) > 0 or level_selected:
         # Display filtered results as table
-        filtered_data = metadata
         if len(regions_selection) > 0:
             filtered_data = filtered_data[filtered_data.region.isin(regions_selection)]
         if len(size_fraction_selection) > 0:
             filtered_data = filtered_data[filtered_data.size_fraction.isin(size_fraction_selection)]
         if len(depth_selection) > 0:
             filtered_data = filtered_data[filtered_data.depth.isin(depth_selection)]
-        if taxonomy_selection != "all":
-            levels_selection = st.sidebar.multiselect("Select Assignment",
-                                                      list(set(filtered_data[taxonomy_selection])))
-            if len(levels_selection) > 0:
-                filtered_data = filtered_data[filtered_data[taxonomy_selection].isin(levels_selection)]
         st.sidebar.write(f"{len(filtered_data)} MAGs selected")
         # Show dataframe on menu for selection
         return set(filtered_data.index)
