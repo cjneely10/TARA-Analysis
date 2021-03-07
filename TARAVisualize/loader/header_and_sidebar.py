@@ -11,16 +11,16 @@ def get_mags_list(metadata: pd.DataFrame) -> Set[str]:
     st.sidebar.write(title)
     st.sidebar.write("Filter by")
     # Allow user to select which subregions to compare
-    regions_selection = st.sidebar.multiselect("Regions", list(set(metadata.region)))
-    size_fraction_selection = st.sidebar.multiselect("Size Fraction", list(set(metadata.size_fraction)))
-    depth_selection = st.sidebar.multiselect("Depth", list(set(metadata.depth)))
+    regions_selection = st.sidebar.multiselect("Regions", sorted(list(set(metadata.region))))
+    size_fraction_selection = st.sidebar.multiselect("Size Fraction", sorted(list(set(metadata.size_fraction))))
+    depth_selection = st.sidebar.multiselect("Depth", sorted(list(set(metadata.depth))))
     taxonomy_selection = st.sidebar.selectbox("Taxonomic Level", ["all", *tax_levels])
     filtered_data = metadata
 
     level_selected = False
     if taxonomy_selection != "all":
         levels_selection = st.sidebar.multiselect("Select Assignment",
-                                                  list(set(filtered_data[taxonomy_selection])))
+                                                  sorted(list(set(filtered_data[taxonomy_selection].dropna()))))
         if len(levels_selection) > 0:
             level_selected = True
             filtered_data = filtered_data[filtered_data[taxonomy_selection].isin(levels_selection)]
