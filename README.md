@@ -36,4 +36,6 @@ Run the visualizer in a different terminal:
 ./run.py
 ```
 
+Your browser should launch a window at `http://localhost:8501/`
+
 ![](https://github.com/cjneely10/TARA-Analysis/blob/main/assets/main-image.png)
