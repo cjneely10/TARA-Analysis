@@ -9,15 +9,9 @@ from TARAVisualize import st
 
 def hClust_euclidean(genome_df):
     linkage_matrix = linkage(genome_df, method='average', metric='euclidean')
-    # linkage_matrix = linkage(df, metric='braycurtis')
     names = genome_df.index.tolist()
-    # clust = dendrogram(linkage_matrix, orientation="right", labels=names, get_leaves=True)
     clust = dendrogram(linkage_matrix, no_plot=True, labels=names, get_leaves=True)
-    leaves = clust['ivl']
-    leave_order = list(leaves)
-    genome_df = genome_df.reindex(leave_order)
-
-    return genome_df
+    return genome_df.reindex(list(clust['ivl']))
 
 
 def generate_fastani(heatmap_df: pd.DataFrame):
