@@ -11,7 +11,8 @@ def download_selected_mag_data(dataframes: List[pd.DataFrame]):
     """
     if st.sidebar.button("Download selection data"):
         out = pd.DataFrame()
+        out_file = os.path.join(os.getcwd(), 'out.tsv')
         for df in dataframes:
             out = out.join(df, how="outer")
-        out.to_csv("out.tsv", sep="\t")
-        st.sidebar.text(f"Saved to {os.path.join(os.getcwd(), 'out.tsv')}")
+        out.to_csv(out_file, sep="\t")
+        st.sidebar.text(f"Saved to {out_file}")
