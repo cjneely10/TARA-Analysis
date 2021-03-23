@@ -40,8 +40,8 @@ def get_mags_list(metadata: pd.DataFrame) -> Set[str]:
         levels_selection = st.sidebar.multiselect("Select Assignment",
                                                   sorted(list(set(filtered_data[taxonomy_selection].dropna()))))
         filtered_data = filtered_data[filtered_data[taxonomy_selection].isin(levels_selection)]
-        st.sidebar.write(f"{len(filtered_data)} MAGs selected")
         filter_used = True
         # Show dataframe on menu for selection
+    st.sidebar.write(f"{len(filtered_data)} MAGs selected")
     if filter_used:
         return set(filtered_data.index)

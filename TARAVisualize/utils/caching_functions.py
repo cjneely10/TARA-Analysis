@@ -2,9 +2,11 @@ from pathlib import Path
 
 from TARAVisualize import np
 from TARAVisualize import pd
+from TARAVisualize import st
 from TARAVisualize.utils.tree_subsetter import TreeSubsetter
 
 
+@st.cache
 def load_taxonomy(data_file: Path) -> pd.DataFrame:
     """ Load taxonomy data into pandas data frame
 
@@ -15,6 +17,7 @@ def load_taxonomy(data_file: Path) -> pd.DataFrame:
     return tax_df
 
 
+@st.cache
 def load_fastani_data(data_file: Path) -> pd.DataFrame:
     """ Load FastANI data into nxn DataFrame of comparison data
 
@@ -35,6 +38,30 @@ def load_fastani_data(data_file: Path) -> pd.DataFrame:
     return pd.DataFrame(out, index=record_ids, columns=record_ids, dtype="float32")
 
 
+@st.cache
+def load_aai_data(data_file: Path) -> pd.DataFrame:
+    """ Load CompareM AAI data
+
+    :param data_file: CompareM results file
+    :return:
+    """
+    aai = pd.read_csv(data_file, delimiter="\t")
+    record_ids = set(aai["#Genome A"])
+    as_dict = {(k1, k2): p for k1, k2, p in zip(aai["#Genome A"], aai["Genome B"], aai["Mean AAI"])}
+    out = np.full((len(record_ids), len(record_ids)), 0.0, dtype="float32")
+    for i, f1_name in enumerate(record_ids):
+        for j, f2_name in enumerate(record_ids):
+            if (f1_name, f2_name) in as_dict.keys():
+                value = float(as_dict[(f1_name, f2_name)])
+                if value > out[i, j]:
+                    out[i, j] = value
+                    out[j, i] = value
+            elif f1_name == f2_name:
+                out[i, j] = 100
+    return pd.DataFrame(out, index=record_ids, columns=record_ids, dtype="float32").rename(columns={"Mean AAI": "AAI"})
+
+
+@st.cache
 def load_repeats_data(file: Path) -> pd.DataFrame:
     """ Load repeats file results into pandas
 
@@ -47,6 +74,7 @@ def load_repeats_data(file: Path) -> pd.DataFrame:
     return repeats_df
 
 
+@st.cache
 def load_tree(file: Path) -> TreeSubsetter:
     """ Read in newick file into subsettable tree
 
@@ -56,14 +84,17 @@ def load_tree(file: Path) -> TreeSubsetter:
     return TreeSubsetter(file)
 
 
+@st.cache
 def load_quality(file: Path) -> pd.DataFrame:
     return pd.read_csv(file, delimiter=" ", na_values=".", index_col=0, dtype="object").astype(int)
 
 
+@st.cache
 def load_kegg(file: Path) -> pd.DataFrame:
     return pd.read_csv(file, delimiter="\t", na_values=".", index_col=0, dtype="object").astype(int)
 
 
+@st.cache
 def load_kegg_details(file: Path) -> dict:
     out = {}
     for line in open(file, "r"):

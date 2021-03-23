@@ -3,7 +3,7 @@ import os
 
 from TARAVisualize import st
 from TARAVisualize.loader.distribution import distribution
-from TARAVisualize.loader.fastani import generate_fastani, filter_fastani
+from TARAVisualize.loader.fastani import generate_fastani, filter_fastani_aai
 from TARAVisualize.loader.gene_clustering import generate_kegg_plot
 from TARAVisualize.loader.header_and_sidebar import get_mags_list
 from TARAVisualize.loader.phylogeny import generate_phylogeny
@@ -22,10 +22,12 @@ ID_MAPPING_FILE = os.path.join(FILE_DIR, "data", "renamed-eukaryotic-mags.tsv")
 BUSCO_N50_FILE = os.path.join(FILE_DIR, "data", "busco-n50-summary.txt.gz")
 KEGG_FILE = os.path.join(FILE_DIR, "data", "kegg-counts.txt.gz")
 KEGG_DETAILS = os.path.join(FILE_DIR, "data", "kegg-summary-test.txt")
+AAI_FILE = os.path.join(FILE_DIR, "data", "aai_summary.tsv.gz")
 
 # Load all data into full dataframes
-fastani, repeats, metadata, tree, busco_n50, kegg_data, kegg_id_dict = DataCacher().load(
-    [FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE, BUSCO_N50_FILE, KEGG_FILE, KEGG_DETAILS])
+fastani, repeats, metadata, tree, busco_n50, kegg_data, kegg_id_dict, aai_df = DataCacher().load(
+    [FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE, BUSCO_N50_FILE, KEGG_FILE, KEGG_DETAILS,
+     AAI_FILE])
 # Get user filter selections
 selected_mags = get_mags_list(metadata)
 
@@ -35,15 +37,17 @@ if selected_mags:
         futures = [executor.submit(tree.prune, selected_mags),
                    executor.submit(lambda: metadata[metadata.index.isin(selected_mags)]),
                    executor.submit(repeats_filter, repeats[repeats.index.isin(selected_mags)]),
-                   executor.submit(filter_fastani, fastani, selected_mags),
+                   executor.submit(filter_fastani_aai, fastani, selected_mags),
                    executor.submit(lambda: busco_n50[busco_n50.index.isin(selected_mags)]),
-                   executor.submit(lambda: kegg_data[kegg_data.index.isin(selected_mags)])]
+                   executor.submit(lambda: kegg_data[kegg_data.index.isin(selected_mags)]),
+                   executor.submit(filter_fastani_aai, aai_df, selected_mags)]
         concurrent.futures.wait(futures)
         # Get filtered data from thread pool
-        tree_path, metadata, filtered_repeats, fastani, busco_n50, kegg_data = (future.result() for future in futures)
+        tree_path, metadata, filtered_repeats, fastani, busco_n50, kegg_data, aai_df = \
+            (future.result() for future in futures)
         # Load application components to page
         generate_quality(busco_n50)
-        generate_fastani(fastani)
+        generate_fastani(fastani, aai_df)
         generate_phylogeny(tree, tree_path)
         generate_repeats(filtered_repeats, repeats)
         distribution(metadata)
