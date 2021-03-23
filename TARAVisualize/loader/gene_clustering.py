@@ -10,7 +10,6 @@ from sklearn.decomposition import PCA
 
 def generate_kegg_plot(kegg_df: pd.DataFrame, kegg_ids):
     st.title("Top KEGG terms")
-    generate_kegg_pca(kegg_df)
     counted = Counter(kegg_df.astype(bool).sum(axis=0).to_dict())
     out = {}
     for value, count in counted.most_common():
@@ -21,10 +20,10 @@ def generate_kegg_plot(kegg_df: pd.DataFrame, kegg_ids):
 
 
 def generate_kegg_pca(kegg_df: pd.DataFrame):
+    st.title("KEGG PCA")
     kegg_df = scale(kegg_df.loc[:, (kegg_df != 0).any(axis=0)])
     kegg = PCA(n_components=2).fit_transform(kegg_df)
     kegg = pd.DataFrame(kegg, index=kegg_df.index).reset_index()
-    st.write(kegg)
     st.plotly_chart(px.scatter(kegg, x=kegg.columns[1], y=kegg.columns[2], hover_name="ID"), clear_figure=True)
 
 
