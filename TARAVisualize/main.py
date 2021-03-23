@@ -11,6 +11,7 @@ from TARAVisualize.loader.quality import generate_quality
 from TARAVisualize.loader.repeats import generate_repeats, repeats_filter
 from TARAVisualize.loader.taxonomy import get_taxonomy
 from TARAVisualize.utils.data_cacher import DataCacher
+from TARAVisualize.loader.download_selection import download_selected_mag_data
 
 # Paths to data files
 FILE_DIR = os.path.dirname(__file__)
@@ -46,6 +47,7 @@ if selected_mags:
         tree_path, metadata, filtered_repeats, fastani, busco_n50, kegg_data, aai_df = \
             (future.result() for future in futures)
         # Load application components to page
+        download_selected_mag_data([busco_n50, filtered_repeats.fillna(0), metadata.fillna("N/A")])
         generate_quality(busco_n50)
         generate_fastani(fastani, aai_df)
         generate_phylogeny(tree, tree_path)
