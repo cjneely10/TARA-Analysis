@@ -6,7 +6,7 @@ from TARAVisualize.utils.tax_levels import tax_levels
 
 
 def get_mags_list(metadata: pd.DataFrame) -> Set[str]:
-    title = "TOPAZ data visualizer"
+    title = "TOPAviZ"
     # Create simple layout
     st.sidebar.write(title)
     st.sidebar.write("Filter by")
@@ -29,7 +29,6 @@ def get_mags_list(metadata: pd.DataFrame) -> Set[str]:
             to_filter.append(("size_fraction", "size_fraction_selection"))
         if len(depth_selection) > 0:
             to_filter.append(("depth", "depth_selection"))
-        filter_used = True
 
     if len(to_filter) > 0:
         filtered_data = filtered_data[eval("&".join([('filtered_data["%s"].isin(%s)' % (label, selection))
