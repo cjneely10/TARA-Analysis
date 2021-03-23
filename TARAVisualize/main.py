@@ -14,16 +14,16 @@ from TARAVisualize.utils.data_cacher import DataCacher
 from TARAVisualize.loader.download_selection import download_selected_mag_data
 
 # Paths to data files
-FILE_DIR = os.path.dirname(__file__)
-TAX_FILE = os.path.join(FILE_DIR, "data", "tax-summary.tsv.gz")
-FASTANI_FILE = os.path.join(FILE_DIR, "data", "all-alex-v-alex.fastani.out.gz")
-REPEATS_FILE = os.path.join(FILE_DIR, "data", "repeats-summary.bylength.tsv.gz")
-TREE_FILE = os.path.join(FILE_DIR, "data", "COV80_TOPAZ_2021-01-25.nwk")
-ID_MAPPING_FILE = os.path.join(FILE_DIR, "data", "renamed-eukaryotic-mags.tsv")
-BUSCO_N50_FILE = os.path.join(FILE_DIR, "data", "busco-n50-summary.txt.gz")
-KEGG_FILE = os.path.join(FILE_DIR, "data", "kegg-counts.txt.gz")
-KEGG_DETAILS = os.path.join(FILE_DIR, "data", "kegg-summary-test.txt")
-AAI_FILE = os.path.join(FILE_DIR, "data", "aai_summary.tsv.gz")
+FILE_DIR = os.path.join(os.path.dirname(__file__), "data")
+TAX_FILE = os.path.join(FILE_DIR, "tax-summary.tsv.gz")
+FASTANI_FILE = os.path.join(FILE_DIR, "all-alex-v-alex.fastani.out.gz")
+REPEATS_FILE = os.path.join(FILE_DIR, "repeats-summary.bylength.tsv.gz")
+TREE_FILE = os.path.join(FILE_DIR, "COV80_TOPAZ_2021-01-25.nwk")
+ID_MAPPING_FILE = os.path.join(FILE_DIR, "renamed-eukaryotic-mags.tsv")
+BUSCO_N50_FILE = os.path.join(FILE_DIR, "busco-n50-summary.txt.gz")
+KEGG_FILE = os.path.join(FILE_DIR, "kegg-counts.txt.gz")
+KEGG_DETAILS = os.path.join(FILE_DIR, "kegg-summary-test.txt")
+AAI_FILE = os.path.join(FILE_DIR, "aai_summary.tsv.gz")
 
 # Load all data into full dataframes
 fastani, repeats, metadata, tree, busco_n50, kegg_data, kegg_id_dict, aai_df = DataCacher().load(
