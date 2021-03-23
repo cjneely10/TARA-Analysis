@@ -21,8 +21,11 @@ def generate_kegg_plot(kegg_df: pd.DataFrame, kegg_ids):
 
 
 def generate_kegg_pca(kegg_df: pd.DataFrame):
-    kegg = PCA(n_components=2).fit_transform(scale(kegg_df.loc[:, (kegg_df != 0).any(axis=0)]))
-    st.plotly_chart(px.scatter(kegg[:, 0], kegg[:, 1]), clear_figure=True)
+    kegg_df = scale(kegg_df.loc[:, (kegg_df != 0).any(axis=0)])
+    kegg = PCA(n_components=2).fit_transform(kegg_df)
+    kegg = pd.DataFrame(kegg, index=kegg_df.index).reset_index()
+    st.write(kegg)
+    st.plotly_chart(px.scatter(kegg, x=kegg.columns[1], y=kegg.columns[2], hover_name="ID"), clear_figure=True)
 
 
 def scale(df):
