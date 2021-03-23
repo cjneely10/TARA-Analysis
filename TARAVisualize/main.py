@@ -4,7 +4,7 @@ import os
 from TARAVisualize import st
 from TARAVisualize.loader.distribution import distribution
 from TARAVisualize.loader.fastani import generate_fastani, filter_fastani_aai
-from TARAVisualize.loader.gene_clustering import generate_kegg_plot, generate_kegg_pca
+from TARAVisualize.loader.gene_clustering import generate_kegg_pca
 from TARAVisualize.loader.header_and_sidebar import get_mags_list
 from TARAVisualize.loader.phylogeny import generate_phylogeny
 from TARAVisualize.loader.quality import generate_quality

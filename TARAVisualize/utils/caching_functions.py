@@ -2,11 +2,9 @@ from pathlib import Path
 
 from TARAVisualize import np
 from TARAVisualize import pd
-from TARAVisualize import st
 from TARAVisualize.utils.tree_subsetter import TreeSubsetter
 
 
-@st.cache
 def load_taxonomy(data_file: Path) -> pd.DataFrame:
     """ Load taxonomy data into pandas data frame
 
@@ -17,7 +15,6 @@ def load_taxonomy(data_file: Path) -> pd.DataFrame:
     return tax_df
 
 
-@st.cache
 def load_fastani_data(data_file: Path) -> pd.DataFrame:
     """ Load FastANI data into nxn DataFrame of comparison data
 
@@ -38,7 +35,6 @@ def load_fastani_data(data_file: Path) -> pd.DataFrame:
     return pd.DataFrame(out, index=record_ids, columns=record_ids, dtype="float32")
 
 
-@st.cache
 def load_aai_data(data_file: Path) -> pd.DataFrame:
     """ Load CompareM AAI data
 
@@ -61,7 +57,6 @@ def load_aai_data(data_file: Path) -> pd.DataFrame:
     return pd.DataFrame(out, index=record_ids, columns=record_ids, dtype="float32").rename(columns={"Mean AAI": "AAI"})
 
 
-@st.cache
 def load_repeats_data(file: Path) -> pd.DataFrame:
     """ Load repeats file results into pandas
 
@@ -74,7 +69,6 @@ def load_repeats_data(file: Path) -> pd.DataFrame:
     return repeats_df
 
 
-@st.cache
 def load_tree(file: Path) -> TreeSubsetter:
     """ Read in newick file into subsettable tree
 
@@ -84,17 +78,14 @@ def load_tree(file: Path) -> TreeSubsetter:
     return TreeSubsetter(file)
 
 
-@st.cache
 def load_quality(file: Path) -> pd.DataFrame:
     return pd.read_csv(file, delimiter=" ", na_values=".", index_col=0, dtype="object").astype(int)
 
 
-@st.cache
 def load_kegg(file: Path) -> pd.DataFrame:
     return pd.read_csv(file, delimiter="\t", na_values=".", index_col=0, dtype="object").astype(int)
 
 
-@st.cache
 def load_kegg_details(file: Path) -> dict:
     out = {}
     for line in open(file, "r"):
