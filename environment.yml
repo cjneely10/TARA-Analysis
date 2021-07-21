@@ -7,6 +7,6 @@ dependencies:
   - nodejs
   - ete3
   - pip
-  - ./install.sh
+  - bash install.sh
   - pip:
       - -r requirements.txt
