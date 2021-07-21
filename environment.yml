@@ -7,6 +7,7 @@ dependencies:
   - nodejs
   - ete3
   - pip
-  - bash install.sh
   - pip:
       - -r requirements.txt
+  - npm:
+      - react-plotly.js plotly.js @types/react-plotly.js

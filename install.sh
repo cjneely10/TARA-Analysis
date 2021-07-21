@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-## Create conda environment
-#conda env create -f environment.yml
+# Create conda environment
+conda env create -f environment.yml
 
 # Identify install source
 CONDA=`which conda`
