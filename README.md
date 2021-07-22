@@ -25,7 +25,7 @@ Running the visualizer will use &ge; 450MB of system RAM.
 
 ```
 conda activate TARA-Analysis
-./run.py
+streamlit TARA/Visualize/main.py
 ```
 
 Your browser should launch a window at `http://localhost:8501/`
