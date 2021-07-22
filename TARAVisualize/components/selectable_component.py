@@ -2,7 +2,7 @@ import os
 
 import streamlit.components.v1 as components
 
-build_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "build")
+build_dir = os.path.join(os.path.dirname(__file__), "build")
 _component_func = components.declare_component("my_component", path=build_dir)
 
 
