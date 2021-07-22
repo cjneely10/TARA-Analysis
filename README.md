@@ -1,4 +1,9 @@
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/cjneely10/TARA-Analysis/main/TARAVisualize/main.py)
+
+
 # TARA Data summary
+
+Open this repo in `streamlit` using the link above, or follow the installation instructions below for a standalone version.
 
 ### Installation
 
@@ -18,21 +23,8 @@ A conda environment will be created to contain the `nodejs` and `streamlit` depe
 
 Running the visualizer will use &ge; 450MB of system RAM.
 
-Activate your conda environment (if not done so already):
-
 ```
 conda activate TARA-Analysis
-```
-
-In one terminal, start a `nodejs` development server:
-
-```
-./start.sh
-```
-
-Run the visualizer in a different terminal:
-
-```
 ./run.py
 ```
 
