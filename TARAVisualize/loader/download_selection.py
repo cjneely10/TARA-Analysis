@@ -27,7 +27,7 @@ def download_selected_mag_data(dataframes: List[pd.DataFrame]):
         st.sidebar.text(f"Collecting data")
         for df in dataframes:
             out = out.join(df, how="outer")
-        st.markdown(get_table_download_link(out), unsafe_allow_html=True)
+        st.sidebar.markdown(get_table_download_link(out), unsafe_allow_html=True)
         # out.to_csv(out_file, sep="\t")
         # st.sidebar.text(f"Saved to {out_file}")
         st.sidebar.text("Saved!")
