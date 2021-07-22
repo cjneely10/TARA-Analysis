@@ -4,6 +4,7 @@ import os
 from TARAVisualize import st
 from TARAVisualize.loader.distribution import distribution
 from TARAVisualize.loader.fastani import generate_fastani, filter_fastani_aai
+from TARAVisualize.loader.gene_clustering import generate_kegg_pca
 from TARAVisualize.loader.header_and_sidebar import get_mags_list
 from TARAVisualize.loader.phylogeny import generate_phylogeny
 from TARAVisualize.loader.quality import generate_quality
@@ -25,8 +26,9 @@ KEGG_DETAILS = os.path.join(FILE_DIR, "kegg-summary-test.txt")
 AAI_FILE = os.path.join(FILE_DIR, "aai_summary.tsv.gz")
 
 # Load all data into full dataframes
-fastani, repeats, metadata, tree, busco_n50, aai_df = DataCacher().load(
-    [FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE, BUSCO_N50_FILE, AAI_FILE])
+fastani, repeats, metadata, tree, busco_n50, kegg_data, kegg_id_dict, aai_df = DataCacher().load(
+    [FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE, BUSCO_N50_FILE, KEGG_FILE, KEGG_DETAILS,
+     AAI_FILE])
 # Get user filter selections
 selected_mags = get_mags_list(metadata)
 
@@ -38,11 +40,11 @@ if selected_mags:
                    executor.submit(repeats_filter, repeats[repeats.index.isin(selected_mags)]),
                    executor.submit(filter_fastani_aai, fastani, selected_mags),
                    executor.submit(lambda: busco_n50[busco_n50.index.isin(selected_mags)]),
-                   # executor.submit(lambda: kegg_data[kegg_data.index.isin(selected_mags)]),
+                   executor.submit(lambda: kegg_data[kegg_data.index.isin(selected_mags)]),
                    executor.submit(filter_fastani_aai, aai_df, selected_mags)]
         concurrent.futures.wait(futures)
         # Get filtered data from thread pool
-        tree_path, metadata, filtered_repeats, fastani, busco_n50, aai_df = \
+        tree_path, metadata, filtered_repeats, fastani, busco_n50, kegg_data, aai_df = \
             (future.result() for future in futures)
         # Load application components to page
         download_selected_mag_data([busco_n50, filtered_repeats.fillna(0), metadata.fillna("N/A")])
