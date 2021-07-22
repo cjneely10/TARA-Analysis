@@ -22,5 +22,5 @@ dependencies:
       - scipy~=1.6.0
       - scikit-learn==0.24.1
       - ete3
-      - opencv-python
+      - opencv-python==4.1.2.30
       - .
