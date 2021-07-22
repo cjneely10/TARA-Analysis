@@ -21,4 +21,5 @@ dependencies:
       - scipy~=1.6.0
       - scikit-learn==0.24.1
       - ete3
+      - PyQt5==5.11.3
       - .
