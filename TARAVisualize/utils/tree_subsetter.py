@@ -31,7 +31,7 @@ class TreeSubsetter:
     def render(self, full: bool = False) -> str:
         if full:
             self.tree.write(features=[], outfile=self.tmp_tree)
-        local[os.path.join(os.path.dirname(__file__), "render_tree.py")][self.tmp_tree, self.tmp_png]()
+        local["python"][os.path.join(os.path.dirname(__file__), "render_tree.py"), self.tmp_tree, self.tmp_png]()
         return self.tmp_png
 
     def __del__(self):
