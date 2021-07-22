@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 from typing import Set
 
-from plumbum import local
+from plumbum import local, CommandNotFound
 
 from TARAVisualize import ete3
 
@@ -31,7 +31,10 @@ class TreeSubsetter:
     def render(self, full: bool = False) -> str:
         if full:
             self.tree.write(features=[], outfile=self.tmp_tree)
-        local["python3.7"][os.path.join(os.path.dirname(__file__), "render_tree.py"), self.tmp_tree, self.tmp_png]()
+        try:
+            local["python3.7"][os.path.join(os.path.dirname(__file__), "render_tree.py"), self.tmp_tree, self.tmp_png]()
+        except CommandNotFound:
+            local["python"][os.path.join(os.path.dirname(__file__), "render_tree.py"), self.tmp_tree, self.tmp_png]()
         return self.tmp_png
 
     def __del__(self):

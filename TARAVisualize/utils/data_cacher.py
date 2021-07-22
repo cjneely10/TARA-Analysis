@@ -11,10 +11,11 @@ class DataCacher:
         """
         Load all internal data into proper parsable formats, in memory
         """
+        fxns = (load_fastani_data, load_repeats_data, load_taxonomy, load_tree,
+                                          load_quality, load_aai_data)
         with concurrent.futures.ThreadPoolExecutor() as executor:
             futures = []
-            for i, function in enumerate((load_fastani_data, load_repeats_data, load_taxonomy, load_tree,
-                                          load_quality, load_aai_data)):
-                futures.append(executor.submit(function, Path(file_list[i]).resolve()))
+            for file, function in zip(file_list, fxns):
+                futures.append(executor.submit(function, Path(file).resolve()))
             concurrent.futures.wait(futures)
             return tuple((future.result() for future in futures))

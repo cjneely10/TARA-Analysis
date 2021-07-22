@@ -1,5 +1,4 @@
 import base64
-import os
 from typing import List
 from TARAVisualize import pd
 from TARAVisualize import st
@@ -28,6 +27,3 @@ def download_selected_mag_data(dataframes: List[pd.DataFrame]):
         for df in dataframes:
             out = out.join(df, how="outer")
         st.sidebar.markdown(get_table_download_link(out), unsafe_allow_html=True)
-        # out.to_csv(out_file, sep="\t")
-        # st.sidebar.text(f"Saved to {out_file}")
-        st.sidebar.text("Saved!")
