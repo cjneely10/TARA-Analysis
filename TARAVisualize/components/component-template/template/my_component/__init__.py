@@ -35,7 +35,7 @@ else:
     # build directory:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend/build")
-    _component_func = components.declare_component("my_component", path="frontend/build")
+    _component_func = components.declare_component("my_component", path=build_dir)
 
 
 # Create a wrapper function for the component. This is an optional
