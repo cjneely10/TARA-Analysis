@@ -6,6 +6,7 @@ dependencies:
   - python=3.7
   - nodejs
   - ete3
+  - ete_toolchain
   - pip
   - pip:
       - plumbum>=1.6.9
