@@ -1,2 +1,4 @@
 libgl1-mesa-glx
 qt5-default
+freeglut3-dev
+libgtk2.0-dev
