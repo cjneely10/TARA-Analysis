@@ -1,5 +1,4 @@
 .idea
 __pycache__
 node_modules
-component-template
 out.tsv
