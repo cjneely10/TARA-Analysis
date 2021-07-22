@@ -22,5 +22,5 @@ dependencies:
       - pylint==2.6.0
       - scipy~=1.6.0
       - scikit-learn==0.24.1
-      - --upgrade ete3
+      - ete3
       - .
