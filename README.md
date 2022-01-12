@@ -7,7 +7,7 @@ Open this repo in `streamlit` using the link above, or follow the installation i
 
 ### Installation
 
-This visualizer requires a modern browser and a system that can support NodeJS/React.
+This visualizer requires a modern browser.
 
 - Dependencies: `conda`, `git`.
 - All libraries in the `packages.txt` file (installable with `apt-get`).
