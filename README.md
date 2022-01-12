@@ -19,13 +19,21 @@ cd TARA-Analysis
 
 A conda environment will be created to contain the `nodejs` and `streamlit` dependencies.
 
-### Usage
+### Local Usage
 
 Running the visualizer will use &ge; 450MB of system RAM.
 
+In one terminal, run the command:
+
+```shell
+./run.sh
 ```
+
+In a separate terminal, run:
+
+```shell
 conda activate TARA-Analysis
-streamlit run TARA/Visualize/main.py
+streamlit run TARAVisualize/main.py
 ```
 
 Your browser should launch a window at `http://localhost:8501/`

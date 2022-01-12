@@ -7,7 +7,7 @@ from TARAVisualize import st
 def generate_fastani(heatmap_df: pd.DataFrame, aai_df: pd.DataFrame):
     # Generate ANI plot and table
     st.title("Average Identity")
-    col1, col2 = st.beta_columns([1, 1])
+    col1, col2 = st.columns([1, 1])
     col1.plotly_chart(px.imshow(heatmap_df.to_numpy(), labels={"color": "ANI"},
                                 x=heatmap_df.index, y=heatmap_df.columns), clear_figure=True)
     col2.plotly_chart(px.imshow(aai_df.to_numpy(), labels={"color": "AAI"},
