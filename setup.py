@@ -12,5 +12,4 @@ setup(
     license='GNU GPL 3',
     packages=["TARAVisualize", "TARAVisualize.components", "TARAVisualize.loader", "TARAVisualize.utils"],
     python_requires='>=3.7',
-    # install_requires=open(os.path.join(os.path.dirname(__file__), "_requirements.txt")).readlines(),
 )

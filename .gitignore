@@ -2,3 +2,5 @@
 __pycache__
 node_modules
 out.tsv
+build
+TARAVisualize.egg-info
