@@ -1,5 +1,8 @@
 libgl1-mesa-glx
-qt5-default
+qtbase5-dev
+qtchooser
+qt5-qmake
+qtbase5-dev-tools
 freeglut3-dev
 libgtk2.0-dev
 libxkbcommon-x11-0
