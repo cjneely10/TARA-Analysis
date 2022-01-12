@@ -9,7 +9,9 @@ Open this repo in `streamlit` using the link above, or follow the installation i
 
 This visualizer requires a modern browser and a system that can support NodeJS/React.
 
-Dependencies: `conda`, `git`.
+- Dependencies: `conda`, `git`.
+- All libraries in the `packages.txt` file (installable with `apt-get`).
+
 
 ```
 git clone https://github.com/cjneely10/TARA-Analysis.git
