@@ -1,10 +1,9 @@
 import os
-
 import streamlit.components.v1 as components
 
-parent_dir = os.path.dirname(os.path.abspath(__file__))
-build_dir = os.path.join(parent_dir, "component-template/template/my_component/frontend/build")
-_component_func = components.declare_component("my_component", path="TARAVisualize/components/component-template/template/my_component/frontend/build")
+build = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                     "component-template/template/my_component/frontend/build")
+_component_func = components.declare_component("my_component", path=build)
 
 
 def selectable_component(fig):

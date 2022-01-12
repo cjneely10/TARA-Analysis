@@ -14,22 +14,12 @@ Dependencies: `conda`, `git`.
 ```
 git clone https://github.com/cjneely10/TARA-Analysis.git
 cd TARA-Analysis
-./install.sh
+conda env create -f environment.yml
 ```
-
-A conda environment will be created to contain the `nodejs` and `streamlit` dependencies.
 
 ### Local Usage
 
 Running the visualizer will use &ge; 450MB of system RAM.
-
-In one terminal, run the command:
-
-```shell
-./run.sh
-```
-
-In a separate terminal, run:
 
 ```shell
 conda activate TARA-Analysis
