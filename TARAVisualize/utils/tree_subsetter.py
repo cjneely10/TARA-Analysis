@@ -1,5 +1,4 @@
 import os
-import random
 from pathlib import Path
 from typing import Set
 
@@ -12,12 +11,8 @@ class TreeSubsetter:
     def __init__(self, tree_path: Path):
         self.tree_path = tree_path
         self.tree = ete3.Tree(tree_path.read_text())
-        val_prefix = random.choice(list(range(0, 1000000)))
-        self.tmp_tree = os.path.join(os.path.dirname(__file__), f"tmp-tree.{val_prefix}.newick")
-        while os.path.exists(self.tmp_tree):
-            val_prefix = random.choice(list(range(0, 1000000)))
-            self.tmp_tree = os.path.join(os.path.dirname(__file__), f"tmp-tree.{val_prefix}.newick")
-        self.tmp_png = os.path.join(os.path.dirname(__file__), f"tmp.{val_prefix}.png")
+        self.tmp_tree = os.path.join(os.path.dirname(__file__), "tmp-tree.newick")
+        self.tmp_png = os.path.join(os.path.dirname(__file__), "tmp.png")
 
     def prune(self, ids: Set[str]) -> str:
         self.clean()
