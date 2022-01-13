@@ -9,9 +9,9 @@ def generate_fastani(heatmap_df: pd.DataFrame, aai_df: pd.DataFrame):
     st.title("Average Identity")
     col1, col2 = st.columns(2)
     col1.plotly_chart(px.imshow(heatmap_df.to_numpy(), labels={"color": "ANI"},
-                                x=heatmap_df.index, y=heatmap_df.columns), clear_figure=True)
+                                x=heatmap_df.index, y=heatmap_df.columns), clear_figure=True, use_container_width=True)
     col2.plotly_chart(px.imshow(aai_df.to_numpy(), labels={"color": "AAI"},
-                                x=aai_df.index, y=aai_df.columns), clear_figure=True)
+                                x=aai_df.index, y=aai_df.columns), clear_figure=True, use_container_width=True)
 
 
 def filter_fastani_aai(aa_df: pd.DataFrame, subset_ids: Set[str]) -> pd.DataFrame:

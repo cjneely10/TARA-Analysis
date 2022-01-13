@@ -6,4 +6,4 @@ _component_func = components.declare_component("my_component", path="TARAVisuali
 
 
 def selectable_component(fig):
-    return _component_func(spec=fig.to_json())
+    return _component_func(spec=fig.to_json(), use_container_width=True)

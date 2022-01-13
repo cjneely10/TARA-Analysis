@@ -13,7 +13,7 @@ def distribution(metadata: pd.DataFrame):
         x="size_fraction",
         y=alt.Y('count():O'),
         column="region"
-    ).configure_axisX(labelAngle=-45))
+    ).configure_axisX(labelAngle=-45), use_container_width=True)
     st.altair_chart(alt.Chart(metadata).mark_bar(
         cornerRadiusTopLeft=3,
         cornerRadiusTopRight=3,
@@ -22,4 +22,4 @@ def distribution(metadata: pd.DataFrame):
         x="depth",
         y=alt.Y('count():O'),
         column="region"
-    ).configure_axisX(labelAngle=-45))
+    ).configure_axisX(labelAngle=-45), use_container_width=True)
