@@ -1,4 +1,6 @@
 import os
+import random
+import string
 from pathlib import Path
 from typing import Set
 
@@ -11,8 +13,10 @@ class TreeSubsetter:
     def __init__(self, tree_path: Path):
         self.tree_path = tree_path
         self.tree = ete3.Tree(tree_path.read_text())
-        self.tmp_tree = os.path.join(os.path.dirname(__file__), "tmp-tree.newick")
-        self.tmp_png = os.path.join(os.path.dirname(__file__), "tmp.png")
+        self.id =  ''.join(random.choices(string.ascii_uppercase +
+                             string.digits, k=20))
+        self.tmp_tree = os.path.join(os.path.dirname(__file__), f"{self.id}.newick")
+        self.tmp_png = os.path.join(os.path.dirname(__file__), f"{self.id}.png")
 
     def prune(self, ids: Set[str]) -> str:
         self.clean()
@@ -31,10 +35,7 @@ class TreeSubsetter:
     def render(self, full: bool = False) -> str:
         if full:
             self.tree.write(features=[], outfile=self.tmp_tree)
-        try:
-            local["python3.7"][os.path.join(os.path.dirname(__file__), "render_tree.py"), self.tmp_tree, self.tmp_png]()
-        except CommandNotFound:
-            local["python"][os.path.join(os.path.dirname(__file__), "render_tree.py"), self.tmp_tree, self.tmp_png]()
+        local["python"][os.path.join(os.path.dirname(__file__), "render_tree.py"), self.tmp_tree, self.tmp_png]()
         return self.tmp_png
 
     def __del__(self):

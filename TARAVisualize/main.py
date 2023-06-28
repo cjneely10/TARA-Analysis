@@ -9,7 +9,7 @@ from TARAVisualize.loader.phylogeny import generate_phylogeny
 from TARAVisualize.loader.quality import generate_quality
 from TARAVisualize.loader.repeats import generate_repeats, repeats_filter
 from TARAVisualize.loader.taxonomy import get_taxonomy
-from TARAVisualize.utils.data_cacher import DataCacher
+from TARAVisualize.utils.data_cacher import load
 from TARAVisualize.loader.download_selection import download_selected_mag_data
 
 # Paths to data files
@@ -25,14 +25,14 @@ KEGG_DETAILS = os.path.join(FILE_DIR, "kegg-summary-test.txt")
 AAI_FILE = os.path.join(FILE_DIR, "aai_summary.tsv.gz")
 
 # Load all data into full dataframes
-fastani, repeats, metadata, tree, busco_n50, aai_df = DataCacher().load(
+fastani, repeats, metadata, tree, busco_n50, aai_df = load(
     [FASTANI_FILE, REPEATS_FILE, TAX_FILE, TREE_FILE, BUSCO_N50_FILE,
      AAI_FILE])
 # Get user filter selections
 selected_mags = get_mags_list(metadata)
 
 if selected_mags:
-    with concurrent.futures.ThreadPoolExecutor() as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
         # Filter data concurrently
         futures = [executor.submit(tree.prune, selected_mags),
                    executor.submit(lambda: metadata[metadata.index.isin(selected_mags)]),

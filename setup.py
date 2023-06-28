@@ -11,5 +11,5 @@ setup(
     author_email='christopher.neely1200@gmail.com',
     license='GNU GPL 3',
     packages=["TARAVisualize", "TARAVisualize.components", "TARAVisualize.loader", "TARAVisualize.utils"],
-    python_requires='>=3.7',
+    python_requires='>=3.10',
 )
