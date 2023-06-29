@@ -1,9 +1,9 @@
 FROM continuumio/miniconda3
 WORKDIR /app
 COPY . .
-RUN apt-get update && apt-get install libgl1-mesa-glx -y && \
-    conda env create -f environment.yml && \
-    echo "source activate TARA-Analysis" > ~/.bashrc
+RUN apt-get update && \
+    apt-get install $(tr '\n' ' ' < packages.txt) -y && \
+    pip install -r requirements.txt
 ENV PATH /opt/conda/envs/TARA-Analysis/bin:$PATH
 CMD ["streamlit", "run", "TARAVisualize/main.py"]
 EXPOSE 8501
