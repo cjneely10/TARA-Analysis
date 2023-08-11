@@ -6,5 +6,6 @@ RUN apt-get update && \
     pip install -r requirements.txt \
 RUN chown -R adminuser:adminuser /home/adminuser/venv/lib/python3.11/site-packages/TARAVisualize/utils
 ENV PATH /opt/conda/envs/TARA-Analysis/bin:$PATH
+USER adminuser
 CMD ["streamlit", "run", "TARAVisualize/main.py"]
 EXPOSE 8501
