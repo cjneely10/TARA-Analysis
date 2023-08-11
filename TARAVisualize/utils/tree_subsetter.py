@@ -15,8 +15,8 @@ class TreeSubsetter:
         self.tree = ete3.Tree(tree_path.read_text())
         self.id =  ''.join(random.choices(string.ascii_uppercase +
                              string.digits, k=20))
-        self.tmp_tree = os.path.join(os.path.dirname(__file__), f"{self.id}.newick")
-        self.tmp_png = os.path.join(os.path.dirname(__file__), f"{self.id}.png")
+        self.tmp_tree = os.path.join("~", f"{self.id}.newick")
+        self.tmp_png = os.path.join("~", f"{self.id}.png")
 
     def prune(self, ids: Set[str]) -> str:
         self.clean()
