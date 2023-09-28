@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3
+FROM python:3.9.18
 WORKDIR /app
 COPY . .
 RUN apt-get update && \
