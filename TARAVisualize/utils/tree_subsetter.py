@@ -38,7 +38,7 @@ class TreeSubsetter:
         try:
             local["/home/appuser/venv/bin/python"][os.path.join(os.path.dirname(__file__), "render_tree.py"), self.tmp_tree, self.tmp_png]()
         except:
-            local["python"][os.path.join(os.path.dirname(__file__), "render_tree.py"), self.tmp_tree, self.tmp_png]()
+            local["/home/adminuser/venv/bin/python"][os.path.join(os.path.dirname(__file__), "render_tree.py"), self.tmp_tree, self.tmp_png]()
         return self.tmp_png
 
     def __del__(self):
